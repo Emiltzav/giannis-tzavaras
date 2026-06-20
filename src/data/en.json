@@ -1,0 +1,359 @@
+{
+  "meta": {
+    "name": "Giannis Tzavaras",
+    "role": "Philosopher · Professor Emeritus of Philosophy",
+    "place": "University of Crete, Rethymno"
+  },
+  "nav": {
+    "home": "Home",
+    "biography": "Biography",
+    "chronology": "Chronology",
+    "works": "Work",
+    "books": "Books",
+    "articles": "Articles",
+    "blog": "Blog",
+    "activities": "Activities",
+    "contact": "Contact"
+  },
+  "ui": {
+    "language": "Language",
+    "greek": "Greek",
+    "english": "English",
+    "readMore": "Read more",
+    "back": "Back",
+    "backToBlog": "Back to the blog",
+    "explore": "Explore the work",
+    "readBlog": "Read the blog",
+    "minRead": "min read",
+    "publishedOn": "Published",
+    "tags": "Topics",
+    "viewAll": "View all",
+    "scroll": "Scroll",
+    "menu": "Menu"
+  },
+  "home": {
+    "heroKicker": "Greek philosophical thought",
+    "heroTitle": "Giannis Tzavaras",
+    "heroSubtitle": "Philosopher, translator and teacher. Professor Emeritus of Philosophy at the University of Crete, with a body of work devoted to ontology, phenomenology, and the dialogue between Greek thought and German philosophy.",
+    "heroQuote": "Philosophy does not give answers; it teaches us how to ask well.",
+    "heroQuoteAuthor": "G. Tzavaras",
+    "ctaExplore": "Explore the work",
+    "ctaBlog": "Recent thoughts",
+    "introTitle": "A life among ideas",
+    "introParagraphs": [
+      "For decades, Giannis Tzavaras has stood between two worlds of thought: the ancient Greek philosophy that first posed the question of Being, and modern German philosophy, which renewed that question in new terms.",
+      "His work — as translator, interpreter and original thinker — builds bridges between Plato and Heidegger, between Aristotle and Hegel, in a language that is clear, rigorous and deeply human.",
+      "This site gathers his books, articles, biography and most recent reflections — a living archive for anyone who wishes to think alongside him."
+    ],
+    "highlightsTitle": "Threads of the work",
+    "highlights": [
+      {
+        "icon": "scroll",
+        "title": "Ontology & Phenomenology",
+        "text": "The question of the meaning of Being, from the Presocratics to Heidegger."
+      },
+      {
+        "icon": "languages",
+        "title": "Philosophical translation",
+        "text": "Rendering landmark texts of German philosophy into a precise, living Greek."
+      },
+      {
+        "icon": "graduation-cap",
+        "title": "Teaching",
+        "text": "Generations of students at the University of Crete who learned to read texts closely."
+      },
+      {
+        "icon": "feather",
+        "title": "Essay & reflection",
+        "text": "Original writing on language, art, death, and the measure of being human."
+      }
+    ],
+    "featuredQuote": "To think means: to stay faithful to a question, even when it promises no rest.",
+    "featuredQuoteSource": "From lecture notes, Rethymno"
+  },
+  "biography": {
+    "title": "Biography",
+    "lead": "A path from the study of classical texts to the chair of philosophy — and beyond it.",
+    "paragraphs": [
+      "Giannis Tzavaras belongs to the generation of Greek philosophers who, in the second half of the 20th century, set out to bring contemporary European philosophy into fertile dialogue with the Greek tradition. He studied philosophy in Greece and in Germany, where he came into direct contact with the phenomenological and hermeneutic traditions.",
+      "His encounter with the work of Martin Heidegger proved decisive. He devoted years to the study and translation of foundational texts, aiming not at a mere transfer of words but at the creation of a Greek philosophical language capable of hosting the most demanding concepts.",
+      "As a professor in the Department of Philosophy and Social Studies at the University of Crete, in Rethymno, he taught ontology, the history of philosophy and phenomenology. His teaching was marked by an insistence on careful, slow reading of texts — an exercise in patience and precision.",
+      "Today, as Professor Emeritus, he continues to write, translate and reflect, sharing his thoughts through essays and posts on his blog."
+    ],
+    "timelineTitle": "Milestones",
+    "timeline": [
+      {
+        "year": "Early years",
+        "title": "Studies in philosophy",
+        "text": "Foundational studies in classical and modern philosophy, in Greece and in Germany."
+      },
+      {
+        "year": "Research",
+        "title": "Encounter with phenomenology",
+        "text": "Deep engagement with Husserl and Heidegger; the start of a long translation project."
+      },
+      {
+        "year": "Teaching",
+        "title": "University of Crete, Rethymno",
+        "text": "Many years as professor of philosophy; seminars in ontology and hermeneutics."
+      },
+      {
+        "year": "Writing",
+        "title": "Books & translations",
+        "text": "A series of original studies and landmark translations of German philosophy."
+      },
+      {
+        "year": "Today",
+        "title": "Professor Emeritus",
+        "text": "Ongoing writing, essays and public reflection through the blog."
+      }
+    ],
+    "influencesTitle": "Interlocutors & influences",
+    "influences": [
+      "Plato",
+      "Aristotle",
+      "Heraclitus",
+      "Immanuel Kant",
+      "G. W. F. Hegel",
+      "Søren Kierkegaard",
+      "Edmund Husserl",
+      "Martin Heidegger"
+    ]
+  },
+  "chronology": {
+    "title": "Chronology",
+    "lead": "From his birth in 1950 to the present: studies, academic milestones, and his writing and translation work, year by year.",
+    "note": "A complete chronology of life, studies, appointments and publications. Bibliographic entries are listed in their original Greek.",
+    "milestoneLabel": "Milestone"
+  },
+  "works": {
+    "title": "The work",
+    "lead": "Four interwoven threads compose a single philosophical path.",
+    "areas": [
+      {
+        "title": "Ontology",
+        "text": "At the centre of the work lies philosophy's oldest question: what does it mean 'to be'? Through the Presocratics, Plato and Aristotle, and up to the modern reformulation of the question, the meaning of existence itself is sought."
+      },
+      {
+        "title": "Phenomenology & Hermeneutics",
+        "text": "The method of 'returning to the things themselves' and the art of interpretation lead to a philosophy that imposes no schemes, but lets the phenomena show themselves."
+      },
+      {
+        "title": "Philosophy of language",
+        "text": "Language is not a mere tool but the place where meaning becomes possible. Translation thus becomes a philosophical act in itself — the search for the right word as the search for truth."
+      },
+      {
+        "title": "Ethics & the human measure",
+        "text": "Beyond theory, the question remains: how ought one to live? Death, time, freedom and responsibility define the horizon of a reflective life."
+      }
+    ]
+  },
+  "books": {
+    "title": "Books & Bibliography",
+    "lead": "The independent books of Giannis Tzavaras — studies, essays, and annotated or bilingual editions. Each title shows its publisher and year.",
+    "note": "Independent books only; titles are given in their original language (Greek / German).",
+    "countLabel": "books",
+    "pagesLabel": "pp.",
+    "tabBooks": "Books",
+    "tabTranslations": "Translations",
+    "translationsLead": "Philosophical works translated by Giannis Tzavaras — from Kierkegaard and Heidegger to Kant, Hegel, Plotinus and Schelling. Each title shows its publisher and year.",
+    "translationsNote": "Translations of other thinkers’ works; titles are given in the language of the edition.",
+    "translationsCountLabel": "translations"
+  },
+  "articles": {
+    "title": "Articles & Publications",
+    "lead": "A selection of scholarly articles, essays and contributions to edited volumes and journals.",
+    "items": [
+      {
+        "year": "1989",
+        "title": "The Problem of Translation in Philosophy",
+        "journal": "Deukalion — Journal of Philosophy",
+        "description": "On the difficulties and possibilities of carrying philosophical concepts from one language into another."
+      },
+      {
+        "year": "1996",
+        "title": "Heraclitus and Heidegger: a silent conversation",
+        "journal": "Notes on Philosophy",
+        "description": "How contemporary thought returns to the Presocratics in order to rethink Being."
+      },
+      {
+        "year": "2003",
+        "title": "The Concept of Time in Aristotle",
+        "journal": "Philosophia — Yearbook",
+        "description": "An analysis of the chapters of the Physics on time and their significance for contemporary ontology."
+      },
+      {
+        "year": "2010",
+        "title": "Language, Silence and Meaning",
+        "journal": "Nea Estia",
+        "description": "An essay on the limits of speech and the philosophical significance of silence."
+      },
+      {
+        "year": "2017",
+        "title": "Education as an Exercise in Reading",
+        "journal": "Conference Proceedings in Philosophy",
+        "description": "A defence of slow, careful reading in an age of acceleration."
+      }
+    ]
+  },
+  "blog": {
+    "title": "Blog",
+    "lead": "Thoughts, notes and short essays — written to the rhythm of daily study.",
+    "posts": [
+      {
+        "id": "i-techni-tis-argis-anagnosis",
+        "date": "2026-05-18",
+        "title": "The art of slow reading",
+        "tags": ["education", "reading", "method"],
+        "excerpt": "In a world that reads ever faster, philosophy insists on the opposite: on patience.",
+        "body": [
+          "When I teach, I often tell my students that a philosophical text is not read; it is inhabited. We do not hurry through it as through a corridor. We stay, we look again, we let the words open up.",
+          "Slow reading is not nostalgia. It is method. A single page of Aristotle or Heidegger can hold an entire day — and this is not a failure, it is the right rhythm.",
+          "Perhaps the most revolutionary thing a young person can do today is exactly this: to sit with a difficult book and not be in a hurry."
+        ]
+      },
+      {
+        "id": "giati-metafrazoume",
+        "date": "2026-03-02",
+        "title": "Why we translate philosophy",
+        "tags": ["translation", "language"],
+        "excerpt": "Every translation is an interpretation, and every interpretation a decision about what truth means.",
+        "body": [
+          "People often ask me why I devoted so many years to translating texts that few will read. My answer is simple: translation is the slowest and the most faithful way of reading.",
+          "To translate a single word of Heidegger, you must understand it to the end. It is not enough to know what it means; you must find how the same thought sounds in your own language.",
+          "In this way the Greek language does not merely receive a foreign idea — it changes too, it grows, it discovers new possibilities. This is the true gain of translation."
+        ]
+      },
+      {
+        "id": "to-erotima-pou-menei",
+        "date": "2026-01-11",
+        "title": "The question that remains",
+        "tags": ["ontology", "reflection"],
+        "excerpt": "Philosophy does not accumulate answers; it cultivates a question that never ceases.",
+        "body": [
+          "After a life among books, I confess that I hold no more certainties than I did in my youth. But I have better questions.",
+          "The question of Being — why there is something rather than nothing — has never been solved, and perhaps it should not be. Its value lies not in the answer but in the fact that it keeps us awake.",
+          "This is what I try to leave to my students: not a system, but a capacity to be astonished before the fact that the world exists."
+        ]
+      }
+    ]
+  },
+  "activities": {
+    "title": "Broader Activities",
+    "lead": "Websites, academic and institutional activities, and lectures by Giannis Tzavaras.",
+    "sourceLabel": "Read more on the personal website",
+    "sourceUrl": "https://istoselidatzavara.webnode.page/%ce%b5%cf%85%cf%81%cf%8d%cf%84%ce%b5%cf%81%ce%b5%cf%82%20%ce%b4%cf%81%ce%b1%cf%83%cf%84%ce%b7%cf%81%ce%b9%cf%8c%cf%84%ce%b7%cf%84%ce%b5%cf%82/",
+    "sections": [
+      {
+        "id": "websites",
+        "letter": "A",
+        "heading": "Websites of Giannis Tzavaras",
+        "items": [
+          {
+            "text": "Greek Philosophical Bibliography 1980–2019. An archive of Greek-language philosophical bibliography.",
+            "url": "https://tzavaras-ioannis.blogspot.com/2022/05/blog-post_9.html"
+          },
+          {
+            "text": "Aesthetic Education (Aisthitiki Agogi). A biannual student journal (published without interruption from October 2002 to October 2014), edited by Giannis Tzavaras with graphic design by Konstantinos Nyktaris. It mainly featured seminar papers from the Aesthetic Education seminar supervised by G. Tzavaras. It published original texts covering a broad field: A) theories of art, the beautiful and related concepts; B) works of art (their analysis and evaluation); C) the history of art; D) aesthetic cultivation and artistic education. Its interest focused especially on the area of pre-school and early-school education.",
+            "url": "http://periodikoaisthag.webnode.com"
+          },
+          {
+            "text": "Shadow Theatre and Education. An effort to make known to the Greek public the educational possibilities of Shadow Theatre beyond the traditional Karagiozis.",
+            "url": "http://theatroskivvn.yolasite.com"
+          },
+          {
+            "text": "Philosophy for Children. An effort to introduce to the Greek public the international philosophical–pedagogical movement “philosophy for children”.",
+            "url": "https://childrenandphilosophy.webnode.com"
+          },
+          {
+            "text": "“Philosophical Publications” (Filosofika Dimosievmata). Online publication of Greek-language philosophical texts from 2011 onwards.",
+            "url": "https://www.philosophicalbibliography.com/index.php?option=com_content&view=article&id=5%3Afilosofika-dimosieymata"
+          }
+        ]
+      },
+      {
+        "id": "other",
+        "letter": "B",
+        "heading": "Other activities",
+        "items": [
+          {
+            "text": "He served as alternate representative of the University of Crete on the Prefectural Committee for Popular Education (N.E.L.E.) of the Prefecture of Rethymno for a two-year term (1985–1987)."
+          },
+          {
+            "text": "He contributed to the organisation of the following conferences: A) “Wittgenstein Philosophical Symposium”, 15–17 December 1989. B) “The Present and Future of Philosophy”. A two-day philosophical symposium, Orthodox Academy of Crete, November 1991. C) “Technology and Knowledge. Philosophical and Sociological Investigations”. A two-day international seminar, Rethymno, 17–18 October 1996."
+          },
+          {
+            "text": "During the academic year 1993–1994 he served as Chair of the Department of Philosophy and Social Studies, and during the academic years 2005–2007 as Chair of the Department of Pre-school Education of the University of Crete."
+          },
+          {
+            "text": "For several years he supervised, as principal supervisor, the doctoral thesis of Kostas Kourpetis on “Man and God in Empedocles”. The thesis was successfully defended (grade: excellent) in June 1996."
+          },
+          {
+            "text": "He was a member of many three-member committees set up to supervise Master’s specialisation theses and doctoral dissertations (PhD). In addition, he examined numerous doctoral theses as a member of their seven-member examination committee."
+          },
+          {
+            "text": "He was a member of many electoral bodies set up to judge the election or promotion of faculty members of the University of Crete and other Greek universities."
+          },
+          {
+            "text": "During 1993–1997 he was a regular member of the Research Committee (E.L.K.E.) of the University of Crete as representative of the Department of Philosophy and Social Studies."
+          },
+          {
+            "text": "For several years he served as Deputy Chair of the Department of Philosophy and Social Studies and of the Department of Pre-school Education of the University of Crete."
+          },
+          {
+            "text": "For several years (1998–2005) he served as Vice-President of the Nursery Teachers’ Training College of the University of Crete, and during 2005–2007 as President of the same College."
+          },
+          {
+            "text": "He organised an academic workshop on: “From the teacher’s monologue to group dialogue. Philosophical thought and inquiry in the primary-school classroom” (Rethymno, 22 October 2010). The proceedings of the workshop, with enriched and improved versions of the participants’ papers, were published in the journal Dia-LOGOS 2 (2012), pp. 181–339."
+          },
+          {
+            "text": "He was a member of the Quality Assurance Unit (MO.DI.P.) of the University of Crete from 2010 to 2012."
+          },
+          {
+            "text": "He was co-editor of the journal Dia-LOGOS. Yearbook of Philosophical Research (2011 onwards), a member of the editorial committee of the journal Filosofein. Episteme, eunoia, parrhesia, and a member of the scientific committee of the journal Philosophy and Education."
+          }
+        ]
+      },
+      {
+        "id": "lectures",
+        "letter": "C",
+        "heading": "Lectures",
+        "items": [
+          {
+            "text": "“An alternative proposal for the teaching of philosophy in Secondary Education”. A lecture before philologists of East Attica, Pallini, 11 April 1994. The text was published in the journal “Philosophy and Education” 1 (1995), issue 3, pp. 12–14."
+          },
+          {
+            "text": "“The God of Empedocles”. A lecture given in Athens in 1997. The text, in a repeatedly reworked form, was published in 2015 under the title “The spherical god of Empedocles”."
+          },
+          {
+            "text": "“Is the artwork a thing or a meaning?”. A lecture given in Rethymno, Armonia Gallery, 27 November 2002."
+          },
+          {
+            "text": "“Manolis Markakis as a philosopher”. A lecture organised by the Union of Philologists of the Prefecture of Heraklion, Crete, Heraklion, 3 March 2003, in honour of Manolis Markakis (1942–2001), sociologist, philosopher, poet and writer. Published in the journal “Dialogos” (issued by the Union of Philologists of the Prefecture of Heraklion), issue 17, October 2005, pp. 203–208."
+          },
+          {
+            "text": "“Does time exist?”. A lecture given in Rethymno, at the Museum of Contemporary Art of Crete – L. Kanakakis Gallery, 2 December 2009. The lecture was repeated in Athens, at the “Patakis” bookshop (65 Akadimias St.), on 11 February 2010, under the title: “The existence of time according to Aristotle, Kant and Heidegger”."
+          }
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "lead": "For academic correspondence, invitations, or questions about the work.",
+    "emailLabel": "Email",
+    "email": "itzavar@edc.uoc.gr",
+    "locationLabel": "Location",
+    "location": "Rethymno, Crete",
+    "note": "This site is a digital archive; there is no automated message-sending mechanism. Please use the email above.",
+    "writeButton": "Send an email"
+  },
+  "footer": {
+    "tagline": "A digital archive of ideas, books and philosophical reflection.",
+    "explore": "Explore",
+    "about": "About",
+    "aboutText": "Personal website of the philosopher Giannis Tzavaras. Content in Greek and English.",
+    "rights": "All rights reserved.",
+    "builtWith": "Made with love for philosophy."
+  }
+}
