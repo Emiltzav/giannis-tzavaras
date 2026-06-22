@@ -8,6 +8,7 @@ export default function Footer() {
 
   const links = [
     { to: '/biography', label: t.nav.biography },
+    { to: '/cv', label: t.nav.cv },
     { to: '/chronology', label: t.nav.chronology },
     { to: '/works', label: t.nav.works },
     { to: '/books', label: t.nav.books },

@@ -26,6 +26,7 @@ export default function Navbar() {
     { to: '/biography', label: t.nav.biography },
     { to: '/chronology', label: t.nav.chronology },
     { to: '/works', label: t.nav.works },
+    { to: '/interests', label: t.nav.interests },
     { to: '/books', label: t.nav.books },
     { to: '/articles', label: t.nav.articles },
     { to: '/blog', label: t.nav.blog },

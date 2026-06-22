@@ -1,8 +1,10 @@
 import { createContext, useContext, useEffect, useState } from 'react'
 import el from '../data/el.json'
 import en from '../data/en.json'
+import de from '../data/de.json'
 
-const dictionaries = { el, en }
+const dictionaries = { el, en, de }
+const LANGS = ['el', 'en', 'de']
 
 const LanguageContext = createContext(null)
 
@@ -11,7 +13,8 @@ const STORAGE_KEY = 'gt-lang'
 export function LanguageProvider({ children }) {
   const [lang, setLang] = useState(() => {
     if (typeof window === 'undefined') return 'el'
-    return window.localStorage.getItem(STORAGE_KEY) || 'el'
+    const stored = window.localStorage.getItem(STORAGE_KEY)
+    return LANGS.includes(stored) ? stored : 'el'
   })
 
   useEffect(() => {
@@ -19,7 +22,7 @@ export function LanguageProvider({ children }) {
     document.documentElement.lang = lang
   }, [lang])
 
-  const toggle = () => setLang((prev) => (prev === 'el' ? 'en' : 'el'))
+  const toggle = () => setLang((prev) => LANGS[(LANGS.indexOf(prev) + 1) % LANGS.length])
 
   const value = {
     lang,

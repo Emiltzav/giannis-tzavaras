@@ -1,6 +1,8 @@
+const LOCALES = { el: 'el-GR', en: 'en-GB', de: 'de-DE' }
+
 export function formatDate(dateStr, lang) {
   const date = new Date(dateStr)
-  return date.toLocaleDateString(lang === 'el' ? 'el-GR' : 'en-GB', {
+  return date.toLocaleDateString(LOCALES[lang] || 'en-GB', {
     day: 'numeric',
     month: 'long',
     year: 'numeric',

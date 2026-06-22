@@ -4,6 +4,7 @@ import { useLang } from '../i18n/LanguageContext.jsx'
 import Reveal from '../components/Reveal.jsx'
 import Icon from '../components/Icon.jsx'
 import Portrait from '../components/Portrait.jsx'
+import { formatDate } from '../utils/format.js'
 
 export default function Home() {
   const { t, lang } = useLang()
@@ -55,7 +56,7 @@ export default function Home() {
       <section className="section intro">
         <div className="container intro__grid">
           <Reveal className="intro__heading">
-            <span className="eyebrow">{lang === 'el' ? 'Εισαγωγή' : 'Introduction'}</span>
+            <span className="eyebrow">{t.ui.introduction}</span>
             <h2 className="section__title">{t.home.introTitle}</h2>
           </Reveal>
           <div className="intro__body">
@@ -116,13 +117,7 @@ export default function Home() {
             {posts.map((post, i) => (
               <Reveal key={post.id} delay={i * 80}>
                 <Link to={`/blog/${post.id}`} className="card post-card">
-                  <time className="post-card__date">
-                    {new Date(post.date).toLocaleDateString(lang === 'el' ? 'el-GR' : 'en-GB', {
-                      day: 'numeric',
-                      month: 'long',
-                      year: 'numeric',
-                    })}
-                  </time>
+                  <time className="post-card__date">{formatDate(post.date, lang)}</time>
                   <h3 className="post-card__title">{post.title}</h3>
                   <p className="post-card__excerpt">{post.excerpt}</p>
                   <span className="post-card__more">

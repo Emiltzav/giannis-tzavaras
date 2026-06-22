@@ -4,8 +4,10 @@ import Navbar from './components/Navbar.jsx'
 import Footer from './components/Footer.jsx'
 import Home from './pages/Home.jsx'
 import Biography from './pages/Biography.jsx'
+import CV from './pages/CV.jsx'
 import Chronology from './pages/Chronology.jsx'
 import Works from './pages/Works.jsx'
+import Interests from './pages/Interests.jsx'
 import Books from './pages/Books.jsx'
 import Articles from './pages/Articles.jsx'
 import Blog from './pages/Blog.jsx'
@@ -31,8 +33,10 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/biography" element={<Biography />} />
+          <Route path="/cv" element={<CV />} />
           <Route path="/chronology" element={<Chronology />} />
           <Route path="/works" element={<Works />} />
+          <Route path="/interests" element={<Interests />} />
           <Route path="/books" element={<Books />} />
           <Route path="/translations" element={<Books initialTab="translations" />} />
           <Route path="/articles" element={<Articles />} />

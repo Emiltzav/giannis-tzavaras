@@ -1,14 +1,14 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight } from 'lucide-react'
+import { ArrowRight, FileText } from 'lucide-react'
 import { useLang } from '../i18n/LanguageContext.jsx'
 import PageHeader from '../components/PageHeader.jsx'
 import Reveal from '../components/Reveal.jsx'
 import Portrait from '../components/Portrait.jsx'
 
 export default function Biography() {
-  const { t, lang } = useLang()
+  const { t } = useLang()
   const bio = t.biography
-  const youngCaption = lang === 'el' ? 'Τα πρώτα χρόνια' : 'The early years'
+  const youngCaption = bio.youngCaption
 
   return (
     <article className="page">
@@ -30,6 +30,13 @@ export default function Biography() {
                   <li key={name} className="chip">{name}</li>
                 ))}
               </ul>
+            </Reveal>
+
+            <Reveal className="bio__cv-cta">
+              <Link to="/cv" className="btn btn--ghost">
+                <FileText size={18} />
+                {t.nav.cv}
+              </Link>
             </Reveal>
           </div>
 

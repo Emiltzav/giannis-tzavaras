@@ -7,8 +7,10 @@
   "nav": {
     "home": "Home",
     "biography": "Biography",
+    "cv": "Curriculum (CV)",
     "chronology": "Chronology",
     "works": "Work",
+    "interests": "Interests",
     "books": "Books",
     "articles": "Articles",
     "blog": "Blog",
@@ -19,6 +21,9 @@
     "language": "Language",
     "greek": "Greek",
     "english": "English",
+    "german": "German",
+    "introduction": "Introduction",
+    "notFound": "The page you are looking for was not found.",
     "readMore": "Read more",
     "back": "Back",
     "backToBlog": "Back to the blog",
@@ -74,6 +79,7 @@
   "biography": {
     "title": "Biography",
     "lead": "A path from the study of classical texts to the chair of philosophy — and beyond it.",
+    "youngCaption": "The early years",
     "paragraphs": [
       "Giannis Tzavaras belongs to the generation of Greek philosophers who, in the second half of the 20th century, set out to bring contemporary European philosophy into fertile dialogue with the Greek tradition. He studied philosophy in Greece and in Germany, where he came into direct contact with the phenomenological and hermeneutic traditions.",
       "His encounter with the work of Martin Heidegger proved decisive. He devoted years to the study and translation of foundational texts, aiming not at a mere transfer of words but at the creation of a Greek philosophical language capable of hosting the most demanding concepts.",
@@ -120,6 +126,73 @@
       "Martin Heidegger"
     ]
   },
+  "cv": {
+    "title": "Curriculum (CV)",
+    "lead": "The studies, academic career and publications of Giannis Tzavaras, in the concise form of a curriculum vitae.",
+    "backLink": "Back to Biography",
+    "photo": {
+      "src": "/images/yiannis-2009.jpg",
+      "caption": "Giannis Tzavaras, 2009"
+    },
+    "detailsHeading": "Details",
+    "details": [
+      { "label": "Family name", "value": "Tzavaras" },
+      { "label": "Name", "value": "Ioannis" },
+      { "label": "Position", "value": "Professor Emeritus" },
+      { "label": "Specialization", "value": "Philosophy with an emphasis on Metaphysics" },
+      { "label": "Address", "value": "Roussospiti POB 4642, GR–74100 Rethymno" },
+      { "label": "Tel.", "value": "+30 6945953220" },
+      { "label": "E-mail", "value": "itzavaras@yahoo.gr" }
+    ],
+    "sections": [
+      {
+        "heading": "Education",
+        "entries": [
+          { "label": "Undergraduate", "text": "University of Athens, School of Philosophy, Department of Philosophy: 1968–1973." },
+          { "label": "Post-graduate", "text": "Specialization in Philosophy: a) Göttingen (Germany), winter semester 1973–74; b) Munich (Germany), spring semester 1974 – spring semester 1978." },
+          { "label": "Doctorate", "text": "University of Munich, 1974–1978. Doctoral thesis: “Motion according to Kierkegaard”." }
+        ]
+      },
+      {
+        "heading": "University Teaching (University of Crete)",
+        "entries": [
+          { "label": "Contract appointment", "text": "1979–1984" },
+          { "label": "Assistant Professor", "text": "1984–1990" },
+          { "label": "Associate Professor", "text": "1991–1997" },
+          { "label": "Professor", "text": "1997–2014" }
+        ]
+      }
+    ],
+    "publications": {
+      "heading": "Publications",
+      "booksHeading": "Books",
+      "books": [
+        "1. Motion according to Kierkegaard (in German). Verlag Peter Lang, Frankfurt a.M. 1978, 122 pp.",
+        "2. The poem of Parmenides (in Greek). Domos, Athens 1980, 241 pp.",
+        "3. The certainty of death (in Greek). Dodoni, Athens – Ioannina 1982, 118 pp.",
+        "4. The poetry of Empedocles (Ancient text – Translation – Commentary) (in Greek). Dodoni, Athens – Ioannina 1988, 303 pp.",
+        "5. The Kantian time according to Heidegger (in Greek). Dodoni, Athens – Ioannina 1989, 101 pp.",
+        "6. Love – War. An essay on cosmic theory (in Greek). Dodoni, Athens – Ioannina 1993, 172 pp.",
+        "7. A companion to philosophy (in Greek). Editions of Kosteas-Geitonas School, Athens 1995, 156 pp. (2nd edition, Rethymno 2001. 3rd edition totally renewed, Typothito-G. Dardanos, Athens 2006, 319 pp.).",
+        "8. The universal diffusion of despair (Study on Kierkegaard) (in Greek). Dodoni, Athens – Ioannina 1997, 202 pp.",
+        "9. Problems in philosophy of education (in Greek). Rethymno 2000, 172 pp.",
+        "10. The demerit of values: Nietzsche and Heidegger (in Greek). Indictos, Athens 2005, 237 pp.",
+        "11. Theology and philosophy according to early Heidegger (in Greek). Indictos, Athens 2007, 125 pp.",
+        "12. An Anthology of Aesthetics (in Greek). Gutenberg, Athens 2007, 175 pp.",
+        "13. An Introduction to Ontology (in Greek). Gutenberg, Athens 2009, 186 pp.",
+        "14. Philosophical Dialogue in the Classroom. Proceedings of a Congress (Rethymno, 22-10-2010). (In Greek).",
+        "15. Nietzsches Notizen zum Zarathustra (Juli 1882 - Februar 1883). e-book, 2011. (In Greek).",
+        "16. Heideggers «Beitraege zur Philosophie». Ein Zugangsversuch. e-book, 2012. (In Greek).",
+        "17. Existentielles und denkerisches Werden bei Kierkegaard. e-book, 2013. (In Greek)."
+      ],
+      "groups": [
+        { "label": "Papers & editions", "text": "Many papers, book reviews, bibliographical works and editions." },
+        { "label": "Translations & commentaries", "text": "Translations and commentaries on philosophical works of: Sören Kierkegaard, Martin Heidegger, Immanuel Kant, Paul Feyerabend, Georg Hegel, Plotinos, Thomas Aquinas, Joanna Haynes, Rainer Maria Rilke, Friedrich Hölderlin." }
+      ]
+    },
+    "sourceLabel": "Read more on the personal website",
+    "sourceUrl": "https://istoselidatzavara.webnode.page/tzavaras-john-curriculum-cv-/"
+  },
   "chronology": {
     "title": "Chronology",
     "lead": "From his birth in 1950 to the present: studies, academic milestones, and his writing and translation work, year by year.",
@@ -145,6 +218,99 @@
       {
         "title": "Ethics & the human measure",
         "text": "Beyond theory, the question remains: how ought one to live? Death, time, freedom and responsibility define the horizon of a reflective life."
+      }
+    ]
+  },
+  "interests": {
+    "title": "Interests",
+    "lead": "The fields that shaped the thought and work of Giannis Tzavaras — from ancient Greek philosophy to aesthetic education — together with the related books, translations and scholarly papers.",
+    "photos": [
+      {
+        "src": "/images/foto-giannis.jpg",
+        "caption": "Giannis Tzavaras"
+      },
+      {
+        "src": "/images/giannis-rubik.jpg",
+        "caption": "Play and thought — the puzzle as a challenge"
+      }
+    ],
+    "sections": [
+      {
+        "letter": "A",
+        "heading": "Ancient Greek Philosophy",
+        "groups": [
+          {
+            "label": "Related books",
+            "items": [
+              "Το ποίημα του Παρμενίδη (1980)",
+              "Η ποίηση του Εμπεδοκλή (1988)",
+              "Πλωτίνου: Το «μεγάλο βιβλίο» (= Εννεάδων βιβλία 30-33) (1995)"
+            ]
+          }
+        ]
+      },
+      {
+        "letter": "B",
+        "heading": "Ontology – Metaphysics",
+        "groups": [
+          {
+            "label": "Related books",
+            "items": [
+              "Bewegung bei Kierkegaard (1978)",
+              "Ο Καντιανός χρόνος κατά τον Χάιντεγγερ (1989)",
+              "Έρωτας – Πόλεμος. Δοκίμιο κοσμοθεωρίας (1993)",
+              "Η απαξίωση των αξιών: Νίτσε και Χάιντεγγερ (2005)",
+              "Εισαγωγή στην Οντολογία (2009)",
+              "Μεταφράσεις οντολογικών-μεταφυσικών βιβλίων των: Θωμά Ακινάτη, Χάιντεγγερ, Καντ, Χέγκελ."
+            ]
+          }
+        ]
+      },
+      {
+        "letter": "C",
+        "heading": "Philosophy of Education",
+        "groups": [
+          {
+            "label": "Related book",
+            "items": [
+              "Προβλήματα Φιλοσοφίας της παιδείας (1η έκδοση, Ρέθυμνο 2000· 2η έκδοση, e-book, 2015)."
+            ]
+          },
+          {
+            "label": "Related scholarly paper",
+            "items": [
+              "«Η δημοκρατική εκπαίδευση ως εμπειρία συλλογικής αυτοθέσμισης και αυτοδιαχείρισης». Ανακοίνωση στην επιστημονική διημερίδα με θέμα «Η κρίση της δημοκρατίας ως κρίση της δημοκρατικής παιδείας» (Αλεξανδρούπολη, 8-9/11/2013)."
+            ]
+          }
+        ]
+      },
+      {
+        "letter": "D",
+        "heading": "Didactics of Philosophy",
+        "groups": [
+          {
+            "label": "Related books",
+            "items": [
+              "Εγχειρίδιο φιλοσοφίας (1995, 2001, 2006)",
+              "Μετάφραση του βιβλίου: Joanna Haynes, Τα παιδιά ως φιλόσοφοι (2009)"
+            ]
+          }
+        ]
+      },
+      {
+        "letter": "E",
+        "heading": "Aesthetics and Aesthetic Education",
+        "groups": [
+          {
+            "label": "Related works",
+            "items": [
+              "M. Heidegger, Η προέλευση του έργου τέχνης. Μετάφραση Γ. Τζαβάρας (1986).",
+              "Ανθολόγιο Αισθητικής (2007)",
+              "Περιοδικό «Αισθητική Αγωγή» (2002–σήμερα).",
+              "«Η διάχυση διακαλλιτεχνικής γνώσης μέσω ιστοσελίδας. Γενικές αρχές». Επιστημονική ανακοίνωση στη Διεθνή Ημερίδα με θέμα «Προς τη νέα διακαλλιτεχνικότητα και διαπολιτισμικότητα με τη χρήση νέας τεχνολογίας», που διοργάνωσε το Εργαστήριο Καλλιτεχνικής και Πολιτισμικής Παιδείας του Παιδαγωγικού Τμήματος Δημοτικής Εκπαίδευσης του Πανεπιστημίου Αιγαίου (Ρόδος, 5-2-2011). Δημοσιεύτηκε στα Πρακτικά της ημερίδας."
+            ]
+          }
+        ]
       }
     ]
   },
@@ -352,7 +518,7 @@
     "tagline": "A digital archive of ideas, books and philosophical reflection.",
     "explore": "Explore",
     "about": "About",
-    "aboutText": "Personal website of the philosopher Giannis Tzavaras. Content in Greek and English.",
+    "aboutText": "Personal website of the philosopher Giannis Tzavaras. Content in Greek, English and German.",
     "rights": "All rights reserved.",
     "builtWith": "Made with love for philosophy."
   }
