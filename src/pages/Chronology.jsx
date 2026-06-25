@@ -2,6 +2,7 @@ import { Info, Award } from 'lucide-react'
 import { useLang } from '../i18n/LanguageContext.jsx'
 import PageHeader from '../components/PageHeader.jsx'
 import Reveal from '../components/Reveal.jsx'
+import RichText from '../components/RichText.jsx'
 import chronology from '../data/chronology.json'
 
 export default function Chronology() {
@@ -46,7 +47,7 @@ export default function Chronology() {
                         ) : (
                           <span className="chrono__bullet" aria-hidden="true" />
                         )}
-                        <span className="chrono__text">{text}</span>
+                        <span className="chrono__text"><RichText text={text} /></span>
                       </Reveal>
                     )
                   })}

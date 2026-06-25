@@ -43,7 +43,7 @@ export default function Biography() {
           <aside className="bio__aside">
             <Portrait caption={t.meta.name} />
             <div className="bio__photo-young">
-              <Portrait src="/images/Giannis-Tzavaras.jpg" caption={youngCaption} />
+              <Portrait src="images/Giannis-Tzavaras.jpg" caption={youngCaption} />
             </div>
           </aside>
         </div>

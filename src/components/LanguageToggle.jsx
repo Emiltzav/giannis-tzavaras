@@ -2,9 +2,9 @@ import { Fragment } from 'react'
 import { useLang } from '../i18n/LanguageContext.jsx'
 
 const LANGS = [
-  { code: 'el', label: 'EL', flag: '/flag-gr.svg', titleKey: 'greek', w: 22, h: 15 },
-  { code: 'en', label: 'EN', flag: '/flag-gb.svg', titleKey: 'english', w: 22, h: 13 },
-  { code: 'de', label: 'DE', flag: '/flag-de.svg', titleKey: 'german', w: 22, h: 14 },
+  { code: 'el', label: 'EL', flag: 'flag-gr.svg', titleKey: 'greek', w: 22, h: 15 },
+  { code: 'en', label: 'EN', flag: 'flag-gb.svg', titleKey: 'english', w: 22, h: 13 },
+  { code: 'de', label: 'DE', flag: 'flag-de.svg', titleKey: 'german', w: 22, h: 14 },
 ]
 
 export default function LanguageToggle({ compact = false }) {

@@ -10,7 +10,7 @@ export default function Footer() {
     { to: '/biography', label: t.nav.biography },
     { to: '/cv', label: t.nav.cv },
     { to: '/chronology', label: t.nav.chronology },
-    { to: '/works', label: t.nav.works },
+    { to: '/interests', label: t.nav.interests },
     { to: '/books', label: t.nav.books },
     { to: '/articles', label: t.nav.articles },
     { to: '/blog', label: t.nav.blog },
@@ -24,7 +24,7 @@ export default function Footer() {
       <div className="container footer__grid">
         <div className="footer__brand">
           <div className="footer__brand-row">
-            <img src="/owl.svg" alt="" aria-hidden="true" width="44" height="44" />
+            <img src="owl.svg" alt="" aria-hidden="true" width="44" height="44" />
             <div>
               <p className="footer__name">{t.meta.name}</p>
               <p className="footer__role">{t.meta.role}</p>

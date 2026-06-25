@@ -32,7 +32,7 @@ export default function BlogPost() {
           <div className="post__meta">
             <time>{formatDate(post.date, lang)}</time>
             <span className="post__reading">
-              <Clock size={14} /> {readingTime(post.body)} {t.ui.minRead}
+              <Clock size={14} /> {readingTime(post.body)} {readingTime(post.body) === 1 ? t.ui.minReadOne : t.ui.minRead}
             </span>
           </div>
           <h1 className="post__title">{post.title}</h1>
@@ -53,7 +53,7 @@ export default function BlogPost() {
         ))}
 
         <div className="post__signature">
-          <img src="/owl.svg" alt="" aria-hidden="true" width="34" height="34" />
+          <img src="owl.svg" alt="" aria-hidden="true" width="34" height="34" />
           <span>{t.meta.name}</span>
         </div>
 

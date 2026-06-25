@@ -3,6 +3,7 @@ import { ArrowLeft, ExternalLink } from 'lucide-react'
 import { useLang } from '../i18n/LanguageContext.jsx'
 import PageHeader from '../components/PageHeader.jsx'
 import Reveal from '../components/Reveal.jsx'
+import RichText from '../components/RichText.jsx'
 
 export default function CV() {
   const { t } = useLang()
@@ -61,7 +62,7 @@ export default function CV() {
             <ol className="cv-pub__list">
               {pub.books.map((book, i) => (
                 <Reveal as="li" key={i} delay={i * 25} className="cv-pub__item">
-                  {book}
+                  <RichText text={book} />
                 </Reveal>
               ))}
             </ol>

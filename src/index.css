@@ -267,6 +267,20 @@ main {
   transform: scaleX(1);
 }
 
+/* Stacked nav group: links rendered one below the other in the top bar */
+.nav-stack {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.1rem;
+}
+
+.nav-stack .nav-link {
+  padding: 0.05rem 0.15rem;
+  font-size: 0.92rem;
+  line-height: 1.3;
+}
+
 .navbar__links-lang {
   display: none;
 }
@@ -1292,6 +1306,7 @@ main {
 
 .book-card__title {
   font-size: 1.45rem;
+  font-style: italic;
   color: var(--aegean);
   line-height: 1.2;
   margin-bottom: 0.3rem;
@@ -1424,9 +1439,14 @@ main {
 }
 
 .article-item__journal {
+  color: var(--ink-soft);
+  margin-bottom: 0.5rem;
+  line-height: 1.55;
+}
+
+.article-item__journal em {
   font-style: italic;
   color: var(--terracotta);
-  margin-bottom: 0.5rem;
 }
 
 .article-item__desc {

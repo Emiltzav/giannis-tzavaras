@@ -30,6 +30,7 @@
     "explore": "Das Werk erkunden",
     "readBlog": "Den Blog lesen",
     "minRead": "Min. Lesezeit",
+    "minReadOne": "Min. Lesezeit",
     "publishedOn": "Veröffentlicht",
     "tags": "Themen",
     "viewAll": "Alle ansehen",
@@ -39,7 +40,7 @@
   "home": {
     "heroKicker": "Griechisches philosophisches Denken",
     "heroTitle": "Giannis Tzavaras",
-    "heroSubtitle": "Philosoph, Übersetzer und Lehrer. Emeritierter Professor für Philosophie an der Universität Kreta, mit einem Werk, das der Ontologie, der Phänomenologie und dem Dialog zwischen griechischem Denken und deutscher Philosophie gewidmet ist.",
+    "heroSubtitle": "Philosoph, Übersetzer und Lehrer. Emeritierter Professor für Philosophie an der Universität Kreta, mit einem Werk, das auf die Ontologie, die Metaphysik und den Dialog zwischen griechischem Denken und deutscher Philosophie ausgerichtet ist.",
     "heroQuote": "Die Philosophie gibt keine Antworten; sie lehrt uns, gut zu fragen.",
     "heroQuoteAuthor": "G. Tzavaras",
     "ctaExplore": "Das Werk erkunden",
@@ -54,7 +55,7 @@
     "highlights": [
       {
         "icon": "scroll",
-        "title": "Ontologie & Phänomenologie",
+        "title": "Ontologie & Metaphysik",
         "text": "Die Frage nach dem Sinn des Seins, von den Vorsokratikern bis zu Heidegger."
       },
       {
@@ -81,9 +82,9 @@
     "lead": "Ein Weg vom Studium der klassischen Texte bis zum Lehrstuhl für Philosophie — und darüber hinaus.",
     "youngCaption": "Die frühen Jahre",
     "paragraphs": [
-      "Giannis Tzavaras gehört zu jener Generation griechischer Philosophen, die in der zweiten Hälfte des 20. Jahrhunderts daran gingen, die zeitgenössische europäische Philosophie in einen fruchtbaren Dialog mit der griechischen Tradition zu bringen. Er studierte Philosophie in Griechenland und in Deutschland, wo er in unmittelbaren Kontakt mit der phänomenologischen und der hermeneutischen Tradition kam.",
+      "Giannis Tzavaras gehört zu jener Generation griechischer Philosophen, die in der zweiten Hälfte des 20. Jahrhunderts daran gingen, die zeitgenössische europäische Philosophie in einen fruchtbaren Dialog mit der griechischen Tradition zu bringen. Er studierte Philosophie in Griechenland und in Deutschland, wo er in unmittelbaren Kontakt mit der metaphysischen und der hermeneutischen Tradition kam.",
       "Seine Begegnung mit dem Werk Martin Heideggers erwies sich als entscheidend. Er widmete Jahre dem Studium und der Übersetzung grundlegender Texte, mit dem Ziel, nicht bloß Worte zu übertragen, sondern eine griechische philosophische Sprache zu schaffen, die den anspruchsvollsten Begriffen ein Zuhause geben kann.",
-      "Als Professor am Institut für Philosophie und Sozialwissenschaften der Universität Kreta in Rethymno lehrte er Ontologie, Philosophiegeschichte und Phänomenologie. Seine Lehre war geprägt vom Beharren auf der sorgfältigen, langsamen Lektüre der Texte — einer Übung in Geduld und Genauigkeit.",
+      "Als Professor am Institut für Philosophie und Sozialwissenschaften der Universität Kreta in Rethymno lehrte er Ontologie, Philosophiegeschichte und Metaphysik. Seine Lehre war geprägt vom Beharren auf der sorgfältigen, langsamen Lektüre der Texte — einer Übung in Geduld und Genauigkeit.",
       "Heute, als emeritierter Professor, schreibt, übersetzt und denkt er weiter und teilt seine Gedanken in Essays und Beiträgen auf seinem Blog."
     ],
     "timelineTitle": "Meilensteine",
@@ -95,7 +96,7 @@
       },
       {
         "year": "Forschung",
-        "title": "Begegnung mit der Phänomenologie",
+        "title": "Begegnung mit der Metaphysik",
         "text": "Vertiefte Auseinandersetzung mit Husserl und Heidegger; der Beginn eines langjährigen Übersetzungsprojekts."
       },
       {
@@ -131,7 +132,7 @@
     "lead": "Studium, akademische Laufbahn und Veröffentlichungen von Giannis Tzavaras in der knappen Form eines Lebenslaufs.",
     "backLink": "Zurück zur Biografie",
     "photo": {
-      "src": "/images/yiannis-2009.jpg",
+      "src": "images/yiannis-2009.jpg",
       "caption": "Giannis Tzavaras, 2009"
     },
     "detailsHeading": "Angaben",
@@ -167,23 +168,23 @@
       "heading": "Veröffentlichungen",
       "booksHeading": "Bücher",
       "books": [
-        "1. Motion according to Kierkegaard (in German). Verlag Peter Lang, Frankfurt a.M. 1978, 122 pp.",
-        "2. The poem of Parmenides (in Greek). Domos, Athens 1980, 241 pp.",
-        "3. The certainty of death (in Greek). Dodoni, Athens – Ioannina 1982, 118 pp.",
-        "4. The poetry of Empedocles (Ancient text – Translation – Commentary) (in Greek). Dodoni, Athens – Ioannina 1988, 303 pp.",
-        "5. The Kantian time according to Heidegger (in Greek). Dodoni, Athens – Ioannina 1989, 101 pp.",
-        "6. Love – War. An essay on cosmic theory (in Greek). Dodoni, Athens – Ioannina 1993, 172 pp.",
-        "7. A companion to philosophy (in Greek). Editions of Kosteas-Geitonas School, Athens 1995, 156 pp. (2nd edition, Rethymno 2001. 3rd edition totally renewed, Typothito-G. Dardanos, Athens 2006, 319 pp.).",
-        "8. The universal diffusion of despair (Study on Kierkegaard) (in Greek). Dodoni, Athens – Ioannina 1997, 202 pp.",
-        "9. Problems in philosophy of education (in Greek). Rethymno 2000, 172 pp.",
-        "10. The demerit of values: Nietzsche and Heidegger (in Greek). Indictos, Athens 2005, 237 pp.",
-        "11. Theology and philosophy according to early Heidegger (in Greek). Indictos, Athens 2007, 125 pp.",
-        "12. An Anthology of Aesthetics (in Greek). Gutenberg, Athens 2007, 175 pp.",
-        "13. An Introduction to Ontology (in Greek). Gutenberg, Athens 2009, 186 pp.",
-        "14. Philosophical Dialogue in the Classroom. Proceedings of a Congress (Rethymno, 22-10-2010). (In Greek).",
-        "15. Nietzsches Notizen zum Zarathustra (Juli 1882 - Februar 1883). e-book, 2011. (In Greek).",
-        "16. Heideggers «Beitraege zur Philosophie». Ein Zugangsversuch. e-book, 2012. (In Greek).",
-        "17. Existentielles und denkerisches Werden bei Kierkegaard. e-book, 2013. (In Greek)."
+        "1. *Bewegung bei Kierkegaard* (auf Deutsch). Verlag Peter Lang, Frankfurt a.M. 1978, 122 S. (Dissertation).",
+        "2. *Das Gedicht des Parmenides* (auf Griechisch). Domos, Athen 1980, 241 S.",
+        "3. *Die Gewissheit des Todes* (auf Griechisch). Dodoni, Athen – Ioannina 1982, 118 S.",
+        "4. *Die Dichtung des Empedokles* (Urtext – Übersetzung – Kommentar) (auf Griechisch). Dodoni, Athen – Ioannina 1988, 303 S.",
+        "5. *Die kantische Zeit nach Heidegger* (auf Griechisch). Dodoni, Athen – Ioannina 1989, 101 S.",
+        "6. *Liebe – Krieg. Ein Essay zur Weltanschauung* (auf Griechisch). Dodoni, Athen – Ioannina 1993, 172 S.",
+        "7. *Handbuch der Philosophie* (auf Griechisch). Kosteas-Geitonas-Schule, Athen 1995, 156 S. (2. Auflage, Rethymno 2001. 3., grundlegend überarbeitete Auflage, Typothito – G. Dardanos, Athen 2006, 319 S.).",
+        "8. *Die universale Verbreitung der Verzweiflung* (Studie zu Kierkegaard) (auf Griechisch). Dodoni, Athen – Ioannina 1997, 202 S.",
+        "9. *Probleme der Bildungsphilosophie* (auf Griechisch). Rethymno 2000, 172 S.",
+        "10. *Die Entwertung der Werte: Nietzsche und Heidegger* (auf Griechisch). Indiktos, Athen 2005, 237 S.",
+        "11. *Theologie und Philosophie beim frühen Heidegger* (auf Griechisch). Indiktos, Athen 2007, 125 S.",
+        "12. *Anthologie der Ästhetik* (auf Griechisch). Gutenberg, Athen 2007, 175 S.",
+        "13. *Einführung in die Ontologie* (auf Griechisch). Gutenberg, Athen 2009, 186 S.",
+        "14. *Philosophischer Dialog im Schulunterricht. Tagungsband (Rethymno, 22.10.2010)* (auf Griechisch).",
+        "15. *Nietzsches Notizen zum Zarathustra (Juli 1882 – Februar 1883)* (auf Griechisch). E-Book, 2011.",
+        "16. *Heideggers «Beiträge zur Philosophie». Ein Zugangsversuch* (auf Griechisch). E-Book, 2012.",
+        "17. *Existentielles und denkerisches Werden bei Kierkegaard* (auf Griechisch). E-Book, 2013."
       ],
       "groups": [
         { "label": "Aufsätze & Editionen", "text": "Zahlreiche Aufsätze, Rezensionen, bibliografische Arbeiten und Editionen." },
@@ -196,7 +197,7 @@
   "chronology": {
     "title": "Chronologie",
     "lead": "Von seiner Geburt 1950 bis heute: Studium, akademische Meilensteine sowie seine Schreib- und Übersetzungsarbeit, Jahr für Jahr.",
-    "note": "Eine vollständige Chronologie von Leben, Studium, Berufungen und Veröffentlichungen. Die bibliografischen Einträge sind in ihrem ursprünglichen Griechisch aufgeführt.",
+    "note": "Eine vollständige Chronologie von Leben, Studium, Berufungen und Veröffentlichungen.",
     "milestoneLabel": "Meilenstein"
   },
   "works": {
@@ -208,7 +209,7 @@
         "text": "Im Zentrum des Werks steht die älteste Frage der Philosophie: Was bedeutet „sein“? Über die Vorsokratiker, Platon und Aristoteles bis hin zur modernen Neuformulierung der Frage wird der Sinn der Existenz selbst gesucht."
       },
       {
-        "title": "Phänomenologie & Hermeneutik",
+        "title": "Metaphysik & Hermeneutik",
         "text": "Die Methode der „Rückkehr zu den Sachen selbst“ und die Kunst der Auslegung führen zu einer Philosophie, die keine Schemata aufzwingt, sondern die Phänomene sich zeigen lässt."
       },
       {
@@ -226,11 +227,11 @@
     "lead": "Die Gebiete, die das Denken und Werk von Giannis Tzavaras geprägt haben — von der altgriechischen Philosophie bis zur ästhetischen Erziehung — samt den zugehörigen Büchern, Übersetzungen und wissenschaftlichen Beiträgen.",
     "photos": [
       {
-        "src": "/images/foto-giannis.jpg",
+        "src": "images/foto-giannis.jpg",
         "caption": "Giannis Tzavaras"
       },
       {
-        "src": "/images/giannis-rubik.jpg",
+        "src": "images/giannis-rubik.jpg",
         "caption": "Spiel und Denken — das Rätsel als Herausforderung"
       }
     ],
@@ -242,9 +243,9 @@
           {
             "label": "Zugehörige Bücher",
             "items": [
-              "Το ποίημα του Παρμενίδη (1980)",
-              "Η ποίηση του Εμπεδοκλή (1988)",
-              "Πλωτίνου: Το «μεγάλο βιβλίο» (= Εννεάδων βιβλία 30-33) (1995)"
+              "*Das Gedicht des Parmenides* (1980)",
+              "*Die Dichtung des Empedokles* (1988)",
+              "Plotin: *Das „große Buch“* (= Enneaden 30–33) (1995)"
             ]
           }
         ]
@@ -256,12 +257,12 @@
           {
             "label": "Zugehörige Bücher",
             "items": [
-              "Bewegung bei Kierkegaard (1978)",
-              "Ο Καντιανός χρόνος κατά τον Χάιντεγγερ (1989)",
-              "Έρωτας – Πόλεμος. Δοκίμιο κοσμοθεωρίας (1993)",
-              "Η απαξίωση των αξιών: Νίτσε και Χάιντεγγερ (2005)",
-              "Εισαγωγή στην Οντολογία (2009)",
-              "Μεταφράσεις οντολογικών-μεταφυσικών βιβλίων των: Θωμά Ακινάτη, Χάιντεγγερ, Καντ, Χέγκελ."
+              "*Bewegung bei Kierkegaard* (1978)",
+              "*Die kantische Zeit nach Heidegger* (1989)",
+              "*Liebe – Krieg. Ein Essay zur Weltanschauung* (1993)",
+              "*Die Entwertung der Werte: Nietzsche und Heidegger* (2005)",
+              "*Einführung in die Ontologie* (2009)",
+              "Übersetzungen ontologisch-metaphysischer Bücher von Thomas von Aquin, Heidegger, Kant und Hegel."
             ]
           }
         ]
@@ -273,13 +274,13 @@
           {
             "label": "Zugehöriges Buch",
             "items": [
-              "Προβλήματα Φιλοσοφίας της παιδείας (1η έκδοση, Ρέθυμνο 2000· 2η έκδοση, e-book, 2015)."
+              "*Probleme der Bildungsphilosophie* (1. Auflage, Rethymno 2000; 2. Auflage, E-Book, 2015)."
             ]
           },
           {
             "label": "Zugehöriger wissenschaftlicher Beitrag",
             "items": [
-              "«Η δημοκρατική εκπαίδευση ως εμπειρία συλλογικής αυτοθέσμισης και αυτοδιαχείρισης». Ανακοίνωση στην επιστημονική διημερίδα με θέμα «Η κρίση της δημοκρατίας ως κρίση της δημοκρατικής παιδείας» (Αλεξανδρούπολη, 8-9/11/2013)."
+              "„Demokratische Bildung als Erfahrung kollektiver Selbstinstituierung und Selbstverwaltung“. Ein Beitrag auf der wissenschaftlichen Tagung „Die Krise der Demokratie als Krise der demokratischen Bildung“ (Alexandroupoli, 8.–9. November 2013)."
             ]
           }
         ]
@@ -291,8 +292,8 @@
           {
             "label": "Zugehörige Bücher",
             "items": [
-              "Εγχειρίδιο φιλοσοφίας (1995, 2001, 2006)",
-              "Μετάφραση του βιβλίου: Joanna Haynes, Τα παιδιά ως φιλόσοφοι (2009)"
+              "*Handbuch der Philosophie* (1995, 2001, 2006)",
+              "Übersetzung von: Joanna Haynes, *Kinder als Philosophen* (2009)"
             ]
           }
         ]
@@ -304,10 +305,10 @@
           {
             "label": "Zugehörige Werke",
             "items": [
-              "M. Heidegger, Η προέλευση του έργου τέχνης. Μετάφραση Γ. Τζαβάρας (1986).",
-              "Ανθολόγιο Αισθητικής (2007)",
-              "Περιοδικό «Αισθητική Αγωγή» (2002–σήμερα).",
-              "«Η διάχυση διακαλλιτεχνικής γνώσης μέσω ιστοσελίδας. Γενικές αρχές». Επιστημονική ανακοίνωση στη Διεθνή Ημερίδα με θέμα «Προς τη νέα διακαλλιτεχνικότητα και διαπολιτισμικότητα με τη χρήση νέας τεχνολογίας», που διοργάνωσε το Εργαστήριο Καλλιτεχνικής και Πολιτισμικής Παιδείας του Παιδαγωγικού Τμήματος Δημοτικής Εκπαίδευσης του Πανεπιστημίου Αιγαίου (Ρόδος, 5-2-2011). Δημοσιεύτηκε στα Πρακτικά της ημερίδας."
+              "M. Heidegger, *Der Ursprung des Kunstwerks*. Übersetzt von G. Tzavaras (1986).",
+              "*Anthologie der Ästhetik* (2007)",
+              "Die Zeitschrift *Ästhetische Erziehung* (2002–2014).",
+              "„Die Verbreitung interkünstlerischen Wissens über eine Website. Allgemeine Prinzipien“. Ein wissenschaftlicher Beitrag auf der internationalen Tagung „Auf dem Weg zu neuer Interkünstlerischkeit und Interkulturalität durch den Einsatz neuer Technologie“, veranstaltet vom Labor für künstlerische und kulturelle Bildung des Instituts für Grundschulpädagogik der Universität der Ägäis (Rhodos, 5. Februar 2011). Veröffentlicht in den Tagungsakten."
             ]
           }
         ]
@@ -330,36 +331,44 @@
     "title": "Artikel & Veröffentlichungen",
     "lead": "Eine Auswahl wissenschaftlicher Artikel, Essays und Beiträge zu Sammelbänden und Zeitschriften.",
     "items": [
-      {
-        "year": "1989",
-        "title": "Das Problem der Übersetzung in der Philosophie",
-        "journal": "Deukalion — Zeitschrift für Philosophie",
-        "description": "Über die Schwierigkeiten und Möglichkeiten, philosophische Begriffe von einer Sprache in eine andere zu übertragen."
-      },
-      {
-        "year": "1996",
-        "title": "Heraklit und Heidegger: ein stilles Gespräch",
-        "journal": "Notizen zur Philosophie",
-        "description": "Wie das zeitgenössische Denken zu den Vorsokratikern zurückkehrt, um das Sein neu zu denken."
-      },
-      {
-        "year": "2003",
-        "title": "Der Begriff der Zeit bei Aristoteles",
-        "journal": "Philosophia — Jahrbuch",
-        "description": "Eine Analyse der Kapitel der Physik über die Zeit und ihrer Bedeutung für die zeitgenössische Ontologie."
-      },
-      {
-        "year": "2010",
-        "title": "Sprache, Schweigen und Sinn",
-        "journal": "Nea Estia",
-        "description": "Ein Essay über die Grenzen der Rede und die philosophische Bedeutung des Schweigens."
-      },
-      {
-        "year": "2017",
-        "title": "Bildung als Übung im Lesen",
-        "journal": "Tagungsband zur Philosophie",
-        "description": "Eine Verteidigung des langsamen, sorgfältigen Lesens in einem Zeitalter der Beschleunigung."
-      }
+      { "year": "1974", "title": "«Προβλήματα και προτάσεις για μια νεοελληνική μετάφραση του Sein und Zeit του Μάρτιν Χάιντεγγερ»", "source": "*Φιλοσοφία. Επετηρίς του Κέντρου Φιλοσοφίας της Ακαδημίας Αθηνών* 4 (1974), 449-458." },
+      { "year": "1978", "title": "«Η ριζική αναγκαιότητα κατά τον Χάιντεγγερ. Μια προσπάθεια για πρόσβαση στο Είναι και χρόνος»", "source": "*Εποπτεία* 29 (1978), 955-960." },
+      { "year": "1979", "title": "«Ένα κείμενο του Αριστοτέλη για την αλήθεια. Των Μετά τα Φυσικά Θ 10»", "source": "*Εποπτεία* 34 (1979), 415-428." },
+      { "year": "1979", "title": "«Η σχέση της αμφιβολίας προς το σκέπτεσθαι και την πίστη στον Κίρκεγκωρ»", "source": "*Φιλοσοφία. Επετηρίς του Κέντρου Ερεύνης της Ελληνικής Φιλοσοφίας της Ακαδημίας Αθηνών* 8-9 (1978-79), 401-418." },
+      { "year": "1984", "title": "«Η απεραντοσύνη του χρόνου. Έρευνα στον Αριστοτέλη»", "source": "*Αριάδνη. Επετηρίδα της Φιλοσοφικής Σχολής του Πανεπιστημίου Κρήτης* 2 (1984), 126-139." },
+      { "year": "1985", "title": "«Ο Ζαρατούστρα του Νίτσε ως κήρυκας του ολέθρου»", "source": "*Φιλοσοφία. Επετηρίς του Κέντρου Ερεύνης της Ελληνικής Φιλοσοφίας της Ακαδημίας Αθηνών* 15-16 (1985-86), 398-443." },
+      { "year": "1988", "title": "«Διαλεκτική κίνηση στη φιλοσοφία της τέχνης του Χάιντεγγερ»", "source": "Συμμετοχή στο 3ο Πανελλήνιο συνέδριο της Ελληνικής Φιλοσοφικής Εταιρείας («Η έννοια της διαλεκτικής», 1986). Στον τόμο: *Η διαλεκτική*, Ελληνική Φιλοσοφική Εταιρεία, Αθήνα 1988, 383-387." },
+      { "year": "1989", "title": "“Heideggers Unterscheidung zwischen Zuhandenheit und Vorhandenheit”", "source": "*Philosophisches Jahrbuch* 96 (1989), 367-371. (Ελληνική μετάφραση 2015: «Η διάκριση του Χάιντεγγερ μεταξύ πρόχειρων και παρευρισκόμενων όντων».)" },
+      { "year": "1990", "title": "«Η θεμελιώδης Οντολογία του Μάρτιν Χάιντεγγερ»", "source": "Συμμετοχή στο Συμπόσιο «Χάιντεγγερ και Αντόρνο – ο διάλογος που δεν πραγματοποιήθηκε» (Ινστιτούτο Γκαίτε Αθηνών, 22-24 Νοεμβρίου 1989). *Λεβιάθαν* 8 (1990), 21-26." },
+      { "year": "1991", "title": "«Ο χρόνος της καθημερινότητας στον Αριστοτέλη και στον Heidegger»", "source": "*Ζήνων* 10-12 (1989-91), 15-19." },
+      { "year": "1992", "title": "«Πυθαγόρειες επιδράσεις στη φιλοσοφία του Εμπεδοκλή»", "source": "Ανακοίνωση στο 3ο Διεθνές Συνέδριο Ελληνικής Φιλοσοφίας (Σάμος, 22-26/8/1991). Στον τόμο: Κωνσταντίνος Βουδούρης (επιμ.), *Πυθαγόρεια Φιλοσοφία*, Αθήνα-Σάμος 1992, 189-194." },
+      { "year": "1994", "title": "«Ο εξωπραγματικός χαρακτήρας του καλλιτεχνήματος κατά τον Martin Heidegger»", "source": "Συμμετοχή στο 6ο Πανελλήνιο συνέδριο της Ελληνικής Φιλοσοφικής Εταιρείας («Αισθητική και Φιλοσοφία της τέχνης», Αθήνα 18-20/5/1994). Στον τόμο: Παύλος Χριστοδουλίδης (επιμ.), *Αισθητική και θεωρία της τέχνης*, Εκδόσεις Καρδαμίτσα, Αθήνα 1994, 179-183." },
+      { "year": "1994", "title": "«Το διονυσιακό στοιχείο κατά τον πρώιμο Νίτσε»", "source": "Ανακοίνωση στην εκδήλωση «Ο Νίτσε και η Ελλάδα» (Ινστιτούτο Γκαίτε Αθηνών & Γαλλικό Ινστιτούτο Αθηνών, 8-9/12/1994)." },
+      { "year": "1995", "title": "«Μια εναλλακτική πρόταση για τη διδασκαλία της φιλοσοφίας στη Μέση Εκπαίδευση»", "source": "Διάλεξη ενώπιον φιλολόγων της Ανατολικής Αττικής (Παλλήνη, 11/4/1994). *Φιλοσοφία και Παιδεία* 1 (1995), τεύχος 3, 12-14." },
+      { "year": "1995", "title": "«Ο διάλογος ως μελλοντική φιλοσοφική μέθοδος»", "source": "Στον τόμο: *Παρόν και μέλλον της φιλοσοφίας* (Πανεπιστήμιο Κρήτης, Τομέας Φιλοσοφίας), Αθήνα-Γιάννινα 1995, 77-84." },
+      { "year": "1996", "title": "“Craft and Craftsman According to Plato”", "source": "Εισήγηση σε διεθνές σεμινάριο «Τεχνολογία και γνώση. Φιλοσοφικές και κοινωνιολογικές διερευνήσεις», Ρέθυμνο 17-18 Οκτωβρίου 1996." },
+      { "year": "1998", "title": "«Η ιατρο-θεολογική φιλοσοφία του ύστερου Kierkegaard και οι ιστορικές καταβολές της»", "source": "Ανακοίνωση στο συνέδριο «Ιατρική και φιλοσοφία» (Κως-Κάλυμνος, Αύγουστος 1997). Στον τόμο: Κωνσταντίνος Βουδούρης (επιμ.), *Φιλοσοφία και ιατρική*, Αθήνα 1998, 297-301." },
+      { "year": "1999", "title": "«Χάιντεγγερ και Αναξίμανδρος»", "source": "*Διαβάζω* 399 (1999), 121-124." },
+      { "year": "2001", "title": "«Ένα καινούριο απόσπασμα από την ποίηση του Εμπεδοκλή»", "source": "Εισήγηση σε διεθνές συνέδριο για τα νέα αποσπάσματα του Εμπεδοκλή (Παρίσι, 26-27 Μαΐου 2000). *Ελληνική Φιλοσοφική Επιθεώρηση* 18 (2001), 45-57." },
+      { "year": "2001", "title": "«Φιλοσοφία της παιδείας στον Ηράκλειτο»", "source": "Εισήγηση στο Β΄ Διεθνές Συνέδριο Φιλοσοφίας, Πανεπιστήμιο Κύπρου, Λευκωσία, 5-7 Απριλίου 2001." },
+      { "year": "2002", "title": "«Αληθινά και ψευδή παραμύθια κατά τον Πλάτωνα»", "source": "Εισήγηση σε Διεθνές Συνέδριο του Παιδαγωγικού Τμήματος Π.Ε. του Πανεπιστημίου Κρήτης (18-20/10/2001). Στον τόμο: *Ψυχοπαιδαγωγική της Προσχολικής Ηλικίας*, Ρέθυμνο 2002, τόμος Β΄, 706-709." },
+      { "year": "2002", "title": "«Αξιώματα διαπαιδαγώγησης του μικρού παιδιού στον Αιμίλιο του Ρουσσώ»", "source": "Στον τόμο: Ευαγγελία Κούρτη (επιμ.), *Η έρευνα στην προσχολική εκπαίδευση*, τόμος Γ΄, Εκδόσεις Τυπωθήτω – Γ. Δαρδανός, Αθήνα 2002, 217-223." },
+      { "year": "2004", "title": "«Η αγωνία ως μέσο ηθικο-θρησκευτικής διαπαιδαγώγησης κατά τον Κίρκεγκωρ»", "source": "Στον τόμο: *Ηθική και θρησκευτική ανάπτυξη και αγωγή του παιδιού*, Πανεπιστήμιο Κρήτης, Ρέθυμνο 2004, 584-588." },
+      { "year": "2005", "title": "“Heideggers Hauptwerk in Neugriechisch”", "source": "*Studia Phaenomenologica* 5 (2005), 119-127." },
+      { "year": "2007", "title": "«Αισθητική Αγωγή μέσω φιλοσοφικών κειμένων»", "source": "*Φιλοσοφία και Παιδεία* 41 (2007), 16-18." },
+      { "year": "2008", "title": "«Ο συγκαιρινός και ο κατοπινός μαθητής κατά τον Κίρκεγκωρ»", "source": "*Φιλοσοφία και Παιδεία* 49-50 (2008), 4-6." },
+      { "year": "2010", "title": "«Μεταφράζοντας το Dasein του Martin Heidegger»", "source": "Στο: *Ευβουλία. Αφιέρωμα στον ομότιμο καθηγητή Βασίλειο Α. Κύρκο* (επιμ. Κωνσταντίνος Θ. Πέτσιος), Ιωάννινα 2010, 255-262." },
+      { "year": "2012", "title": "«Η στοχαστική διαλογική δραστηριότητα ως έξοχη ευκαιρία για εκδημοκρατισμό του σχολικού αναλυτικού προγράμματος»", "source": "Πρακτικά ημερίδας (Ρέθυμνο, 22-10-2010), 1-8. Αναδημοσιεύτηκε στο *Διά-ΛΟΓΟΣ* 2 (2012), 294-304." },
+      { "year": "2012", "title": "«Η ανθρώπινη μοίρα κατά τον Heidegger»", "source": "*Φιλοσοφείν* 5 (2012), 188-210." },
+      { "year": "2013", "title": "«Η τελεολογική αναστολή της ηθικότητας κατά τον Kierkegaard. Μια υπεράσπιση»", "source": "*Φιλοσοφία. Επετηρίς του Κέντρου Ερεύνης της Ελληνικής Φιλοσοφίας της Ακαδημίας Αθηνών* 43 (2013), 365-380." },
+      { "year": "2013", "title": "«Η δημοκρατική εκπαίδευση ως εμπειρία συλλογικής αυτοθέσμισης και αυτοδιαχείρισης»", "source": "Ανακοίνωση στην επιστημονική διημερίδα «Η κρίση της δημοκρατίας ως κρίση της δημοκρατικής παιδείας» (Αλεξανδρούπολη, 8-9/11/2013)." },
+      { "year": "2014", "title": "«Κράτος και εκπαίδευση κατά τον πρώιμο Νίτσε»", "source": "*Φιλοσοφία και Παιδεία* 66-67 (2014), 4-7." },
+      { "year": "2015", "title": "«Ο σφαιρικός θεός του Εμπεδοκλή»", "source": "*Φιλοσοφικά Δημοσιεύματα 2015*, 1-18." },
+      { "year": "2016", "title": "«Νεότερες περιπέτειες του νόμου της αιτιότητας»", "source": "*Φιλοσοφείν: επιστήμη, εύνοια, παρρησία* 14 (2016), 399-409." },
+      { "year": "2017", "title": "«Εμπειρία θανάτου κατά τον Ρίλκε»", "source": "*Φιλοσοφείν: επιστήμη, εύνοια, παρρησία* 15 (2017), 355-374." },
+      { "year": "2018", "title": "«Ο χρόνος κατά τον Αίαντα του Σοφοκλή»", "source": "*Φιλοσοφείν: επιστήμη, εύνοια, παρρησία* 18 (Ιούνιος 2018), 227-238." },
+      { "year": "2019", "title": "«Η ουσία της σύγχρονης τέχνης κατά τον Heidegger»", "source": "*Ελληνική Φιλοσοφική Επιθεώρηση* 108 (2019), 210-225." },
+      { "year": "2021", "title": "«Μικρή Λογική» (Χέγκελ)", "source": "*Βικιπαίδεια*, Μάιος 2021." }
     ]
   },
   "blog": {
@@ -374,7 +383,7 @@
         "excerpt": "In einer Welt, die immer schneller liest, beharrt die Philosophie auf dem Gegenteil: auf Geduld.",
         "body": [
           "Wenn ich unterrichte, sage ich meinen Studierenden oft, dass ein philosophischer Text nicht gelesen, sondern bewohnt wird. Wir eilen nicht durch ihn hindurch wie durch einen Korridor. Wir bleiben, wir schauen erneut hin, wir lassen die Worte sich öffnen.",
-          "Langsames Lesen ist keine Nostalgie. Es ist Methode. Eine einzige Seite von Aristoteles oder Heidegger kann einen ganzen Tag füllen — und das ist kein Versagen, sondern der richtige Rhythmus.",
+          "Langsames Lesen ist kein Selbstzweck. Es ist Methode. Um eine einzige Seite von Aristoteles oder Heidegger zu studieren, kann ein ganzer Tag nötig sein — und das ist kein Versagen, sondern der richtige Rhythmus.",
           "Vielleicht ist das Revolutionärste, was ein junger Mensch heute tun kann, genau dies: sich mit einem schwierigen Buch hinzusetzen und es nicht eilig zu haben."
         ]
       },

@@ -2,6 +2,7 @@ import { FileText } from 'lucide-react'
 import { useLang } from '../i18n/LanguageContext.jsx'
 import PageHeader from '../components/PageHeader.jsx'
 import Reveal from '../components/Reveal.jsx'
+import RichText from '../components/RichText.jsx'
 
 export default function Articles() {
   const { t } = useLang()
@@ -22,8 +23,7 @@ export default function Articles() {
                 </span>
                 <div className="article-item__body">
                   <h2 className="article-item__title">{item.title}</h2>
-                  <p className="article-item__journal">{item.journal}</p>
-                  <p className="article-item__desc">{item.description}</p>
+                  <p className="article-item__journal"><RichText text={item.source} /></p>
                 </div>
               </Reveal>
             ))}

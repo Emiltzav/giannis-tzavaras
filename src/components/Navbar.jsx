@@ -22,17 +22,36 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
-  const links = [
+  // Single links plus two stacked groups (rendered one below the other in the
+  // top bar): Books/Articles and Blog/Activities/Contact.
+  const navItems = [
     { to: '/biography', label: t.nav.biography },
     { to: '/chronology', label: t.nav.chronology },
-    { to: '/works', label: t.nav.works },
     { to: '/interests', label: t.nav.interests },
-    { to: '/books', label: t.nav.books },
-    { to: '/articles', label: t.nav.articles },
-    { to: '/blog', label: t.nav.blog },
-    { to: '/activities', label: t.nav.activities },
-    { to: '/contact', label: t.nav.contact },
+    {
+      stack: [
+        { to: '/books', label: t.nav.books },
+        { to: '/articles', label: t.nav.articles },
+      ],
+    },
+    {
+      stack: [
+        { to: '/blog', label: t.nav.blog },
+        { to: '/activities', label: t.nav.activities },
+        { to: '/contact', label: t.nav.contact },
+      ],
+    },
   ]
+
+  const renderLink = (link) => (
+    <NavLink
+      key={link.to}
+      to={link.to}
+      className={({ isActive }) => `nav-link ${isActive ? 'is-active' : ''}`}
+    >
+      {link.label}
+    </NavLink>
+  )
 
   return (
     <header className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
@@ -40,15 +59,15 @@ export default function Navbar() {
         <Logo />
 
         <nav className={`navbar__links ${open ? 'is-open' : ''}`} aria-label="Primary">
-          {links.map((link) => (
-            <NavLink
-              key={link.to}
-              to={link.to}
-              className={({ isActive }) => `nav-link ${isActive ? 'is-active' : ''}`}
-            >
-              {link.label}
-            </NavLink>
-          ))}
+          {navItems.map((item, i) =>
+            item.stack ? (
+              <div key={i} className="nav-stack">
+                {item.stack.map(renderLink)}
+              </div>
+            ) : (
+              renderLink(item)
+            )
+          )}
           <div className="navbar__links-lang">
             <LanguageToggle />
           </div>

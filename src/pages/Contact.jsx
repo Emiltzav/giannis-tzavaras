@@ -41,10 +41,6 @@ export default function Contact() {
                 )
               })}
             </ul>
-
-            <a href={`mailto:${c.email}`} className="btn btn--primary contact__btn">
-              <Mail size={18} /> {c.writeButton}
-            </a>
           </div>
 
           <Reveal className="contact__note">

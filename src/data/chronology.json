@@ -6,7 +6,8 @@
         {
           "milestone": true,
           "el": "Ο Γιάννης Τζαβάρας γεννιέται (19-08-1950) στον Πειραιά. Γιος του Γεώργιου Ι. Τζαβάρα από τα Βίλια Αττικής και της Σεβαστής (Γυαλιάδου-)Τζαβάρα από τη Σμύρνη.",
-          "en": "Giannis Tzavaras is born (19 August 1950) in Piraeus. Son of Georgios I. Tzavaras from Vilia, Attica, and Sevasti (Gyaliadou-)Tzavara from Smyrna."
+          "en": "Giannis Tzavaras is born (19 August 1950) in Piraeus. Son of Georgios I. Tzavaras from Vilia, Attica, and Sevasti (Gyaliadou-)Tzavara from Smyrna.",
+          "de": "Giannis Tzavaras wird am 19. August 1950 in Piräus geboren. Sohn von Georgios I. Tzavaras aus Vilia (Attika) und Sevasti (Gyaliadou-)Tzavara aus Smyrna."
         }
       ]
     },
@@ -16,7 +17,8 @@
         {
           "milestone": true,
           "el": "Μαθητής στην Ιωνίδειο Πρότυπο Σχολή Πειραιώς.",
-          "en": "Pupil at the Ionideios Model School of Piraeus."
+          "en": "Pupil at the Ionideios Model School of Piraeus.",
+          "de": "Schüler an der Ionideios-Modellschule von Piräus."
         }
       ]
     },
@@ -26,14 +28,19 @@
         {
           "milestone": true,
           "el": "Προπτυχιακός φοιτητής στο Φιλοσοφικό Τμήμα της Φιλοσοφικής Σχολής του Πανεπιστημίου Αθηνών.",
-          "en": "Undergraduate student at the Department of Philosophy of the Faculty of Philosophy, University of Athens."
+          "en": "Undergraduate student at the Department of Philosophy of the Faculty of Philosophy, University of Athens.",
+          "de": "Grundstudent am Institut für Philosophie der Philosophischen Fakultät der Universität Athen."
         }
       ]
     },
     {
       "year": "1971",
       "items": [
-        "Σαίρεν Κίρκεγκωρ: Η έννοια της αγωνίας. Μετάφραση Γιάννης Τζαβάρας. Εκδόσεις Δωδώνη, Αθήνα 1971, 228 σ."
+        {
+          "el": "Σαίρεν Κίρκεγκωρ: *Η έννοια της αγωνίας*. Μετάφραση Γιάννης Τζαβάρας. Εκδόσεις Δωδώνη, Αθήνα 1971, 228 σ.",
+          "en": "Søren Kierkegaard: *The Concept of Anxiety*. Translated by Giannis Tzavaras. Dodoni, Athens 1971, 228 pp.",
+          "de": "Søren Kierkegaard: *Der Begriff Angst*. Übersetzt von Giannis Tzavaras. Dodoni, Athen 1971, 228 S."
+        }
       ]
     },
     {
@@ -42,22 +49,39 @@
         {
           "milestone": true,
           "el": "Μεταπτυχιακός φοιτητής Φιλοσοφίας στη Γερμανία: α) Χειμερινό Εξάμηνο 1973-1974, Πανεπιστήμιο του Göttingen. β) Θερινό Εξάμηνο 1974 – Θερινό Εξάμηνο 1978, Πανεπιστήμιο του Μονάχου.",
-          "en": "Postgraduate student of Philosophy in Germany: a) Winter Semester 1973–1974, University of Göttingen; b) Summer Semester 1974 – Summer Semester 1978, University of Munich."
+          "en": "Postgraduate student of Philosophy in Germany: a) Winter Semester 1973–1974, University of Göttingen; b) Summer Semester 1974 – Summer Semester 1978, University of Munich.",
+          "de": "Postgraduierter Student der Philosophie in Deutschland: a) Wintersemester 1973–1974, Universität Göttingen; b) Sommersemester 1974 – Sommersemester 1978, Universität München."
         }
       ]
     },
     {
       "year": "1974",
       "items": [
-        "«Προβλήματα και προτάσεις για μια νεοελληνική μετάφραση του Sein und Zeit του Μάρτιν Χάιντεγγερ». Φιλοσοφία. Επετηρίς του Κέντρου Φιλοσοφίας της Ακαδημίας Αθηνών 4 (1974), 449-458."
+        {
+          "el": "«Προβλήματα και προτάσεις για μια νεοελληνική μετάφραση του Sein und Zeit του Μάρτιν Χάιντεγγερ». *Φιλοσοφία. Επετηρίς του Κέντρου Φιλοσοφίας της Ακαδημίας Αθηνών* 4 (1974), 449-458.",
+          "en": "“Problems and proposals for a Modern Greek translation of Martin Heidegger’s Sein und Zeit”. *Philosophia. Yearbook of the Centre of Philosophy of the Academy of Athens* 4 (1974), 449-458.",
+          "de": "„Probleme und Vorschläge für eine neugriechische Übersetzung von Martin Heideggers Sein und Zeit“. *Philosophia. Jahrbuch des Zentrums für Philosophie der Akademie von Athen* 4 (1974), 449-458."
+        }
       ]
     },
     {
       "year": "1978",
       "items": [
-        "Johann Tzavaras: Bewegung bei Kierkegaard. Verlag Peter Lang, Frankfurt a. M. 1978, 122 σ. (Διδακτορική διατριβή).",
-        "Μάρτιν Χάιντεγγερ: Είναι και χρόνος. Τόμος πρώτος, Πρόλογος – Μετάφραση – Σχόλια Γιάννης Τζαβάρας. Εκδόσεις Δωδώνη, Αθήνα 1978, 414 σ.",
-        "«Η ριζική αναγκαιότητα κατά τον Χάιντεγγερ. Μια προσπάθεια για πρόσβαση στο Είναι και χρόνος». Εποπτεία 29 (1978), 955-960."
+        {
+          "el": "Johann Tzavaras: *Bewegung bei Kierkegaard*. Verlag Peter Lang, Frankfurt a. M. 1978, 122 σ. (Διδακτορική διατριβή).",
+          "en": "Johann Tzavaras: *Bewegung bei Kierkegaard*. Verlag Peter Lang, Frankfurt a. M. 1978, 122 pp. (Doctoral dissertation).",
+          "de": "Johann Tzavaras: *Bewegung bei Kierkegaard*. Verlag Peter Lang, Frankfurt a. M. 1978, 122 S. (Dissertation)."
+        },
+        {
+          "el": "Μάρτιν Χάιντεγγερ: *Είναι και χρόνος*. Τόμος πρώτος, Πρόλογος – Μετάφραση – Σχόλια Γιάννης Τζαβάρας. Εκδόσεις Δωδώνη, Αθήνα 1978, 414 σ.",
+          "en": "Martin Heidegger: *Being and Time*. Volume one, Preface – Translation – Commentary by Giannis Tzavaras. Dodoni, Athens 1978, 414 pp.",
+          "de": "Martin Heidegger: *Sein und Zeit*. Erster Band, Vorwort – Übersetzung – Kommentar von Giannis Tzavaras. Dodoni, Athen 1978, 414 S."
+        },
+        {
+          "el": "«Η ριζική αναγκαιότητα κατά τον Χάιντεγγερ. Μια προσπάθεια για πρόσβαση στο Είναι και χρόνος». *Εποπτεία* 29 (1978), 955-960.",
+          "en": "“Radical necessity according to Heidegger. An attempt to access Being and Time”. *Epopteia* 29 (1978), 955-960.",
+          "de": "„Die radikale Notwendigkeit bei Heidegger. Ein Zugangsversuch zu Sein und Zeit“. *Epopteia* 29 (1978), 955-960."
+        }
       ]
     },
     {
@@ -66,40 +90,89 @@
         {
           "milestone": true,
           "el": "Διορίζεται στο Πανεπιστήμιο Κρήτης ως ειδικός επιστήμων με κατ’ έτος ανανεωνόμενη σύμβαση έργου (1979-1984).",
-          "en": "Appointed at the University of Crete as a specialist scholar on a yearly-renewed work contract (1979–1984)."
+          "en": "Appointed at the University of Crete as a specialist scholar on a yearly-renewed work contract (1979–1984).",
+          "de": "Wird an der Universität Kreta als wissenschaftlicher Spezialist mit jährlich erneuertem Werkvertrag angestellt (1979–1984)."
         },
-        "Μάρτιν Χάιντεγγερ: Φαινομενολογία και Θεολογία. Εισαγωγή – Μετάφραση – Σχόλια Γιάννης Τζαβάρας. Εκδόσεις Εποπτεία, Αθήνα 1979, 80 σ.",
-        "«Ένα κείμενο του Αριστοτέλη για την αλήθεια. Των Μετά τα Φυσικά Θ 10». Εποπτεία 34 (1979), 415-428.",
-        "«Η σχέση της αμφιβολίας προς το σκέπτεσθαι και την πίστη στον Κίρκεγκωρ». Φιλοσοφία. Επετηρίς του Κέντρου Ερεύνης της Ελληνικής Φιλοσοφίας της Ακαδημίας Αθηνών 8-9 (1978-79), 401-418."
+        {
+          "el": "Μάρτιν Χάιντεγγερ: *Φαινομενολογία και Θεολογία*. Εισαγωγή – Μετάφραση – Σχόλια Γιάννης Τζαβάρας. Εκδόσεις Εποπτεία, Αθήνα 1979, 80 σ.",
+          "en": "Martin Heidegger: *Phenomenology and Theology*. Introduction – Translation – Commentary by Giannis Tzavaras. Epopteia, Athens 1979, 80 pp.",
+          "de": "Martin Heidegger: *Phänomenologie und Theologie*. Einführung – Übersetzung – Kommentar von Giannis Tzavaras. Epopteia, Athen 1979, 80 S."
+        },
+        {
+          "el": "«Ένα κείμενο του Αριστοτέλη για την αλήθεια. Των Μετά τα Φυσικά Θ 10». *Εποπτεία* 34 (1979), 415-428.",
+          "en": "“A text of Aristotle on truth. Metaphysics Θ 10”. *Epopteia* 34 (1979), 415-428.",
+          "de": "„Ein Text des Aristoteles über die Wahrheit. Metaphysik Θ 10“. *Epopteia* 34 (1979), 415-428."
+        },
+        {
+          "el": "«Η σχέση της αμφιβολίας προς το σκέπτεσθαι και την πίστη στον Κίρκεγκωρ». *Φιλοσοφία. Επετηρίς του Κέντρου Ερεύνης της Ελληνικής Φιλοσοφίας της Ακαδημίας Αθηνών* 8-9 (1978-79), 401-418.",
+          "en": "“The relation of doubt to thinking and to faith in Kierkegaard”. *Philosophia. Yearbook of the Centre for Research into Greek Philosophy of the Academy of Athens* 8-9 (1978-79), 401-418.",
+          "de": "„Das Verhältnis des Zweifels zum Denken und zum Glauben bei Kierkegaard“. *Philosophia. Jahrbuch des Zentrums für die Erforschung der griechischen Philosophie der Akademie von Athen* 8-9 (1978-79), 401-418."
+        }
       ]
     },
     {
       "year": "1980",
       "items": [
-        "«Σχόλια στο προοίμιο του Παρμενίδη». Εποπτεία 45 (1980), 311-326.",
-        "Βιβλιοκρισία στο έργο του Hans Wagner: Φιλοσοφία και σκέψη (Philosophie und Reflexion), Εισαγωγή-Μετάφραση Ν. Αυγελή, Α΄ τόμος, Θεσσαλονίκη 1981. Δημοσιεύτηκε στο: Φιλοσοφία. Επετηρίς του Κέντρου Ερεύνης της Ελληνικής Φιλοσοφίας της Ακαδημίας Αθηνών 10-11 (1980-81), 514-516.",
-        "Πώς γράφεται μια επιστημονική εργασία (Βοηθητικό εγχειρίδιο για τα σεμινάρια, δακτυλογραφημένο), Ρέθυμνο 1981, 22 σ."
+        {
+          "el": "«Σχόλια στο προοίμιο του Παρμενίδη». *Εποπτεία* 45 (1980), 311-326.",
+          "en": "“Commentary on the proem of Parmenides”. *Epopteia* 45 (1980), 311-326.",
+          "de": "„Kommentar zum Proömium des Parmenides“. *Epopteia* 45 (1980), 311-326."
+        },
+        {
+          "el": "Βιβλιοκρισία στο έργο του Hans Wagner: *Philosophie und Reflexion*, Εισαγωγή-Μετάφραση Ν. Αυγελή, Α΄ τόμος, Θεσσαλονίκη 1981. *Φιλοσοφία. Επετηρίς του Κέντρου Ερεύνης της Ελληνικής Φιλοσοφίας της Ακαδημίας Αθηνών* 10-11 (1980-81), 514-516.",
+          "en": "Review of Hans Wagner’s *Philosophie und Reflexion*, Introduction–Translation by N. Avgelis, vol. I, Thessaloniki 1981. *Philosophia. Yearbook of the Academy of Athens* 10-11 (1980-81), 514-516.",
+          "de": "Rezension zu Hans Wagner: *Philosophie und Reflexion*, Einführung–Übersetzung von N. Avgelis, Bd. I, Thessaloniki 1981. *Philosophia. Jahrbuch der Akademie von Athen* 10-11 (1980-81), 514-516."
+        },
+        {
+          "el": "*Πώς γράφεται μια επιστημονική εργασία* (Βοηθητικό εγχειρίδιο για τα σεμινάρια, δακτυλογραφημένο), Ρέθυμνο 1981, 22 σ.",
+          "en": "*How to write a scholarly paper* (An auxiliary handbook for seminars, typescript), Rethymno 1981, 22 pp.",
+          "de": "*Wie man eine wissenschaftliche Arbeit schreibt* (Hilfshandbuch für Seminare, maschinenschriftlich), Rethymno 1981, 22 S."
+        }
       ]
     },
     {
       "year": "1981",
       "items": [
-        "Μάρτιν Χάιντεγγερ: «Πραγματεία περί θανάτου». Πρόλογος – Μετάφραση – Σχόλια Γιάννης Τζαβάρας. Εποπτεία 53 (1981), 5-26."
+        {
+          "el": "Μάρτιν Χάιντεγγερ: «Πραγματεία περί θανάτου». Πρόλογος – Μετάφραση – Σχόλια Γιάννης Τζαβάρας. *Εποπτεία* 53 (1981), 5-26.",
+          "en": "Martin Heidegger: “Treatise on death”. Preface – Translation – Commentary by Giannis Tzavaras. *Epopteia* 53 (1981), 5-26.",
+          "de": "Martin Heidegger: „Abhandlung über den Tod“. Vorwort – Übersetzung – Kommentar von Giannis Tzavaras. *Epopteia* 53 (1981), 5-26."
+        }
       ]
     },
     {
       "year": "1982",
       "items": [
-        "Το βέβαιο του θανάτου. Εκδόσεις Δωδώνη, Αθήνα-Γιάννινα 1982, 118 σ.",
-        "«Η τεχνική της πανεπιστημιακής συζήτησης». (Διασκευή από τα γερμανικά). Σύγχρονη Εκπαίδευση 6 (1982), 85-89.",
-        "«Ελληνική φιλοσοφική βιβλιογραφία». Τεύχος 1, Ρέθυμνο 1982, 47 σ. Τεύχος 2, Ρέθυμνο 1983, 27 σ. Τεύχη 3-15, Ελληνική Φιλοσοφική Επιθεώρηση 1-5 (1984-1988)."
+        {
+          "el": "*Το βέβαιο του θανάτου*. Εκδόσεις Δωδώνη, Αθήνα-Γιάννινα 1982, 118 σ.",
+          "en": "*The Certainty of Death*. Dodoni, Athens–Ioannina 1982, 118 pp.",
+          "de": "*Die Gewissheit des Todes*. Dodoni, Athen–Ioannina 1982, 118 S."
+        },
+        {
+          "el": "«Η τεχνική της πανεπιστημιακής συζήτησης». (Διασκευή από τα γερμανικά). *Σύγχρονη Εκπαίδευση* 6 (1982), 85-89.",
+          "en": "“The technique of academic discussion”. (Adapted from the German). *Synchroni Ekpaidefsi* (Contemporary Education) 6 (1982), 85-89.",
+          "de": "„Die Technik der akademischen Diskussion“. (Bearbeitung aus dem Deutschen). *Synchroni Ekpaidefsi* (Zeitgenössische Bildung) 6 (1982), 85-89."
+        },
+        {
+          "el": "«Ελληνική φιλοσοφική βιβλιογραφία». Τεύχος 1, Ρέθυμνο 1982, 47 σ. Τεύχος 2, Ρέθυμνο 1983, 27 σ. Τεύχη 3-15, *Ελληνική Φιλοσοφική Επιθεώρηση* 1-5 (1984-1988).",
+          "en": "“Greek philosophical bibliography”. Issue 1, Rethymno 1982, 47 pp. Issue 2, Rethymno 1983, 27 pp. Issues 3-15, *Greek Philosophical Review* 1-5 (1984-1988).",
+          "de": "„Griechische philosophische Bibliografie“. Heft 1, Rethymno 1982, 47 S. Heft 2, Rethymno 1983, 27 S. Hefte 3-15, *Griechische Philosophische Rundschau* 1-5 (1984-1988)."
+        }
       ]
     },
     {
       "year": "1983",
       "items": [
-        "Immanuel Kant: Προλεγόμενα σε κάθε μελλοντική Μεταφυσική που θα μπορεί να εμφανίζεται ως επιστήμη. Εισαγωγή – Μετάφραση – Σχόλια Γιάννης Τζαβάρας. Εκδόσεις Δωδώνη, Αθήνα-Γιάννινα 1983, 211 σ.",
-        "Σειρά άρθρων του Γιάννη Τζαβάρα με βιογραφίες φιλοσόφων στην Εκπαιδευτική Ελληνική Εγκυκλοπαίδεια. Παγκόσμιο βιογραφικό λεξικό, Αθήνα 1983-1987. («Αξελός Κώστας», «Γιάσπερς Καρλ», «Θεοδωρακόπουλος Ιωάννης», «Κίρκεγκωρ Σαίρεν», «Μαλεβίτσης Χρήστος», «Μαριταίν Ζακ», «Μαρσέλ Γκαμπριέλ», «Μερλώ-Ποντύ Μωρίς», «Μπερξόν Ανρί-Λουί»)."
+        {
+          "el": "Immanuel Kant: *Προλεγόμενα σε κάθε μελλοντική Μεταφυσική που θα μπορεί να εμφανίζεται ως επιστήμη*. Εισαγωγή – Μετάφραση – Σχόλια Γιάννης Τζαβάρας. Εκδόσεις Δωδώνη, Αθήνα-Γιάννινα 1983, 211 σ.",
+          "en": "Immanuel Kant: *Prolegomena to Any Future Metaphysics That Will Be Able to Present Itself as a Science*. Introduction – Translation – Commentary by Giannis Tzavaras. Dodoni, Athens–Ioannina 1983, 211 pp.",
+          "de": "Immanuel Kant: *Prolegomena zu einer jeden künftigen Metaphysik, die als Wissenschaft wird auftreten können*. Einführung – Übersetzung – Kommentar von Giannis Tzavaras. Dodoni, Athen–Ioannina 1983, 211 S."
+        },
+        {
+          "el": "Σειρά άρθρων του Γιάννη Τζαβάρα με βιογραφίες φιλοσόφων στην *Εκπαιδευτική Ελληνική Εγκυκλοπαίδεια. Παγκόσμιο βιογραφικό λεξικό*, Αθήνα 1983-1987 (Αξελός, Γιάσπερς, Θεοδωρακόπουλος, Κίρκεγκωρ, Μαλεβίτσης, Μαριταίν, Μαρσέλ, Μερλώ-Ποντύ, Μπερξόν).",
+          "en": "A series of articles by Giannis Tzavaras with biographies of philosophers in the *Educational Greek Encyclopaedia. World Biographical Dictionary*, Athens 1983-1987 (Axelos, Jaspers, Theodorakopoulos, Kierkegaard, Malevitsis, Maritain, Marcel, Merleau-Ponty, Bergson).",
+          "de": "Eine Reihe von Artikeln von Giannis Tzavaras mit Biografien von Philosophen in der *Pädagogischen Griechischen Enzyklopädie. Weltbiografisches Lexikon*, Athen 1983-1987 (Axelos, Jaspers, Theodorakopoulos, Kierkegaard, Malevitsis, Maritain, Marcel, Merleau-Ponty, Bergson)."
+        }
       ]
     },
     {
@@ -108,53 +181,114 @@
         {
           "milestone": true,
           "el": "Εκλέγεται και διορίζεται ως επίκουρος καθηγητής Φιλοσοφίας στο Πανεπιστήμιο Κρήτης.",
-          "en": "Elected and appointed Assistant Professor of Philosophy at the University of Crete."
+          "en": "Elected and appointed Assistant Professor of Philosophy at the University of Crete.",
+          "de": "Wird zum Juniorprofessor (Assistant Professor) für Philosophie an der Universität Kreta gewählt und ernannt."
         },
-        "Immanuel Kant: Τα θεμέλια της Μεταφυσικής των ηθών. Εισαγωγή – Μετάφραση – Σχόλια Γιάννης Τζαβάρας. Εκδόσεις Δωδώνη, Αθήνα-Γιάννινα 1984, 143 σ.",
-        "«Η απεραντοσύνη του χρόνου. Έρευνα στον Αριστοτέλη». Αριάδνη (= Επετηρίδα της Φιλοσοφικής Σχολής του Πανεπιστημίου Κρήτης) 2 (1984), 126-139.",
-        "Βιβλιοπαρουσίαση του έργου: Ελληνική Ανθρωπιστική Εταιρεία, Αρετής μνήμη. Αφιέρωμα εις μνήμην του Κ.Ι. Βουρβέρη, Αθήνα 1983, 384 σ. Δημοσιεύτηκε στην Ελληνική Φιλοσοφική Επιθεώρηση 1 (1984), 206-208."
+        {
+          "el": "Immanuel Kant: *Τα θεμέλια της Μεταφυσικής των ηθών*. Εισαγωγή – Μετάφραση – Σχόλια Γιάννης Τζαβάρας. Εκδόσεις Δωδώνη, Αθήνα-Γιάννινα 1984, 143 σ.",
+          "en": "Immanuel Kant: *Groundwork of the Metaphysics of Morals*. Introduction – Translation – Commentary by Giannis Tzavaras. Dodoni, Athens–Ioannina 1984, 143 pp.",
+          "de": "Immanuel Kant: *Grundlegung zur Metaphysik der Sitten*. Einführung – Übersetzung – Kommentar von Giannis Tzavaras. Dodoni, Athen–Ioannina 1984, 143 S."
+        },
+        {
+          "el": "«Η απεραντοσύνη του χρόνου. Έρευνα στον Αριστοτέλη». *Αριάδνη (Επετηρίδα της Φιλοσοφικής Σχολής του Πανεπιστημίου Κρήτης)* 2 (1984), 126-139.",
+          "en": "“The boundlessness of time. A study in Aristotle”. *Ariadne (Yearbook of the Faculty of Philosophy of the University of Crete)* 2 (1984), 126-139.",
+          "de": "„Die Unendlichkeit der Zeit. Eine Untersuchung bei Aristoteles“. *Ariadne (Jahrbuch der Philosophischen Fakultät der Universität Kreta)* 2 (1984), 126-139."
+        },
+        {
+          "el": "Βιβλιοπαρουσίαση του έργου: Ελληνική Ανθρωπιστική Εταιρεία, *Αρετής μνήμη. Αφιέρωμα εις μνήμην του Κ.Ι. Βουρβέρη*, Αθήνα 1983, 384 σ. *Ελληνική Φιλοσοφική Επιθεώρηση* 1 (1984), 206-208.",
+          "en": "Book presentation of: Greek Humanistic Society, *In memory of virtue. A tribute to the memory of K. I. Vourveris*, Athens 1983, 384 pp. *Greek Philosophical Review* 1 (1984), 206-208.",
+          "de": "Buchbesprechung von: Griechische Humanistische Gesellschaft, *Zum Gedächtnis der Tugend. Eine Hommage an K. I. Vourveris*, Athen 1983, 384 S. *Griechische Philosophische Rundschau* 1 (1984), 206-208."
+        }
       ]
     },
     {
       "year": "1985",
       "items": [
-        "Μάρτιν Χάιντεγγερ: Είναι και χρόνος. Τόμος δεύτερος, Μετάφραση – Σχόλια Γιάννης Τζαβάρας. Εκδόσεις Δωδώνη, Αθήνα-Γιάννινα 1985, 415-772 σ.",
-        "«Ο Ζαρατούστρα του Νίτσε ως κήρυκας του ολέθρου». Φιλοσοφία. Επετηρίς του Κέντρου Ερεύνης της Ελληνικής Φιλοσοφίας της Ακαδημίας Αθηνών 15-16 (1985-86), 398-443."
+        {
+          "el": "Μάρτιν Χάιντεγγερ: *Είναι και χρόνος*. Τόμος δεύτερος, Μετάφραση – Σχόλια Γιάννης Τζαβάρας. Εκδόσεις Δωδώνη, Αθήνα-Γιάννινα 1985, 415-772 σ.",
+          "en": "Martin Heidegger: *Being and Time*. Volume two, Translation – Commentary by Giannis Tzavaras. Dodoni, Athens–Ioannina 1985, pp. 415-772.",
+          "de": "Martin Heidegger: *Sein und Zeit*. Zweiter Band, Übersetzung – Kommentar von Giannis Tzavaras. Dodoni, Athen–Ioannina 1985, S. 415-772."
+        },
+        {
+          "el": "«Ο Ζαρατούστρα του Νίτσε ως κήρυκας του ολέθρου». *Φιλοσοφία. Επετηρίς του Κέντρου Ερεύνης της Ελληνικής Φιλοσοφίας της Ακαδημίας Αθηνών* 15-16 (1985-86), 398-443.",
+          "en": "“Nietzsche’s Zarathustra as a herald of ruin”. *Philosophia. Yearbook of the Academy of Athens* 15-16 (1985-86), 398-443.",
+          "de": "„Nietzsches Zarathustra als Verkünder des Verderbens“. *Philosophia. Jahrbuch der Akademie von Athen* 15-16 (1985-86), 398-443."
+        }
       ]
     },
     {
       "year": "1986",
       "items": [
-        "Μάρτιν Χάιντεγγερ: Η προέλευση του έργου τέχνης. Εισαγωγή – Μετάφραση – Σχόλια Γιάννης Τζαβάρας. Εκδόσεις Δωδώνη, Αθήνα-Γιάννινα 1986, 153 σ.",
-        "Paul Feyerabend: Γνώση για ελεύθερους ανθρώπους. Μετάφραση Γιάννης Τζαβάρας. Εκδόσεις Σύγχρονα Θέματα, Θεσσαλονίκη 1986, 264 σ."
+        {
+          "el": "Μάρτιν Χάιντεγγερ: *Η προέλευση του έργου τέχνης*. Εισαγωγή – Μετάφραση – Σχόλια Γιάννης Τζαβάρας. Εκδόσεις Δωδώνη, Αθήνα-Γιάννινα 1986, 153 σ.",
+          "en": "Martin Heidegger: *The Origin of the Work of Art*. Introduction – Translation – Commentary by Giannis Tzavaras. Dodoni, Athens–Ioannina 1986, 153 pp.",
+          "de": "Martin Heidegger: *Der Ursprung des Kunstwerks*. Einführung – Übersetzung – Kommentar von Giannis Tzavaras. Dodoni, Athen–Ioannina 1986, 153 S."
+        },
+        {
+          "el": "Paul Feyerabend: *Γνώση για ελεύθερους ανθρώπους*. Μετάφραση Γιάννης Τζαβάρας. Εκδόσεις Σύγχρονα Θέματα, Θεσσαλονίκη 1986, 264 σ.",
+          "en": "Paul Feyerabend: *Science in a Free Society*. Translated by Giannis Tzavaras. Synchrona Themata, Thessaloniki 1986, 264 pp.",
+          "de": "Paul Feyerabend: *Erkenntnis für freie Menschen*. Übersetzt von Giannis Tzavaras. Synchrona Themata, Thessaloniki 1986, 264 S."
+        }
       ]
     },
     {
       "year": "1987",
       "items": [
-        "«Πίνακας φιλοσοφικών περιοδικών». Ελληνική Φιλοσοφική Επιθεώρηση 4 (1987), 238-247.",
-        "Βιβλιοπαρουσίαση του έργου: Charalambos Apostolopoulos, “Phaedo Christianus”, Dissertation, Frankfurt a. M. 1986. Δημοσιεύτηκε στο: Ελληνική Φιλοσοφική Επιθεώρηση 4 (1987), 331-332."
+        {
+          "el": "«Πίνακας φιλοσοφικών περιοδικών». *Ελληνική Φιλοσοφική Επιθεώρηση* 4 (1987), 238-247.",
+          "en": "“A table of philosophical journals”. *Greek Philosophical Review* 4 (1987), 238-247.",
+          "de": "„Verzeichnis philosophischer Zeitschriften“. *Griechische Philosophische Rundschau* 4 (1987), 238-247."
+        },
+        {
+          "el": "Βιβλιοπαρουσίαση του έργου: Charalambos Apostolopoulos, *Phaedo Christianus*, Dissertation, Frankfurt a. M. 1986. *Ελληνική Φιλοσοφική Επιθεώρηση* 4 (1987), 331-332.",
+          "en": "Book presentation of: Charalambos Apostolopoulos, *Phaedo Christianus*, Dissertation, Frankfurt a. M. 1986. *Greek Philosophical Review* 4 (1987), 331-332.",
+          "de": "Buchbesprechung von: Charalambos Apostolopoulos, *Phaedo Christianus*, Dissertation, Frankfurt a. M. 1986. *Griechische Philosophische Rundschau* 4 (1987), 331-332."
+        }
       ]
     },
     {
       "year": "1988",
       "items": [
-        "Η ποίηση του Εμπεδοκλή (Κείμενο – Μετάφραση – Σχόλια). Εκδόσεις Δωδώνη, Αθήνα-Γιάννινα 1988, 303 σ.",
-        "«Διαλεκτική κίνηση στη φιλοσοφία της τέχνης του Χάιντεγγερ». (Συμμετοχή στο 3ο Πανελλήνιο συνέδριο της Ελληνικής Φιλοσοφικής Εταιρείας με θέμα: Η έννοια της διαλεκτικής). Δημοσιεύτηκε στον τόμο: Ελληνική Φιλοσοφική Εταιρεία, Η διαλεκτική. Αθήνα 1988, 383-387."
+        {
+          "el": "*Η ποίηση του Εμπεδοκλή* (Κείμενο – Μετάφραση – Σχόλια). Εκδόσεις Δωδώνη, Αθήνα-Γιάννινα 1988, 303 σ.",
+          "en": "*The Poetry of Empedocles* (Text – Translation – Commentary). Dodoni, Athens–Ioannina 1988, 303 pp.",
+          "de": "*Die Dichtung des Empedokles* (Text – Übersetzung – Kommentar). Dodoni, Athen–Ioannina 1988, 303 S."
+        },
+        {
+          "el": "«Διαλεκτική κίνηση στη φιλοσοφία της τέχνης του Χάιντεγγερ». Στον τόμο: Ελληνική Φιλοσοφική Εταιρεία, *Η διαλεκτική*. Αθήνα 1988, 383-387.",
+          "en": "“Dialectical movement in Heidegger’s philosophy of art”. In: Greek Philosophical Society, *Dialectics*. Athens 1988, 383-387.",
+          "de": "„Dialektische Bewegung in Heideggers Kunstphilosophie“. In: Griechische Philosophische Gesellschaft, *Die Dialektik*. Athen 1988, 383-387."
+        }
       ]
     },
     {
       "year": "1989",
       "items": [
-        "Ο Καντιανός χρόνος κατά τον Χάιντεγγερ. Εκδόσεις Δωδώνη, Αθήνα-Γιάννινα 1989, 101 σ.",
-        "“Heideggers Unterscheidung zwischen Zuhandenheit und Vorhandenheit”. Philosophisches Jahrbuch 96 (1989), 367-371.",
-        "«Ο χρόνος της καθημερινότητας στον Αριστοτέλη και στον Heidegger». Ζήνων 10-12 (1989-91), 15-19."
+        {
+          "el": "*Ο Καντιανός χρόνος κατά τον Χάιντεγγερ*. Εκδόσεις Δωδώνη, Αθήνα-Γιάννινα 1989, 101 σ.",
+          "en": "*The Kantian Time according to Heidegger*. Dodoni, Athens–Ioannina 1989, 101 pp.",
+          "de": "*Die kantische Zeit nach Heidegger*. Dodoni, Athen–Ioannina 1989, 101 S."
+        },
+        {
+          "el": "“Heideggers Unterscheidung zwischen Zuhandenheit und Vorhandenheit”. *Philosophisches Jahrbuch* 96 (1989), 367-371.",
+          "en": "“Heideggers Unterscheidung zwischen Zuhandenheit und Vorhandenheit”. *Philosophisches Jahrbuch* 96 (1989), 367-371.",
+          "de": "„Heideggers Unterscheidung zwischen Zuhandenheit und Vorhandenheit“. *Philosophisches Jahrbuch* 96 (1989), 367-371."
+        },
+        {
+          "el": "«Ο χρόνος της καθημερινότητας στον Αριστοτέλη και στον Heidegger». *Ζήνων* 10-12 (1989-91), 15-19.",
+          "en": "“The time of everyday life in Aristotle and Heidegger”. *Zenon* 10-12 (1989-91), 15-19.",
+          "de": "„Die Zeit des Alltags bei Aristoteles und Heidegger“. *Zenon* 10-12 (1989-91), 15-19."
+        }
       ]
     },
     {
       "year": "1990",
       "items": [
-        "«Η θεμελιώδης Οντολογία του Μάρτιν Χάιντεγγερ». (Συμμετοχή στο Συμπόσιο με θέμα «Χάιντεγγερ και Αντόρνο – ο διάλογος που δεν πραγματοποιήθηκε», που διοργανώθηκε από το Ινστιτούτο Γκαίτε Αθηνών στις 22-24 Νοεμβρίου 1989). Λεβιάθαν 8 (1990), 21-26."
+        {
+          "el": "«Η θεμελιώδης Οντολογία του Μάρτιν Χάιντεγγερ». (Συμπόσιο «Χάιντεγγερ και Αντόρνο», Ινστιτούτο Γκαίτε Αθηνών, 22-24 Νοεμβρίου 1989). *Λεβιάθαν* 8 (1990), 21-26.",
+          "en": "“The fundamental Ontology of Martin Heidegger”. (Symposium “Heidegger and Adorno”, Goethe-Institut Athens, 22-24 November 1989). *Leviathan* 8 (1990), 21-26.",
+          "de": "„Die Fundamentalontologie Martin Heideggers“. (Symposium „Heidegger und Adorno“, Goethe-Institut Athen, 22.-24. November 1989). *Leviathan* 8 (1990), 21-26."
+        }
       ]
     },
     {
@@ -163,50 +297,119 @@
         {
           "milestone": true,
           "el": "Εκλέγεται και διορίζεται ως αναπληρωτής καθηγητής Φιλοσοφίας στο Πανεπιστήμιο Κρήτης.",
-          "en": "Elected and appointed Associate Professor of Philosophy at the University of Crete."
+          "en": "Elected and appointed Associate Professor of Philosophy at the University of Crete.",
+          "de": "Wird zum außerordentlichen Professor für Philosophie an der Universität Kreta gewählt und ernannt."
         },
-        "Georg W. F. Hegel: Η επιστήμη της Λογικής (από την Εγκυκλοπαίδεια των φιλοσοφικών επιστημών σε επιτομή, §§ 1-244). Εισαγωγή – Μετάφραση – Σχόλια Γιάννης Τζαβάρας. Εκδόσεις Δωδώνη, Αθήνα-Γιάννινα 1991, 511 σ.",
-        "Πανεπιστήμιο Κρήτης, Τομέας Φιλοσοφίας: Συμπόσιο Wittgenstein. Επιμέλεια έκδοσης: Γιάννης Τζαβάρας. Εκδόσεις Δωδώνη, Αθήνα-Γιάννινα 1991, 206 σ."
+        {
+          "el": "Georg W. F. Hegel: *Η επιστήμη της Λογικής* (από την Εγκυκλοπαίδεια των φιλοσοφικών επιστημών, §§ 1-244). Εισαγωγή – Μετάφραση – Σχόλια Γιάννης Τζαβάρας. Εκδόσεις Δωδώνη, Αθήνα-Γιάννινα 1991, 511 σ.",
+          "en": "Georg W. F. Hegel: *The Science of Logic* (from the Encyclopaedia of the Philosophical Sciences, §§ 1-244). Introduction – Translation – Commentary by Giannis Tzavaras. Dodoni, Athens–Ioannina 1991, 511 pp.",
+          "de": "Georg W. F. Hegel: *Die Wissenschaft der Logik* (aus der Enzyklopädie der philosophischen Wissenschaften, §§ 1-244). Einführung – Übersetzung – Kommentar von Giannis Tzavaras. Dodoni, Athen–Ioannina 1991, 511 S."
+        },
+        {
+          "el": "Πανεπιστήμιο Κρήτης, Τομέας Φιλοσοφίας: *Συμπόσιο Wittgenstein*. Επιμέλεια έκδοσης: Γιάννης Τζαβάρας. Εκδόσεις Δωδώνη, Αθήνα-Γιάννινα 1991, 206 σ.",
+          "en": "University of Crete, Department of Philosophy: *Wittgenstein Symposium*. Edited by Giannis Tzavaras. Dodoni, Athens–Ioannina 1991, 206 pp.",
+          "de": "Universität Kreta, Abteilung für Philosophie: *Wittgenstein-Symposium*. Herausgegeben von Giannis Tzavaras. Dodoni, Athen–Ioannina 1991, 206 S."
+        }
       ]
     },
     {
       "year": "1992",
       "items": [
-        "«Πυθαγόρειες επιδράσεις στη φιλοσοφία του Εμπεδοκλή». (Ανακοίνωση στο 3ο Διεθνές Συνέδριο Ελληνικής Φιλοσοφίας, Σάμος 22-26/8/1991). Δημοσιεύτηκε στο: Κωνσταντίνος Βουδούρης (επιμ.): Πυθαγόρεια Φιλοσοφία, Αθήνα-Σάμος 1992, 189-194."
+        {
+          "el": "«Πυθαγόρειες επιδράσεις στη φιλοσοφία του Εμπεδοκλή». Στον τόμο: Κωνσταντίνος Βουδούρης (επιμ.), *Πυθαγόρεια Φιλοσοφία*, Αθήνα-Σάμος 1992, 189-194.",
+          "en": "“Pythagorean influences on the philosophy of Empedocles”. In: Konstantinos Boudouris (ed.), *Pythagorean Philosophy*, Athens–Samos 1992, 189-194.",
+          "de": "„Pythagoreische Einflüsse auf die Philosophie des Empedokles“. In: Konstantinos Boudouris (Hg.), *Pythagoreische Philosophie*, Athen–Samos 1992, 189-194."
+        }
       ]
     },
     {
       "year": "1993",
       "items": [
-        "Έρωτας-Πόλεμος. Δοκίμιο κοσμοθεωρίας. Εκδόσεις Δωδώνη, Αθήνα-Γιάννινα 1993, 172 σ.",
-        "Georg W. F. Hegel: Η φιλοσοφία του πνεύματος. Πρώτο τμήμα: «Το υποκειμενικό πνεύμα» (από την Εγκυκλοπαίδεια των φιλοσοφικών επιστημών σε επιτομή, §§ 377-482). Εισαγωγή – Μετάφραση – Σχόλια Γιάννης Τζαβάρας. Εκδόσεις Δωδώνη, Αθήνα-Γιάννινα 1993, 290 σ.",
-        "«Φιλοσοφική προσέγγιση στο Διονυσιακό και Απολλώνιο πνεύμα». Περιοδικό D & A Spirit 2 (1993), 142-144."
+        {
+          "el": "*Έρωτας-Πόλεμος. Δοκίμιο κοσμοθεωρίας*. Εκδόσεις Δωδώνη, Αθήνα-Γιάννινα 1993, 172 σ.",
+          "en": "*Love–War. An Essay on Cosmic Theory*. Dodoni, Athens–Ioannina 1993, 172 pp.",
+          "de": "*Liebe–Krieg. Ein Essay zur Weltanschauung*. Dodoni, Athen–Ioannina 1993, 172 S."
+        },
+        {
+          "el": "Georg W. F. Hegel: *Η φιλοσοφία του πνεύματος*. Πρώτο τμήμα: «Το υποκειμενικό πνεύμα» (Εγκυκλοπαίδεια, §§ 377-482). Εισαγωγή – Μετάφραση – Σχόλια Γιάννης Τζαβάρας. Εκδόσεις Δωδώνη, Αθήνα-Γιάννινα 1993, 290 σ.",
+          "en": "Georg W. F. Hegel: *The Philosophy of Spirit*. First part: “The subjective spirit” (Encyclopaedia, §§ 377-482). Introduction – Translation – Commentary by Giannis Tzavaras. Dodoni, Athens–Ioannina 1993, 290 pp.",
+          "de": "Georg W. F. Hegel: *Die Philosophie des Geistes*. Erster Teil: „Der subjektive Geist“ (Enzyklopädie, §§ 377-482). Einführung – Übersetzung – Kommentar von Giannis Tzavaras. Dodoni, Athen–Ioannina 1993, 290 S."
+        },
+        {
+          "el": "«Φιλοσοφική προσέγγιση στο Διονυσιακό και Απολλώνιο πνεύμα». *D & A Spirit* 2 (1993), 142-144.",
+          "en": "“A philosophical approach to the Dionysian and Apollonian spirit”. *D & A Spirit* 2 (1993), 142-144.",
+          "de": "„Eine philosophische Annäherung an den dionysischen und apollinischen Geist“. *D & A Spirit* 2 (1993), 142-144."
+        }
       ]
     },
     {
       "year": "1994",
       "items": [
-        "«Ο εξωπραγματικός χαρακτήρας του καλλιτεχνήματος κατά τον Martin Heidegger». (Συμμετοχή στο 6ο Πανελλήνιο συνέδριο της Ελληνικής Φιλοσοφικής Εταιρείας με θέμα: «Αισθητική και Φιλοσοφία της τέχνης», Αθήνα 18-20/5/1994). Δημοσιεύτηκε στο: Παύλος Χριστοδουλίδης (επιμ.): Αισθητική και θεωρία της τέχνης. Εκδόσεις Καρδαμίτσα, Αθήνα 1994, 179-183.",
-        "«Το διονυσιακό στοιχείο κατά τον πρώιμο Νίτσε». Ανακοίνωση στην εκδήλωση: «Ο Νίτσε και η Ελλάδα», που διοργάνωσαν στις 8-9/12/1994 το Ινστιτούτο Γκαίτε Αθηνών και το Γαλλικό Ινστιτούτο Αθηνών."
+        {
+          "el": "«Ο εξωπραγματικός χαρακτήρας του καλλιτεχνήματος κατά τον Martin Heidegger». Στον τόμο: Παύλος Χριστοδουλίδης (επιμ.), *Αισθητική και θεωρία της τέχνης*. Εκδόσεις Καρδαμίτσα, Αθήνα 1994, 179-183.",
+          "en": "“The unreal character of the artwork according to Martin Heidegger”. In: Pavlos Christodoulidis (ed.), *Aesthetics and the Theory of Art*. Kardamitsa, Athens 1994, 179-183.",
+          "de": "„Der unwirkliche Charakter des Kunstwerks nach Martin Heidegger“. In: Pavlos Christodoulidis (Hg.), *Ästhetik und Kunsttheorie*. Kardamitsa, Athen 1994, 179-183."
+        },
+        {
+          "el": "«Το διονυσιακό στοιχείο κατά τον πρώιμο Νίτσε». Ανακοίνωση στην εκδήλωση «Ο Νίτσε και η Ελλάδα» (Ινστιτούτο Γκαίτε Αθηνών & Γαλλικό Ινστιτούτο Αθηνών, 8-9/12/1994).",
+          "en": "“The Dionysian element in the early Nietzsche”. Paper at the event “Nietzsche and Greece” (Goethe-Institut Athens & French Institute of Athens, 8-9 December 1994).",
+          "de": "„Das dionysische Element beim frühen Nietzsche“. Vortrag bei der Veranstaltung „Nietzsche und Griechenland“ (Goethe-Institut Athen & Französisches Institut Athen, 8.-9.12.1994)."
+        }
       ]
     },
     {
       "year": "1995",
       "items": [
-        "Εγχειρίδιο φιλοσοφίας. Προβληματισμοί στον χώρο των ιδεών. Εκδόσεις Εκπαιδευτήρια Κωστέα-Γείτονα, Αθήνα 1995, 156 σ. (Β΄ έκδοση, Ρέθυμνο 2001. Γ΄ έκδοση ριζικά ανανεωμένη, Εκδόσεις Τυπωθήτω – Γ. Δαρδανός, Αθήνα 2006, 319 σ.).",
-        "Πλωτίνος: Εννεάδων βιβλία 30-33 (Το «μεγάλο βιβλίο»). Εισαγωγή – Μετάφραση – Σχόλια Γιάννης Τζαβάρας. Εκδόσεις Δωδώνη, Αθήνα-Γιάννινα 1995, 342 σ.",
-        "«Επίμετρο» στο βιβλίο του Γιάννη Τζερμιά: Περί φύσεως. Μία ζωγραφική βασισμένη στον Εμπεδοκλή. Εκδόσεις Γαβριηλίδης, Αθήνα 1995. (Το βιβλίο περιέχει μεταφράσεις από το βιβλίο του Γ. Τζαβάρα: Η ποίηση του Εμπεδοκλή, Αθήνα-Γιάννινα 1988).",
-        "«Μια εναλλακτική πρόταση για τη διδασκαλία της φιλοσοφίας στη Μέση Εκπαίδευση». Διάλεξη ενώπιον φιλολόγων της Ανατολικής Αττικής, Παλλήνη 11/4/1994. Το κείμενο δημοσιεύτηκε στο περιοδικό: Φιλοσοφία και Παιδεία 1 (1995), τεύχος 3, 12-14.",
-        "Πανεπιστήμιο Κρήτης, Τομέας Φιλοσοφίας: Παρόν και μέλλον της φιλοσοφίας. Επιμέλεια έκδοσης: Γιάννη Τζαβάρα. Εκδόσεις Δωδώνη, Αθήνα-Γιάννινα 1995, 118 σ. Σ’ αυτό τον τόμο, Γιάννη Τζαβάρα: «Ο διάλογος ως μελλοντική φιλοσοφική μέθοδος», σελ. 77-84.",
-        "Μιχάλης Ξυλινάς - Γιάννης Τζαβάρας: «Ο Εμπεδοκλής ο Ακραγαντίνος ως επίκαιρος ιατροφιλόσοφος». Ελληνική Φιλοσοφική Επιθεώρηση 12 (1995), 111-128."
+        {
+          "el": "*Εγχειρίδιο φιλοσοφίας. Προβληματισμοί στον χώρο των ιδεών*. Εκδόσεις Εκπαιδευτηρίων Κωστέα-Γείτονα, Αθήνα 1995, 156 σ. (Β΄ έκδοση, Ρέθυμνο 2001· Γ΄ έκδοση ριζικά ανανεωμένη, Τυπωθήτω – Γ. Δαρδανός, Αθήνα 2006, 319 σ.).",
+          "en": "*A Companion to Philosophy. Reflections in the realm of ideas*. Kosteas-Geitonas School, Athens 1995, 156 pp. (2nd edition, Rethymno 2001; 3rd, radically revised edition, Typothito – G. Dardanos, Athens 2006, 319 pp.).",
+          "de": "*Handbuch der Philosophie. Überlegungen im Reich der Ideen*. Kosteas-Geitonas-Schule, Athen 1995, 156 S. (2. Auflage, Rethymno 2001; 3., grundlegend überarbeitete Auflage, Typothito – G. Dardanos, Athen 2006, 319 S.)."
+        },
+        {
+          "el": "Πλωτίνος: *Εννεάδων βιβλία 30-33 (Το «μεγάλο βιβλίο»)*. Εισαγωγή – Μετάφραση – Σχόλια Γιάννης Τζαβάρας. Εκδόσεις Δωδώνη, Αθήνα-Γιάννινα 1995, 342 σ.",
+          "en": "Plotinus: *Enneads, books 30-33 (The “Great Book”)*. Introduction – Translation – Commentary by Giannis Tzavaras. Dodoni, Athens–Ioannina 1995, 342 pp.",
+          "de": "Plotin: *Enneaden, Bücher 30-33 (Das „große Buch“)*. Einführung – Übersetzung – Kommentar von Giannis Tzavaras. Dodoni, Athen–Ioannina 1995, 342 S."
+        },
+        {
+          "el": "«Επίμετρο» στο βιβλίο του Γιάννη Τζερμιά: *Περί φύσεως. Μία ζωγραφική βασισμένη στον Εμπεδοκλή*. Εκδόσεις Γαβριηλίδης, Αθήνα 1995.",
+          "en": "“Afterword” to the book by Giannis Tzermias: *On Nature. A painting based on Empedocles*. Gavriilidis, Athens 1995.",
+          "de": "„Nachwort“ zum Buch von Giannis Tzermias: *Über die Natur. Eine Malerei nach Empedokles*. Gavriilidis, Athen 1995."
+        },
+        {
+          "el": "«Μια εναλλακτική πρόταση για τη διδασκαλία της φιλοσοφίας στη Μέση Εκπαίδευση». Διάλεξη (Παλλήνη, 11/4/1994). *Φιλοσοφία και Παιδεία* 1 (1995), τεύχος 3, 12-14.",
+          "en": "“An alternative proposal for the teaching of philosophy in Secondary Education”. Lecture (Pallini, 11 April 1994). *Philosophy and Education* 1 (1995), issue 3, 12-14.",
+          "de": "„Ein alternativer Vorschlag für den Philosophieunterricht in der Sekundarstufe“. Vortrag (Pallini, 11.4.1994). *Philosophie und Bildung* 1 (1995), Heft 3, 12-14."
+        },
+        {
+          "el": "Πανεπιστήμιο Κρήτης, Τομέας Φιλοσοφίας: *Παρόν και μέλλον της φιλοσοφίας*. Επιμέλεια: Γιάννης Τζαβάρας. Εκδόσεις Δωδώνη, Αθήνα-Γιάννινα 1995, 118 σ. (Με το κείμενο: «Ο διάλογος ως μελλοντική φιλοσοφική μέθοδος», 77-84).",
+          "en": "University of Crete, Department of Philosophy: *The Present and Future of Philosophy*. Edited by Giannis Tzavaras. Dodoni, Athens–Ioannina 1995, 118 pp. (Includes the text “Dialogue as a future philosophical method”, 77-84).",
+          "de": "Universität Kreta, Abteilung für Philosophie: *Gegenwart und Zukunft der Philosophie*. Herausgegeben von Giannis Tzavaras. Dodoni, Athen–Ioannina 1995, 118 S. (Mit dem Text „Der Dialog als künftige philosophische Methode“, 77-84)."
+        },
+        {
+          "el": "Μιχάλης Ξυλινάς – Γιάννης Τζαβάρας: «Ο Εμπεδοκλής ο Ακραγαντίνος ως επίκαιρος ιατροφιλόσοφος». *Ελληνική Φιλοσοφική Επιθεώρηση* 12 (1995), 111-128.",
+          "en": "Michalis Xylinas – Giannis Tzavaras: “Empedocles of Acragas as a timely physician-philosopher”. *Greek Philosophical Review* 12 (1995), 111-128.",
+          "de": "Michalis Xylinas – Giannis Tzavaras: „Empedokles von Akragas als zeitgemäßer Arzt-Philosoph“. *Griechische Philosophische Rundschau* 12 (1995), 111-128."
+        }
       ]
     },
     {
       "year": "1996",
       "items": [
-        "«Επιλεγόμενα». [Σχετικά με το βιβλίο: Εγχειρίδιο φιλοσοφίας, Αθήνα 1995]. Φιλοσοφία και Παιδεία 6 (1996), σελ. 21-22.",
-        "«Η ελευθερία σε σχέση προς τον θάνατο». Εισήγηση στην ημερίδα της Φιλοσοφικής Εταιρείας Κύπρου με θέμα: «Ελευθερία και σύγχρονος άνθρωπος», Λευκωσία 7/5/1996. Δημοσιεύτηκε στο περιοδικό Ζήνων 13-17 (1992-96), 157-160.",
-        "“Craft and Craftsman According to Plato”. Εισήγηση σε διεθνές σεμινάριο με θέμα: Τεχνολογία και γνώση. Φιλοσοφικές και κοινωνιολογικές διερευνήσεις, Ρέθυμνο 17-18 Οκτωβρίου 1996."
+        {
+          "el": "«Επιλεγόμενα» [σχετικά με το *Εγχειρίδιο φιλοσοφίας*, Αθήνα 1995]. *Φιλοσοφία και Παιδεία* 6 (1996), 21-22.",
+          "en": "“Concluding remarks” [on *A Companion to Philosophy*, Athens 1995]. *Philosophy and Education* 6 (1996), 21-22.",
+          "de": "„Schlussbemerkungen“ [zum *Handbuch der Philosophie*, Athen 1995]. *Philosophie und Bildung* 6 (1996), 21-22."
+        },
+        {
+          "el": "«Η ελευθερία σε σχέση προς τον θάνατο». Εισήγηση στην ημερίδα της Φιλοσοφικής Εταιρείας Κύπρου «Ελευθερία και σύγχρονος άνθρωπος» (Λευκωσία 7/5/1996). *Ζήνων* 13-17 (1992-96), 157-160.",
+          "en": "“Freedom in relation to death”. Paper at the conference of the Philosophical Society of Cyprus “Freedom and the modern human” (Nicosia 7 May 1996). *Zenon* 13-17 (1992-96), 157-160.",
+          "de": "„Die Freiheit im Verhältnis zum Tod“. Vortrag auf der Tagung der Philosophischen Gesellschaft Zyperns „Freiheit und der moderne Mensch“ (Nikosia 7.5.1996). *Zenon* 13-17 (1992-96), 157-160."
+        },
+        {
+          "el": "“Craft and Craftsman According to Plato”. Εισήγηση σε διεθνές σεμινάριο: *Τεχνολογία και γνώση. Φιλοσοφικές και κοινωνιολογικές διερευνήσεις*, Ρέθυμνο 17-18 Οκτωβρίου 1996.",
+          "en": "“Craft and Craftsman According to Plato”. Paper at the international seminar *Technology and Knowledge. Philosophical and sociological investigations*, Rethymno 17-18 October 1996.",
+          "de": "„Craft and Craftsman According to Plato“. Vortrag beim internationalen Seminar *Technologie und Wissen. Philosophische und soziologische Untersuchungen*, Rethymno 17.-18. Oktober 1996."
+        }
       ]
     },
     {
@@ -215,135 +418,324 @@
         {
           "milestone": true,
           "el": "Εκλέγεται και διορίζεται ως καθηγητής Φιλοσοφίας στο Πανεπιστήμιο Κρήτης.",
-          "en": "Elected and appointed Professor of Philosophy at the University of Crete."
+          "en": "Elected and appointed Professor of Philosophy at the University of Crete.",
+          "de": "Wird zum Professor für Philosophie an der Universität Kreta gewählt und ernannt."
         },
-        "Η καθολική διάδοση της απελπισίας (Σπουδή στον Kierkegaard). Εκδόσεις Δωδώνη, Αθήνα-Γιάννινα 1997, 202 σ.",
-        "Θωμά Ακινάτη: Περί του όντος και της ουσίας (De ente et essentia). Εισαγωγή – Μετάφραση – Σχόλια Γιάννης Τζαβάρας. Εκδόσεις Δωδώνη, Αθήνα-Γιάννινα 1997, 175 σ.",
-        "Βιβλιοπαρουσίαση του έργου: Πάνου Πολυχρονόπουλου, Νοείν και ποιείν. Συμβολή στη φιλοσοφική και παιδαγωγική διερεύνηση του κατασκευαστικού λόγου, Εκδόσεις Παπαζήση, Αθήνα 1997, σελ. 108. Δημοσιεύτηκε στην Ελληνική Φιλοσοφική Επιθεώρηση 14 (1997), 317-319.",
-        "Βιβλιοπαρουσίαση του έργου: Αλέξανδρος Κόφφας – Άννα Στραταριδάκη, Ο Μέγας Αλέξανδρος και το εκπολιτιστικό του έργο. Ιστορική και παιδαγωγική θεώρηση, Εκδόσεις Γρηγόρη, Αθήνα 1997, σελ. 159. Δημοσιεύτηκε στο: Παιδαγωγικός Λόγος 1997, τεύχος 1, σελ. 108-110."
+        {
+          "el": "*Η καθολική διάδοση της απελπισίας (Σπουδή στον Kierkegaard)*. Εκδόσεις Δωδώνη, Αθήνα-Γιάννινα 1997, 202 σ.",
+          "en": "*The Universal Diffusion of Despair (A Study on Kierkegaard)*. Dodoni, Athens–Ioannina 1997, 202 pp.",
+          "de": "*Die universale Verbreitung der Verzweiflung (Eine Studie zu Kierkegaard)*. Dodoni, Athen–Ioannina 1997, 202 S."
+        },
+        {
+          "el": "Θωμάς Ακινάτης: *Περί του όντος και της ουσίας (De ente et essentia)*. Εισαγωγή – Μετάφραση – Σχόλια Γιάννης Τζαβάρας. Εκδόσεις Δωδώνη, Αθήνα-Γιάννινα 1997, 175 σ.",
+          "en": "Thomas Aquinas: *On Being and Essence (De ente et essentia)*. Introduction – Translation – Commentary by Giannis Tzavaras. Dodoni, Athens–Ioannina 1997, 175 pp.",
+          "de": "Thomas von Aquin: *Über das Seiende und das Wesen (De ente et essentia)*. Einführung – Übersetzung – Kommentar von Giannis Tzavaras. Dodoni, Athen–Ioannina 1997, 175 S."
+        },
+        {
+          "el": "Βιβλιοπαρουσίαση: Πάνος Πολυχρονόπουλος, *Νοείν και ποιείν*, Εκδόσεις Παπαζήση, Αθήνα 1997. *Ελληνική Φιλοσοφική Επιθεώρηση* 14 (1997), 317-319.",
+          "en": "Book presentation: Panos Polychronopoulos, *Thinking and Making*, Papazisis, Athens 1997. *Greek Philosophical Review* 14 (1997), 317-319.",
+          "de": "Buchbesprechung: Panos Polychronopoulos, *Denken und Schaffen*, Papazisis, Athen 1997. *Griechische Philosophische Rundschau* 14 (1997), 317-319."
+        },
+        {
+          "el": "Βιβλιοπαρουσίαση: Αλέξανδρος Κόφφας – Άννα Στραταριδάκη, *Ο Μέγας Αλέξανδρος και το εκπολιτιστικό του έργο*, Εκδόσεις Γρηγόρη, Αθήνα 1997. *Παιδαγωγικός Λόγος* 1997, τεύχος 1, 108-110.",
+          "en": "Book presentation: Alexandros Koffas – Anna Strataridaki, *Alexander the Great and his civilising work*, Grigoris, Athens 1997. *Pedagogical Discourse* 1997, issue 1, 108-110.",
+          "de": "Buchbesprechung: Alexandros Koffas – Anna Strataridaki, *Alexander der Große und sein zivilisatorisches Werk*, Grigoris, Athen 1997. *Pädagogischer Diskurs* 1997, Heft 1, 108-110."
+        }
       ]
     },
     {
       "year": "1998",
       "items": [
-        "«Η ιατρο-θεολογική φιλοσοφία του ύστερου Kierkegaard και οι ιστορικές καταβολές της». Ανακοίνωση στο συνέδριο: «Ιατρική και φιλοσοφία» (Κως-Κάλυμνος, Αύγουστος 1997). Δημοσιεύτηκε στον τόμο: Κωνσταντίνος Βουδούρης (επιμ.): Φιλοσοφία και ιατρική. Αθήνα 1998, 297-301."
+        {
+          "el": "«Η ιατρο-θεολογική φιλοσοφία του ύστερου Kierkegaard και οι ιστορικές καταβολές της». Στον τόμο: Κωνσταντίνος Βουδούρης (επιμ.), *Φιλοσοφία και ιατρική*. Αθήνα 1998, 297-301.",
+          "en": "“The medico-theological philosophy of the late Kierkegaard and its historical roots”. In: Konstantinos Boudouris (ed.), *Philosophy and Medicine*. Athens 1998, 297-301.",
+          "de": "„Die medizinisch-theologische Philosophie des späten Kierkegaard und ihre historischen Wurzeln“. In: Konstantinos Boudouris (Hg.), *Philosophie und Medizin*. Athen 1998, 297-301."
+        }
       ]
     },
     {
       "year": "1999",
       "items": [
-        "«Χάιντεγγερ και Αναξίμανδρος». Διαβάζω 399 (1999), 121-124."
+        {
+          "el": "«Χάιντεγγερ και Αναξίμανδρος». *Διαβάζω* 399 (1999), 121-124.",
+          "en": "“Heidegger and Anaximander”. *Diavazo* 399 (1999), 121-124.",
+          "de": "„Heidegger und Anaximander“. *Diavazo* 399 (1999), 121-124."
+        }
       ]
     },
     {
       "year": "2000",
       "items": [
-        "Προβλήματα Φιλοσοφίας της παιδείας. 1η έκδοση, Ρέθυμνο 2000, 172 σ. 2η έκδοση, «Φιλοσοφικά Δημοσιεύματα 2015», 107 σ."
+        {
+          "el": "*Προβλήματα Φιλοσοφίας της παιδείας*. 1η έκδοση, Ρέθυμνο 2000, 172 σ. (2η έκδοση, «Φιλοσοφικά Δημοσιεύματα 2015», 107 σ.).",
+          "en": "*Problems in the Philosophy of Education*. 1st edition, Rethymno 2000, 172 pp. (2nd edition, “Philosophical Publications 2015”, 107 pp.).",
+          "de": "*Probleme der Bildungsphilosophie*. 1. Auflage, Rethymno 2000, 172 S. (2. Auflage, „Philosophische Veröffentlichungen 2015“, 107 S.)."
+        }
       ]
     },
     {
       "year": "2001",
       "items": [
-        "«Ένα καινούριο απόσπασμα από την ποίηση του Εμπεδοκλή». (Εισήγηση σε διεθνές συνέδριο σχετικά με τα νέα αποσπάσματα του Εμπεδοκλή, που έλαβε χώρα στο Παρίσι, 26-27 Μαΐου 2000). Ελληνική Φιλοσοφική Επιθεώρηση 18 (2001), 45-57.",
-        "«Φιλοσοφία της παιδείας στον Ηράκλειτο». Εισήγηση στο Β΄ Διεθνές Συνέδριο Φιλοσοφίας, Πανεπιστήμιο Κύπρου, Λευκωσία, 5-7 Απριλίου 2001.",
-        "Βιβλιοκρισία στο βιβλίο: Κωνσταντίνος Π. Ρωμανός, Οικείωσις. Η ιδέα ενός Αισθητικού Ανθρωπισμού με αφετηρία τη Φιλοσοφία της Ζωής του Ανρί Μπερξόν, μετάφραση Λευτέρης Αναγνώστου, Εκδόσεις Παραφερνάλια – Τυπωθήτω, Αθήνα 2001. Δημοσιεύτηκε στην εφημερίδα Το Βήμα, Κυριακή 29/7/2001, «Το Άλλο Βήμα», σελ. 37.",
-        "«Παιδαγωγικές και γνωσιολογικές υποτυπώσεις του Παρμενίδη». Παιδαγωγικός Λόγος τόμος 7, τεύχος 1 (2001), 83-92."
+        {
+          "el": "«Ένα καινούριο απόσπασμα από την ποίηση του Εμπεδοκλή». (Διεθνές συνέδριο, Παρίσι, 26-27 Μαΐου 2000). *Ελληνική Φιλοσοφική Επιθεώρηση* 18 (2001), 45-57.",
+          "en": "“A new fragment from the poetry of Empedocles”. (International conference, Paris, 26-27 May 2000). *Greek Philosophical Review* 18 (2001), 45-57.",
+          "de": "„Ein neues Fragment aus der Dichtung des Empedokles“. (Internationale Tagung, Paris, 26.-27. Mai 2000). *Griechische Philosophische Rundschau* 18 (2001), 45-57."
+        },
+        {
+          "el": "«Φιλοσοφία της παιδείας στον Ηράκλειτο». Εισήγηση στο Β΄ Διεθνές Συνέδριο Φιλοσοφίας, Πανεπιστήμιο Κύπρου, Λευκωσία, 5-7 Απριλίου 2001.",
+          "en": "“Philosophy of education in Heraclitus”. Paper at the 2nd International Philosophy Conference, University of Cyprus, Nicosia, 5-7 April 2001.",
+          "de": "„Bildungsphilosophie bei Heraklit“. Vortrag auf der 2. Internationalen Philosophiekonferenz, Universität Zypern, Nikosia, 5.-7. April 2001."
+        },
+        {
+          "el": "Βιβλιοκρισία: Κωνσταντίνος Π. Ρωμανός, *Οικείωσις*, Εκδόσεις Παραφερνάλια – Τυπωθήτω, Αθήνα 2001. Εφημερίδα *Το Βήμα*, 29/7/2001, «Το Άλλο Βήμα», σελ. 37.",
+          "en": "Review: Konstantinos P. Romanos, *Oikeiosis*, Parafernalia – Typothito, Athens 2001. Newspaper *To Vima*, 29 July 2001, “To Allo Vima”, p. 37.",
+          "de": "Rezension: Konstantinos P. Romanos, *Oikeiosis*, Parafernalia – Typothito, Athen 2001. Zeitung *To Vima*, 29.7.2001, „To Allo Vima“, S. 37."
+        },
+        {
+          "el": "«Παιδαγωγικές και γνωσιολογικές υποτυπώσεις του Παρμενίδη». *Παιδαγωγικός Λόγος*, τόμος 7, τεύχος 1 (2001), 83-92.",
+          "en": "“Pedagogical and epistemological sketches in Parmenides”. *Pedagogical Discourse*, vol. 7, issue 1 (2001), 83-92.",
+          "de": "„Pädagogische und erkenntnistheoretische Skizzen bei Parmenides“. *Pädagogischer Diskurs*, Bd. 7, Heft 1 (2001), 83-92."
+        }
       ]
     },
     {
       "year": "2002",
       "items": [
-        "«Αληθινά και ψευδή παραμύθια κατά τον Πλάτωνα». Εισήγηση σε Διεθνές Συνέδριο του Παιδαγωγικού Τμήματος Προσχολικής Εκπαίδευσης του Πανεπιστημίου Κρήτης, 18-20/10/2001. Δημοσιεύτηκε στον τόμο: Πανεπιστήμιο Κρήτης, Σχολή Επιστημών Αγωγής, Παιδαγωγικό Τμήμα Π. Ε.: Ψυχοπαιδαγωγική της Προσχολικής Ηλικίας. Ρέθυμνο 2002, τόμος Β΄, σελ. 706-709.",
-        "«Η νιτσεϊκή απόρριψη της αλήθειας». Περιοδικό Ομπρέλα 56 (2002), 24-28.",
-        "Τρία κείμενα για τους Προσωκρατικούς, σε μετάφραση Γιάννη Τζαβάρα: α) Karl Reinhardt: «Η σχέση ανάμεσα στα δύο μέρη του ποιήματος του Παρμενίδη» (1916). β) Uvo Hölscher: «Παράδοξο, παρομοίωση και γνωμικό στον Ηράκλειτο» (1968). γ) Hermann Fränkel: «Ο εμπειρισμός του Ξενοφάνη και η γνωσιολογική του κριτική (απόσπ. Β 34)» (1960). Δημοσιεύτηκαν στους τόμους: Αλέξανδρος-Φοίβος Μουρελάτος (Επιμ.): Οι Προσωκρατικοί. Συλλογή κριτικών δοκιμίων. Εκπαιδευτήρια «Κωστέα-Γείτονα», Παλλήνη Αττικής, 2 τόμοι (2002).",
-        "«Το βέβαιο του θανάτου», στον τόμο: Τα Δοκίμια των Ελλήνων, Εισαγωγή - Τελική Επιλογή Κώστα Ε. Τσιρόπουλου, «Μέγας Αστρολάβος - Ευθύνη», Αθήνα 2002, σελ. 557-559.",
-        "«Αξιώματα διαπαιδαγώγησης του μικρού παιδιού στον Αιμίλιο του Ρουσσώ». Εισήγηση σε συνέδριο του Παιδαγωγικού Τμήματος Προσχολικής Εκπαίδευσης του Πανεπιστημίου Κρήτης, Ρέθυμνο, Οκτώβριος 1999. Δημοσιεύτηκε στο: Ευαγγελία Κούρτη (Επιμ.): Η έρευνα στην προσχολική εκπαίδευση. Τόμος Γ΄. Εκδόσεις Τυπωθήτω – Γιώργος Δαρδανός, Αθήνα 2002, σελ. 217-223."
+        {
+          "el": "«Αληθινά και ψευδή παραμύθια κατά τον Πλάτωνα». Στον τόμο: *Ψυχοπαιδαγωγική της Προσχολικής Ηλικίας*, Πανεπιστήμιο Κρήτης, Ρέθυμνο 2002, τόμος Β΄, 706-709.",
+          "en": "“True and false tales according to Plato”. In: *Psychopedagogy of the Pre-school Age*, University of Crete, Rethymno 2002, vol. II, 706-709.",
+          "de": "„Wahre und falsche Märchen nach Platon“. In: *Psychopädagogik des Vorschulalters*, Universität Kreta, Rethymno 2002, Bd. II, 706-709."
+        },
+        {
+          "el": "«Η νιτσεϊκή απόρριψη της αλήθειας». *Ομπρέλα* 56 (2002), 24-28.",
+          "en": "“The Nietzschean rejection of truth”. *Ombrela* 56 (2002), 24-28.",
+          "de": "„Die nietzscheanische Ablehnung der Wahrheit“. *Ombrela* 56 (2002), 24-28."
+        },
+        {
+          "el": "Τρία κείμενα για τους Προσωκρατικούς, σε μετάφραση Γιάννη Τζαβάρα (Karl Reinhardt, Uvo Hölscher, Hermann Fränkel). Στον τόμο: Α.-Φ. Μουρελάτος (επιμ.), *Οι Προσωκρατικοί. Συλλογή κριτικών δοκιμίων*, Παλλήνη 2002.",
+          "en": "Three texts on the Presocratics, translated by Giannis Tzavaras (Karl Reinhardt, Uvo Hölscher, Hermann Fränkel). In: A.-Ph. Mourelatos (ed.), *The Presocratics. A collection of critical essays*, Pallini 2002.",
+          "de": "Drei Texte über die Vorsokratiker, übersetzt von Giannis Tzavaras (Karl Reinhardt, Uvo Hölscher, Hermann Fränkel). In: A.-Ph. Mourelatos (Hg.), *Die Vorsokratiker. Eine Sammlung kritischer Essays*, Pallini 2002."
+        },
+        {
+          "el": "«Το βέβαιο του θανάτου», στον τόμο: *Τα Δοκίμια των Ελλήνων*, επιμ. Κώστα Ε. Τσιρόπουλου, «Μέγας Αστρολάβος – Ευθύνη», Αθήνα 2002, 557-559.",
+          "en": "“The certainty of death”, in: *The Essays of the Greeks*, ed. Kostas E. Tsiropoulos, “Megas Astrolavos – Efthyni”, Athens 2002, 557-559.",
+          "de": "„Die Gewissheit des Todes“, in: *Die Essays der Griechen*, hg. von Kostas E. Tsiropoulos, „Megas Astrolavos – Efthyni“, Athen 2002, 557-559."
+        },
+        {
+          "el": "«Αξιώματα διαπαιδαγώγησης του μικρού παιδιού στον Αιμίλιο του Ρουσσώ». Στον τόμο: Ευαγγελία Κούρτη (επιμ.), *Η έρευνα στην προσχολική εκπαίδευση*, τόμος Γ΄, Τυπωθήτω – Γ. Δαρδανός, Αθήνα 2002, 217-223.",
+          "en": "“Principles of educating the young child in Rousseau’s Émile”. In: Evangelia Kourti (ed.), *Research in pre-school education*, vol. III, Typothito – G. Dardanos, Athens 2002, 217-223.",
+          "de": "„Grundsätze der Erziehung des kleinen Kindes in Rousseaus Émile“. In: Evangelia Kourti (Hg.), *Forschung in der Vorschulerziehung*, Bd. III, Typothito – G. Dardanos, Athen 2002, 217-223."
+        }
       ]
     },
     {
       "year": "2003",
       "items": [
-        "«Μελετώντας την ανάγνωση». Ευθύνη 376 (2003), 179-181.",
-        "Γιάννης Τζαβάρας - Πέτρος Αναστασιάδης (Επιμ.): Αφιέρωμα με θέμα: «Φιλοσοφία της παιδείας και εκπαιδευτική πρακτική». Περιοδικό Επιστήμες Αγωγής, Θεματικό Τεύχος 4 (2003). Σ’ αυτό το τεύχος: «Εισαγωγή των επιμελητών», σελ. 7-9.",
-        "«Η κριτική λειτουργία της Φιλοσοφίας της εκπαίδευσης». Επιστήμες Αγωγής, Θεματικό Τεύχος 4 (2003), σελ. 11-18."
+        {
+          "el": "«Μελετώντας την ανάγνωση». *Ευθύνη* 376 (2003), 179-181.",
+          "en": "“Studying reading”. *Efthyni* 376 (2003), 179-181.",
+          "de": "„Das Lesen studieren“. *Efthyni* 376 (2003), 179-181."
+        },
+        {
+          "el": "Γιάννης Τζαβάρας – Πέτρος Αναστασιάδης (επιμ.): Αφιέρωμα «Φιλοσοφία της παιδείας και εκπαιδευτική πρακτική». *Επιστήμες Αγωγής*, Θεματικό Τεύχος 4 (2003). Με το κείμενο «Εισαγωγή των επιμελητών», 7-9.",
+          "en": "Giannis Tzavaras – Petros Anastasiadis (eds.): Tribute issue “Philosophy of education and educational practice”. *Education Sciences*, Thematic Issue 4 (2003). With the text “Editors’ introduction”, 7-9.",
+          "de": "Giannis Tzavaras – Petros Anastasiadis (Hg.): Themenheft „Bildungsphilosophie und pädagogische Praxis“. *Erziehungswissenschaften*, Themenheft 4 (2003). Mit dem Text „Einführung der Herausgeber“, 7-9."
+        },
+        {
+          "el": "«Η κριτική λειτουργία της Φιλοσοφίας της εκπαίδευσης». *Επιστήμες Αγωγής*, Θεματικό Τεύχος 4 (2003), 11-18.",
+          "en": "“The critical function of the Philosophy of Education”. *Education Sciences*, Thematic Issue 4 (2003), 11-18.",
+          "de": "„Die kritische Funktion der Bildungsphilosophie“. *Erziehungswissenschaften*, Themenheft 4 (2003), 11-18."
+        }
       ]
     },
     {
       "year": "2004",
       "items": [
-        "«Η αγωνία ως μέσο ηθικο-θρησκευτικής διαπαιδαγώγησης κατά τον Κίρκεγκωρ». Εισήγηση σε διεθνές συνέδριο του Παιδαγωγικού Τμήματος Προσχολικής Εκπαίδευσης του Πανεπιστημίου Κρήτης. Στον τόμο: «Ηθική και θρησκευτική ανάπτυξη και αγωγή του παιδιού», Ρέθυμνο 2004, σελ. 584-588.",
-        "«Η νιτσεϊκή απόρριψη της ηθικής». Στον τόμο: Φιλοσοφίας αγώνισμα. Μελέτες προς τιμήν του καθηγητού Κωνσταντίνου Βουδούρη. Εκδόσεις Ιωνία, Αθήνα 2004, σελ. 581-591.",
-        "«Η διδασκαλία της φιλοσοφίας με τη μέθοδο project». Φιλοσοφία και Παιδεία 33 (2004), 13-16."
+        {
+          "el": "«Η αγωνία ως μέσο ηθικο-θρησκευτικής διαπαιδαγώγησης κατά τον Κίρκεγκωρ». Στον τόμο: *Ηθική και θρησκευτική ανάπτυξη και αγωγή του παιδιού*, Πανεπιστήμιο Κρήτης, Ρέθυμνο 2004, 584-588.",
+          "en": "“Anxiety as a means of moral-religious education according to Kierkegaard”. In: *Moral and religious development and education of the child*, University of Crete, Rethymno 2004, 584-588.",
+          "de": "„Die Angst als Mittel der moralisch-religiösen Erziehung bei Kierkegaard“. In: *Moralische und religiöse Entwicklung und Erziehung des Kindes*, Universität Kreta, Rethymno 2004, 584-588."
+        },
+        {
+          "el": "«Η νιτσεϊκή απόρριψη της ηθικής». Στον τόμο: *Φιλοσοφίας αγώνισμα. Μελέτες προς τιμήν του καθηγητού Κωνσταντίνου Βουδούρη*. Εκδόσεις Ιωνία, Αθήνα 2004, 581-591.",
+          "en": "“The Nietzschean rejection of morality”. In: *The exercise of philosophy. Studies in honour of Professor Konstantinos Boudouris*. Ionia, Athens 2004, 581-591.",
+          "de": "„Die nietzscheanische Ablehnung der Moral“. In: *Die Übung der Philosophie. Studien zu Ehren von Professor Konstantinos Boudouris*. Ionia, Athen 2004, 581-591."
+        },
+        {
+          "el": "«Η διδασκαλία της φιλοσοφίας με τη μέθοδο project». *Φιλοσοφία και Παιδεία* 33 (2004), 13-16.",
+          "en": "“Teaching philosophy with the project method”. *Philosophy and Education* 33 (2004), 13-16.",
+          "de": "„Philosophieunterricht mit der Projektmethode“. *Philosophie und Bildung* 33 (2004), 13-16."
+        }
       ]
     },
     {
       "year": "2005",
       "items": [
-        "Η απαξίωση των αξιών: Νίτσε και Χάιντεγγερ. Εκδόσεις Ίνδικτος, Αθήνα 2005, 237 σ.",
-        "“Heideggers Hauptwerk in Neugriechisch”. In: Studia Phaenomenologica 5 (2005), “Translating Heidegger’s Sein und Zeit”, pp. 119-127."
+        {
+          "el": "*Η απαξίωση των αξιών: Νίτσε και Χάιντεγγερ*. Εκδόσεις Ίνδικτος, Αθήνα 2005, 237 σ.",
+          "en": "*The Demerit of Values: Nietzsche and Heidegger*. Indictos, Athens 2005, 237 pp.",
+          "de": "*Die Entwertung der Werte: Nietzsche und Heidegger*. Indiktos, Athen 2005, 237 S."
+        },
+        {
+          "el": "“Heideggers Hauptwerk in Neugriechisch”. *Studia Phaenomenologica* 5 (2005), 119-127.",
+          "en": "“Heideggers Hauptwerk in Neugriechisch”. *Studia Phaenomenologica* 5 (2005), 119-127.",
+          "de": "„Heideggers Hauptwerk in Neugriechisch“. *Studia Phaenomenologica* 5 (2005), 119-127."
+        }
       ]
     },
     {
       "year": "2006",
       "items": [
-        "Εγχειρίδιο φιλοσοφίας. Διδασκαλία της φιλοσοφίας με διαλογική κι ερευνητική μέθοδο. Γ΄ έκδοση ριζικά ανανεωμένη. «Τυπωθήτω - Γιώργος Δαρδανός», Αθήνα 2006, 319 σελ.",
-        "Martin Heidegger: Η τέχνη και ο χώρος. Εισαγωγή – Μετάφραση – Σχόλια Γιάννης Τζαβάρας. Εκδόσεις Ίνδικτος, Αθήνα 2006, 64 σ."
+        {
+          "el": "*Εγχειρίδιο φιλοσοφίας. Διδασκαλία της φιλοσοφίας με διαλογική κι ερευνητική μέθοδο*. Γ΄ έκδοση ριζικά ανανεωμένη. Τυπωθήτω – Γ. Δαρδανός, Αθήνα 2006, 319 σ.",
+          "en": "*A Companion to Philosophy. Teaching philosophy with a dialogical and inquiry-based method*. 3rd, radically revised edition. Typothito – G. Dardanos, Athens 2006, 319 pp.",
+          "de": "*Handbuch der Philosophie. Philosophieunterricht mit dialogischer und forschender Methode*. 3., grundlegend überarbeitete Auflage. Typothito – G. Dardanos, Athen 2006, 319 S."
+        },
+        {
+          "el": "Martin Heidegger: *Η τέχνη και ο χώρος*. Εισαγωγή – Μετάφραση – Σχόλια Γιάννης Τζαβάρας. Εκδόσεις Ίνδικτος, Αθήνα 2006, 64 σ.",
+          "en": "Martin Heidegger: *Art and Space*. Introduction – Translation – Commentary by Giannis Tzavaras. Indictos, Athens 2006, 64 pp.",
+          "de": "Martin Heidegger: *Die Kunst und der Raum*. Einführung – Übersetzung – Kommentar von Giannis Tzavaras. Indiktos, Athen 2006, 64 S."
+        }
       ]
     },
     {
       "year": "2007",
       "items": [
-        "Ανθολόγιο Αισθητικής. Εκδόσεις Gutenberg, Αθήνα 2007, 175 σ.",
-        "Θεολογία και Φιλοσοφία κατά τον πρώιμο Χάιντεγγερ. Εκδόσεις Ίνδικτος, Αθήνα 2007, 125 σ.",
-        "«Αισθητική αγωγή μέσω φιλοσοφικών κειμένων». Φιλοσοφία και Παιδεία 41 (2007), σελ. 16-18."
+        {
+          "el": "*Ανθολόγιο Αισθητικής*. Εκδόσεις Gutenberg, Αθήνα 2007, 175 σ.",
+          "en": "*An Anthology of Aesthetics*. Gutenberg, Athens 2007, 175 pp.",
+          "de": "*Anthologie der Ästhetik*. Gutenberg, Athen 2007, 175 S."
+        },
+        {
+          "el": "*Θεολογία και Φιλοσοφία κατά τον πρώιμο Χάιντεγγερ*. Εκδόσεις Ίνδικτος, Αθήνα 2007, 125 σ.",
+          "en": "*Theology and Philosophy according to the Early Heidegger*. Indictos, Athens 2007, 125 pp.",
+          "de": "*Theologie und Philosophie beim frühen Heidegger*. Indiktos, Athen 2007, 125 S."
+        },
+        {
+          "el": "«Αισθητική αγωγή μέσω φιλοσοφικών κειμένων». *Φιλοσοφία και Παιδεία* 41 (2007), 16-18.",
+          "en": "“Aesthetic education through philosophical texts”. *Philosophy and Education* 41 (2007), 16-18.",
+          "de": "„Ästhetische Erziehung durch philosophische Texte“. *Philosophie und Bildung* 41 (2007), 16-18."
+        }
       ]
     },
     {
       "year": "2008",
       "items": [
-        "«Ο συγκαιρινός και ο κατοπινός μαθητής κατά τον Κίρκεγκωρ». Φιλοσοφία και Παιδεία 49-50 (2008), σελ. 4-6."
+        {
+          "el": "«Ο συγκαιρινός και ο κατοπινός μαθητής κατά τον Κίρκεγκωρ». *Φιλοσοφία και Παιδεία* 49-50 (2008), 4-6.",
+          "en": "“The contemporary and the later disciple according to Kierkegaard”. *Philosophy and Education* 49-50 (2008), 4-6.",
+          "de": "„Der zeitgenössische und der spätere Schüler bei Kierkegaard“. *Philosophie und Bildung* 49-50 (2008), 4-6."
+        }
       ]
     },
     {
       "year": "2009",
       "items": [
-        "Εισαγωγή στην Οντολογία. Εγχειρίδιο για διδασκαλία και έρευνα. Εκδόσεις Gutenberg, Αθήνα 2009, 186 σ.",
-        "Joanna Haynes: Τα παιδιά ως φιλόσοφοι. Μάθηση μέσω έρευνας και διαλόγου στην πρωτοβάθμια εκπαίδευση. Πρόλογος – Μετάφραση Γιάννης Τζαβάρας. Εκδόσεις Μεταίχμιο, Αθήνα 2009, 268 σ."
+        {
+          "el": "*Εισαγωγή στην Οντολογία. Εγχειρίδιο για διδασκαλία και έρευνα*. Εκδόσεις Gutenberg, Αθήνα 2009, 186 σ.",
+          "en": "*An Introduction to Ontology. A handbook for teaching and research*. Gutenberg, Athens 2009, 186 pp.",
+          "de": "*Einführung in die Ontologie. Ein Handbuch für Lehre und Forschung*. Gutenberg, Athen 2009, 186 S."
+        },
+        {
+          "el": "Joanna Haynes: *Τα παιδιά ως φιλόσοφοι*. Πρόλογος – Μετάφραση Γιάννης Τζαβάρας. Εκδόσεις Μεταίχμιο, Αθήνα 2009, 268 σ.",
+          "en": "Joanna Haynes: *Children as Philosophers*. Preface – Translation by Giannis Tzavaras. Metaichmio, Athens 2009, 268 pp.",
+          "de": "Joanna Haynes: *Kinder als Philosophen*. Vorwort – Übersetzung von Giannis Tzavaras. Metaichmio, Athen 2009, 268 S."
+        }
       ]
     },
     {
       "year": "2010",
       "items": [
-        "«Η ύπαρξη του χρόνου κατά τον Αριστοτέλη, τον Καντ και τον Χάιντεγγερ». Φιλοσοφία και Παιδεία 55 (2010), 4-6.",
-        "«Μεταφράζοντας το Dasein του Martin Heidegger». Στο: Ευβουλία. Αφιέρωμα στον ομότιμο καθηγητή Βασίλειο Α. Κύρκο. Επιμέλεια Κωνσταντίνος Θ. Πέτσιος, Ιωάννινα 2010, σελ. 255-262."
+        {
+          "el": "«Η ύπαρξη του χρόνου κατά τον Αριστοτέλη, τον Καντ και τον Χάιντεγγερ». *Φιλοσοφία και Παιδεία* 55 (2010), 4-6.",
+          "en": "“The existence of time according to Aristotle, Kant and Heidegger”. *Philosophy and Education* 55 (2010), 4-6.",
+          "de": "„Die Existenz der Zeit nach Aristoteles, Kant und Heidegger“. *Philosophie und Bildung* 55 (2010), 4-6."
+        },
+        {
+          "el": "«Μεταφράζοντας το Dasein του Martin Heidegger». Στο: *Ευβουλία. Αφιέρωμα στον ομότιμο καθηγητή Βασίλειο Α. Κύρκο* (επιμ. Κ. Θ. Πέτσιος), Ιωάννινα 2010, 255-262.",
+          "en": "“Translating Martin Heidegger’s Dasein”. In: *Euboulia. A tribute to Professor Emeritus Vasileios A. Kyrkos* (ed. K. Th. Petsios), Ioannina 2010, 255-262.",
+          "de": "„Das Dasein Martin Heideggers übersetzen“. In: *Euboulia. Eine Hommage an den emeritierten Professor Vasileios A. Kyrkos* (Hg. K. Th. Petsios), Ioannina 2010, 255-262."
+        }
       ]
     },
     {
       "year": "2011",
       "items": [
-        "Φιλοσοφικός διάλογος μέσα στη σχολική τάξη. Πρακτικά ημερίδας (Ρέθυμνο, 22-10-2010). Εισαγωγή-Επιμ. Γιάννη Τζαβάρα. Δημοσιεύτηκε ηλεκτρονικά στα «Φιλοσοφικά Δημοσιεύματα 2011». Δεύτερη έκδοση, Διά-ΛΟΓΟΣ 2 (2012), 181-339.",
-        "«Εισαγωγή σε μια ημερίδα». Στα Πρακτικά της ημερίδας με θέμα: Φιλοσοφικός διάλογος μέσα στη σχολική τάξη (Ρέθυμνο, 22-10-2010), σελ. 1-2.",
-        "«Η στοχαστική διαλογική δραστηριότητα ως έξοχη ευκαιρία για εκδημοκρατισμό του σχολικού αναλυτικού προγράμματος». Δημοσιεύτηκε ηλεκτρονικά στα Πρακτικά της ημερίδας (Ρέθυμνο, 22-10-2010), σελ. 1-8. Αναδημοσιεύτηκε στο περιοδικό Διά-ΛΟΓΟΣ 2 (2012), σελ. 294-304.",
-        "Οι Σημειώσεις του Νίτσε για τον ‘Ζαρατούστρα’ (Ιούλιος 1882 – Φεβρουάριος 1883). Δημοσιεύτηκε ηλεκτρονικά στα «Φιλοσοφικά Δημοσιεύματα 2011», 137 σ.",
-        "«Η διάχυση διακαλλιτεχνικής γνώσης μέσω ιστοσελίδας: Γενικές αρχές». Επιστημονική ανακοίνωση στη Διεθνή Ημερίδα: «Προς τη νέα διακαλλιτεχνικότητα και διαπολιτισμικότητα με τη χρήση νέας τεχνολογίας», Πανεπιστήμιο Αιγαίου (Ρόδος, 5-2-2011)."
+        {
+          "el": "*Φιλοσοφικός διάλογος μέσα στη σχολική τάξη. Πρακτικά ημερίδας (Ρέθυμνο, 22-10-2010)*. Εισαγωγή – Επιμέλεια Γιάννη Τζαβάρα. «Φιλοσοφικά Δημοσιεύματα 2011» (β΄ έκδοση: *Διά-ΛΟΓΟΣ* 2 (2012), 181-339).",
+          "en": "*Philosophical dialogue in the classroom. Proceedings of a workshop (Rethymno, 22 October 2010)*. Introduction – Edited by Giannis Tzavaras. “Philosophical Publications 2011” (2nd ed.: *Dia-LOGOS* 2 (2012), 181-339).",
+          "de": "*Philosophischer Dialog im Schulunterricht. Tagungsband (Rethymno, 22. Oktober 2010)*. Einführung – Herausgegeben von Giannis Tzavaras. „Philosophische Veröffentlichungen 2011“ (2. Aufl.: *Dia-LOGOS* 2 (2012), 181-339)."
+        },
+        {
+          "el": "«Εισαγωγή σε μια ημερίδα». Στα Πρακτικά της ημερίδας *Φιλοσοφικός διάλογος μέσα στη σχολική τάξη* (Ρέθυμνο, 22-10-2010), 1-2.",
+          "en": "“Introduction to a workshop”. In the proceedings of the workshop *Philosophical dialogue in the classroom* (Rethymno, 22 October 2010), 1-2.",
+          "de": "„Einführung zu einer Tagung“. In den Akten der Tagung *Philosophischer Dialog im Schulunterricht* (Rethymno, 22.10.2010), 1-2."
+        },
+        {
+          "el": "«Η στοχαστική διαλογική δραστηριότητα ως έξοχη ευκαιρία για εκδημοκρατισμό του σχολικού αναλυτικού προγράμματος». Πρακτικά ημερίδας (Ρέθυμνο, 22-10-2010), 1-8 (αναδημοσίευση: *Διά-ΛΟΓΟΣ* 2 (2012), 294-304).",
+          "en": "“Reflective dialogical activity as an excellent opportunity to democratise the school curriculum”. Workshop proceedings (Rethymno, 22 October 2010), 1-8 (reprinted: *Dia-LOGOS* 2 (2012), 294-304).",
+          "de": "„Die reflexive dialogische Tätigkeit als hervorragende Gelegenheit zur Demokratisierung des Schullehrplans“. Tagungsakten (Rethymno, 22.10.2010), 1-8 (Nachdruck: *Dia-LOGOS* 2 (2012), 294-304)."
+        },
+        {
+          "el": "*Οι Σημειώσεις του Νίτσε για τον ‘Ζαρατούστρα’ (Ιούλιος 1882 – Φεβρουάριος 1883)*. «Φιλοσοφικά Δημοσιεύματα 2011», 137 σ.",
+          "en": "*Nietzsche’s Notes on ‘Zarathustra’ (July 1882 – February 1883)*. “Philosophical Publications 2011”, 137 pp.",
+          "de": "*Nietzsches Notizen zum ‚Zarathustra‘ (Juli 1882 – Februar 1883)*. „Philosophische Veröffentlichungen 2011“, 137 S."
+        },
+        {
+          "el": "«Η διάχυση διακαλλιτεχνικής γνώσης μέσω ιστοσελίδας: Γενικές αρχές». Διεθνής Ημερίδα, Πανεπιστήμιο Αιγαίου (Ρόδος, 5-2-2011).",
+          "en": "“The diffusion of inter-artistic knowledge through a website: General principles”. International workshop, University of the Aegean (Rhodes, 5 February 2011).",
+          "de": "„Die Verbreitung interkünstlerischen Wissens über eine Website: Allgemeine Prinzipien“. Internationale Tagung, Universität der Ägäis (Rhodos, 5.2.2011)."
+        }
       ]
     },
     {
       "year": "2012",
       "items": [
-        "Οι ‘Εισφορές στη Φιλοσοφία’ του Heidegger. Μια προσπάθεια προσέγγισης. Δημοσιεύτηκε ηλεκτρονικά στα «Φιλοσοφικά Δημοσιεύματα 2012», 117 σ. Δεύτερη έκδοση, «Bookstars – Γιωγγαράς», Αθήνα 2013, 176 σ.",
-        "Martin Heidegger: «Μερικές υποδείξεις πάνω σε κεφαλαιώδη ζητήματα του θεολογικού διαλόγου περί ‘Το πρόβλημα ενός μη-αντικειμενοποιητικού σκέπτεσθαι και ομιλείν μέσα στη σημερινή Θεολογία’». Μετάφραση – Σχόλια Γιάννης Τζαβάρας. Δημοσιεύτηκε ηλεκτρονικά στα «Φιλοσοφικά Δημοσιεύματα 2012», 9 σ.",
-        "«Η ανθρώπινη μοίρα κατά τον Heidegger». Φιλοσοφείν 5 (2012), σελ. 188-210.",
-        "«Οι Εισφορές του Χάιντεγγερ και το συμβάν της ιδιοποίησης». Νέα Ευθύνη 14 (2012), σελ. 640-647."
+        {
+          "el": "*Οι ‘Εισφορές στη Φιλοσοφία’ του Heidegger. Μια προσπάθεια προσέγγισης*. «Φιλοσοφικά Δημοσιεύματα 2012», 117 σ. (β΄ έκδοση: Bookstars – Γιωγγαράς, Αθήνα 2013, 176 σ.).",
+          "en": "*Heidegger’s ‘Contributions to Philosophy’. An attempt at an approach*. “Philosophical Publications 2012”, 117 pp. (2nd ed.: Bookstars – Giongaras, Athens 2013, 176 pp.).",
+          "de": "*Heideggers ‚Beiträge zur Philosophie‘. Ein Zugangsversuch*. „Philosophische Veröffentlichungen 2012“, 117 S. (2. Aufl.: Bookstars – Giongaras, Athen 2013, 176 S.)."
+        },
+        {
+          "el": "Martin Heidegger: «Μερικές υποδείξεις πάνω σε κεφαλαιώδη ζητήματα του θεολογικού διαλόγου». Μετάφραση – Σχόλια Γιάννης Τζαβάρας. «Φιλοσοφικά Δημοσιεύματα 2012», 9 σ.",
+          "en": "Martin Heidegger: “Some indications on principal points of the theological conversation”. Translation – Commentary by Giannis Tzavaras. “Philosophical Publications 2012”, 9 pp.",
+          "de": "Martin Heidegger: „Einige Hinweise auf Hauptgesichtspunkte des theologischen Gesprächs“. Übersetzung – Kommentar von Giannis Tzavaras. „Philosophische Veröffentlichungen 2012“, 9 S."
+        },
+        {
+          "el": "«Η ανθρώπινη μοίρα κατά τον Heidegger». *Φιλοσοφείν* 5 (2012), 188-210.",
+          "en": "“Human destiny according to Heidegger”. *Filosofein* 5 (2012), 188-210.",
+          "de": "„Das menschliche Schicksal bei Heidegger“. *Filosofein* 5 (2012), 188-210."
+        },
+        {
+          "el": "«Οι Εισφορές του Χάιντεγγερ και το συμβάν της ιδιοποίησης». *Νέα Ευθύνη* 14 (2012), 640-647.",
+          "en": "“Heidegger’s Contributions and the event of appropriation”. *Nea Efthyni* 14 (2012), 640-647.",
+          "de": "„Heideggers Beiträge und das Ereignis der Aneignung“. *Nea Efthyni* 14 (2012), 640-647."
+        }
       ]
     },
     {
       "year": "2013",
       "items": [
-        "Υπαρξιακό και νοητικό γίγνεσθαι κατά τον Kierkegaard. Δημοσιεύτηκε ηλεκτρονικά στα «Φιλοσοφικά Δημοσιεύματα 2013» και ταυτόχρονα από τις εκδόσεις «Bookstars – Γιωγγαράς», Αθήνα 2013, 181 σ.",
-        "«Πρόλογος» στο βιβλίο της Μελίνας Γ. Μουζάλα: Ζητήματα Γνωσιολογίας, Οντολογίας και Μεταφυσικής στην Φιλοσοφία του Αριστοτέλους (2013), σελ. 13-14.",
-        "«Η τελεολογική αναστολή της ηθικότητας κατά τον Kierkegaard. Μια υπεράσπιση». Φιλοσοφία. Επετηρίς του Κέντρου Ερεύνης της Ελληνικής Φιλοσοφίας της Ακαδημίας Αθηνών 43 (2013), 365-380.",
-        "«Η δημοκρατική εκπαίδευση ως εμπειρία συλλογικής αυτοθέσμισης και αυτοδιαχείρισης». Ανακοίνωση στην επιστημονική διημερίδα: «Η κρίση της δημοκρατίας ως κρίση της δημοκρατικής παιδείας» (Αλεξανδρούπολη, 8-9/11/2013)."
+        {
+          "el": "*Υπαρξιακό και νοητικό γίγνεσθαι κατά τον Kierkegaard*. Bookstars – Γιωγγαράς, Αθήνα 2013, 181 σ. (και «Φιλοσοφικά Δημοσιεύματα 2013»).",
+          "en": "*Existential and intellectual becoming according to Kierkegaard*. Bookstars – Giongaras, Athens 2013, 181 pp. (also “Philosophical Publications 2013”).",
+          "de": "*Existentielles und denkerisches Werden bei Kierkegaard*. Bookstars – Giongaras, Athen 2013, 181 S. (sowie „Philosophische Veröffentlichungen 2013“)."
+        },
+        {
+          "el": "«Πρόλογος» στο βιβλίο της Μελίνας Γ. Μουζάλα: *Ζητήματα Γνωσιολογίας, Οντολογίας και Μεταφυσικής στην Φιλοσοφία του Αριστοτέλους* (2013), 13-14.",
+          "en": "“Preface” to the book by Melina G. Mouzala: *Issues of Epistemology, Ontology and Metaphysics in the Philosophy of Aristotle* (2013), 13-14.",
+          "de": "„Vorwort“ zum Buch von Melina G. Mouzala: *Fragen der Erkenntnistheorie, Ontologie und Metaphysik in der Philosophie des Aristoteles* (2013), 13-14."
+        },
+        {
+          "el": "«Η τελεολογική αναστολή της ηθικότητας κατά τον Kierkegaard. Μια υπεράσπιση». *Φιλοσοφία. Επετηρίς της Ακαδημίας Αθηνών* 43 (2013), 365-380.",
+          "en": "“The teleological suspension of the ethical according to Kierkegaard. A defence”. *Philosophia. Yearbook of the Academy of Athens* 43 (2013), 365-380.",
+          "de": "„Die teleologische Suspension des Sittlichen bei Kierkegaard. Eine Verteidigung“. *Philosophia. Jahrbuch der Akademie von Athen* 43 (2013), 365-380."
+        },
+        {
+          "el": "«Η δημοκρατική εκπαίδευση ως εμπειρία συλλογικής αυτοθέσμισης και αυτοδιαχείρισης». Επιστημονική διημερίδα (Αλεξανδρούπολη, 8-9/11/2013).",
+          "en": "“Democratic education as an experience of collective self-institution and self-management”. Academic symposium (Alexandroupoli, 8-9 November 2013).",
+          "de": "„Demokratische Bildung als Erfahrung kollektiver Selbstinstituierung und Selbstverwaltung“. Wissenschaftliche Tagung (Alexandroupoli, 8.-9.11.2013)."
+        }
       ]
     },
     {
@@ -352,11 +744,24 @@
         {
           "milestone": true,
           "el": "Ο Τζαβάρας υποβάλλει την παραίτησή του από το Πανεπιστήμιο Κρήτης, αφού συμπλήρωσε 35 χρόνια υπηρεσίας.",
-          "en": "Tzavaras submits his resignation from the University of Crete, having completed 35 years of service."
+          "en": "Tzavaras submits his resignation from the University of Crete, having completed 35 years of service.",
+          "de": "Tzavaras reicht seinen Rücktritt von der Universität Kreta ein, nachdem er 35 Dienstjahre vollendet hat."
         },
-        "«Μεταφράζοντας την Έννοια της αγωνίας του Κίρκεγκωρ». Φρέαρ 5 (2014), 66-68.",
-        "«Ελληνόγλωσση βιβλιογραφία Σαίρεν Κίρκεγκωρ». Φρέαρ 5 (2014), 84-87.",
-        "«Κράτος και εκπαίδευση κατά τον πρώιμο Νίτσε». Φιλοσοφία και Παιδεία 66-67 (2014), 4-7."
+        {
+          "el": "«Μεταφράζοντας την Έννοια της αγωνίας του Κίρκεγκωρ». *Φρέαρ* 5 (2014), 66-68.",
+          "en": "“Translating Kierkegaard’s Concept of Anxiety”. *Frear* 5 (2014), 66-68.",
+          "de": "„Kierkegaards Begriff Angst übersetzen“. *Frear* 5 (2014), 66-68."
+        },
+        {
+          "el": "«Ελληνόγλωσση βιβλιογραφία Σαίρεν Κίρκεγκωρ». *Φρέαρ* 5 (2014), 84-87.",
+          "en": "“Greek-language bibliography of Søren Kierkegaard”. *Frear* 5 (2014), 84-87.",
+          "de": "„Griechischsprachige Bibliografie zu Søren Kierkegaard“. *Frear* 5 (2014), 84-87."
+        },
+        {
+          "el": "«Κράτος και εκπαίδευση κατά τον πρώιμο Νίτσε». *Φιλοσοφία και Παιδεία* 66-67 (2014), 4-7.",
+          "en": "“State and education in the early Nietzsche”. *Philosophy and Education* 66-67 (2014), 4-7.",
+          "de": "„Staat und Bildung beim frühen Nietzsche“. *Philosophie und Bildung* 66-67 (2014), 4-7."
+        }
       ]
     },
     {
@@ -365,86 +770,209 @@
         {
           "milestone": true,
           "el": "Ο Τζαβάρας ανακηρύσσεται ομότιμος καθηγητής του Πανεπιστημίου Κρήτης.",
-          "en": "Tzavaras is named Professor Emeritus of the University of Crete."
+          "en": "Tzavaras is named Professor Emeritus of the University of Crete.",
+          "de": "Tzavaras wird zum emeritierten Professor der Universität Kreta ernannt."
         },
-        "«Ο σφαιρικός θεός του Εμπεδοκλή». «Φιλοσοφικά Δημοσιεύματα 2015», σελίδες 1-18.",
-        "«Επαναπατρισμός κατά τον Hölderlin και τον Heidegger». Substantia Philosophica 1 (2015), 74-111.",
-        "«Η διάκριση του Χάιντεγγερ μεταξύ πρόχειρων και παρευρισκόμενων όντων» (σε μετάφραση του συγγραφέα). «Φιλοσοφικά Δημοσιεύματα 2015», σελίδες 1-7."
+        {
+          "el": "«Ο σφαιρικός θεός του Εμπεδοκλή». «Φιλοσοφικά Δημοσιεύματα 2015», 1-18.",
+          "en": "“The spherical god of Empedocles”. “Philosophical Publications 2015”, 1-18.",
+          "de": "„Der kugelförmige Gott des Empedokles“. „Philosophische Veröffentlichungen 2015“, 1-18."
+        },
+        {
+          "el": "«Επαναπατρισμός κατά τον Hölderlin και τον Heidegger». *Substantia Philosophica* 1 (2015), 74-111.",
+          "en": "“Repatriation according to Hölderlin and Heidegger”. *Substantia Philosophica* 1 (2015), 74-111.",
+          "de": "„Die Heimkehr bei Hölderlin und Heidegger“. *Substantia Philosophica* 1 (2015), 74-111."
+        },
+        {
+          "el": "«Η διάκριση του Χάιντεγγερ μεταξύ πρόχειρων και παρευρισκόμενων όντων» (μετάφραση του συγγραφέα). «Φιλοσοφικά Δημοσιεύματα 2015», 1-7.",
+          "en": "“Heidegger’s distinction between the ready-to-hand and the present-at-hand” (translated by the author). “Philosophical Publications 2015”, 1-7.",
+          "de": "„Heideggers Unterscheidung zwischen Zuhandenem und Vorhandenem“ (Übersetzung des Verfassers). „Philosophische Veröffentlichungen 2015“, 1-7."
+        }
       ]
     },
     {
       "year": "2016",
       "items": [
-        "Σχόλια στο ποίημα του Παρμενίδη. Δημοσιεύτηκε ηλεκτρονικά στα «Φιλοσοφικά Δημοσιεύματα 2016», σελίδες 1-126.",
-        "Friedrich Nietzsche: Οι σημειώσεις για τον Ζαρατούστρα. Εισαγωγή - Μετάφραση - Σχόλια Γιάννης Τζαβάρας. «Παπαζήση», Αθήνα 2016, 262 σ.",
-        "«Νεότερες περιπέτειες του νόμου της αιτιότητας». Φιλοσοφείν: επιστήμη, εύνοια, παρρησία 14 (2016), 399-409.",
-        "«Πρόλογος» στο βιβλίο του Βασίλειου Δημόπουλου: Ο Martin Heidegger και η παιδαγωγία του θανάτου. Εκδόσεις Μπατσιούλας, Αθήνα 2016, σελ. 11-14.",
-        "«Προλεγόμενα σε κάθε μελλοντική Σιγητική ως επιστήμη». Φιλοσοφία. Επετηρίς του Κέντρου Ερεύνης της Ελληνικής Φιλοσοφίας της Ακαδημίας Αθηνών 46 (2016), 228-240."
+        {
+          "el": "*Σχόλια στο ποίημα του Παρμενίδη*. «Φιλοσοφικά Δημοσιεύματα 2016», 1-126.",
+          "en": "*Commentary on the poem of Parmenides*. “Philosophical Publications 2016”, 1-126.",
+          "de": "*Kommentar zum Gedicht des Parmenides*. „Philosophische Veröffentlichungen 2016“, 1-126."
+        },
+        {
+          "el": "Friedrich Nietzsche: *Οι σημειώσεις για τον Ζαρατούστρα*. Εισαγωγή – Μετάφραση – Σχόλια Γιάννης Τζαβάρας. Εκδόσεις Παπαζήση, Αθήνα 2016, 262 σ.",
+          "en": "Friedrich Nietzsche: *The Notes for Zarathustra*. Introduction – Translation – Commentary by Giannis Tzavaras. Papazisis, Athens 2016, 262 pp.",
+          "de": "Friedrich Nietzsche: *Die Notizen zum Zarathustra*. Einführung – Übersetzung – Kommentar von Giannis Tzavaras. Papazisis, Athen 2016, 262 S."
+        },
+        {
+          "el": "«Νεότερες περιπέτειες του νόμου της αιτιότητας». *Φιλοσοφείν* 14 (2016), 399-409.",
+          "en": "“More recent adventures of the law of causality”. *Filosofein* 14 (2016), 399-409.",
+          "de": "„Neuere Abenteuer des Kausalgesetzes“. *Filosofein* 14 (2016), 399-409."
+        },
+        {
+          "el": "«Πρόλογος» στο βιβλίο του Βασίλειου Δημόπουλου: *Ο Martin Heidegger και η παιδαγωγία του θανάτου*. Εκδόσεις Μπατσιούλας, Αθήνα 2016, 11-14.",
+          "en": "“Preface” to the book by Vasileios Dimopoulos: *Martin Heidegger and the pedagogy of death*. Batsioulas, Athens 2016, 11-14.",
+          "de": "„Vorwort“ zum Buch von Vasileios Dimopoulos: *Martin Heidegger und die Pädagogik des Todes*. Batsioulas, Athen 2016, 11-14."
+        },
+        {
+          "el": "«Προλεγόμενα σε κάθε μελλοντική Σιγητική ως επιστήμη». *Φιλοσοφία. Επετηρίς της Ακαδημίας Αθηνών* 46 (2016), 228-240.",
+          "en": "“Prolegomena to any future Sigetics as a science”. *Philosophia. Yearbook of the Academy of Athens* 46 (2016), 228-240.",
+          "de": "„Prolegomena zu einer jeden künftigen Sigetik als Wissenschaft“. *Philosophia. Jahrbuch der Akademie von Athen* 46 (2016), 228-240."
+        }
       ]
     },
     {
       "year": "2017",
       "items": [
-        "Στοχασμός και ποίηση: Χάιντεγγερ και Χαίλντερλιν. Εκδόσεις Bookstars, Αθήνα 2017, 143 σ.",
-        "«Εμπειρία θανάτου κατά τον Ρίλκε». Φιλοσοφείν: επιστήμη, εύνοια, παρρησία 15 (Ιανουάριος 2017), 355-374.",
-        "Εμπεδοκλής ο Ακραγαντίνος: Άπαντα τα ευρισκόμενα. Δίγλωσση έκδοση. Εισαγωγή - Μετάφραση - Σχόλια Γιάννης Τζαβάρας. «Δωδώνη», Αθήνα 2017, 264 σελ."
+        {
+          "el": "*Στοχασμός και ποίηση: Χάιντεγγερ και Χαίλντερλιν*. Εκδόσεις Bookstars, Αθήνα 2017, 143 σ.",
+          "en": "*Thought and Poetry: Heidegger and Hölderlin*. Bookstars, Athens 2017, 143 pp.",
+          "de": "*Denken und Dichten: Heidegger und Hölderlin*. Bookstars, Athen 2017, 143 S."
+        },
+        {
+          "el": "«Εμπειρία θανάτου κατά τον Ρίλκε». *Φιλοσοφείν* 15 (Ιανουάριος 2017), 355-374.",
+          "en": "“The experience of death according to Rilke”. *Filosofein* 15 (January 2017), 355-374.",
+          "de": "„Die Erfahrung des Todes bei Rilke“. *Filosofein* 15 (Januar 2017), 355-374."
+        },
+        {
+          "el": "*Εμπεδοκλής ο Ακραγαντίνος: Άπαντα τα ευρισκόμενα*. Δίγλωσση έκδοση. Εισαγωγή – Μετάφραση – Σχόλια Γιάννης Τζαβάρας. Εκδόσεις Δωδώνη, Αθήνα 2017, 264 σ.",
+          "en": "*Empedocles of Acragas: The complete extant works*. Bilingual edition. Introduction – Translation – Commentary by Giannis Tzavaras. Dodoni, Athens 2017, 264 pp.",
+          "de": "*Empedokles von Akragas: Sämtliche erhaltene Werke*. Zweisprachige Ausgabe. Einführung – Übersetzung – Kommentar von Giannis Tzavaras. Dodoni, Athen 2017, 264 S."
+        }
       ]
     },
     {
       "year": "2018",
       "items": [
-        "«Σαίρεν Κίρκεγκωρ, ένας αδιανόητος διανοητής». Εφημερίδα «Ελευθερία» (Λάρισα, 25/3/2018).",
-        "«Το ηρακλείτειο εν πάντα κατά τον Heidegger». Δημοσιεύτηκε στον τόμο: Θέματα Οντολογίας - Μεταφυσικής, Φιλοσοφίας των Μαθηματικών και Λογικής. Τιμητικός τόμος in memoriam Δημητρίου Δ. Μούκανου. Επιμέλεια Μελίνα Γ. Μουζάλα. «Gutenberg», Αθήνα 2018, 25-51.",
-        "«Ο χρόνος κατά τον Αίαντα του Σοφοκλή». Φιλοσοφείν: επιστήμη, εύνοια, παρρησία 18 (Ιούνιος 2018), 227-238.",
-        "«Ο δικός μου θάνατος κατά τον Ρίλκε». Διά-ΛΟΓΟΣ 8 (2018), 186-201."
+        {
+          "el": "«Σαίρεν Κίρκεγκωρ, ένας αδιανόητος διανοητής». Εφημερίδα *Ελευθερία* (Λάρισα, 25/3/2018).",
+          "en": "“Søren Kierkegaard, an inconceivable thinker”. Newspaper *Eleftheria* (Larisa, 25 March 2018).",
+          "de": "„Søren Kierkegaard, ein undenkbarer Denker“. Zeitung *Eleftheria* (Larisa, 25.3.2018)."
+        },
+        {
+          "el": "«Το ηρακλείτειο εν πάντα κατά τον Heidegger». Στον τόμο: *Θέματα Οντολογίας – Μεταφυσικής… in memoriam Δημητρίου Δ. Μούκανου* (επιμ. Μ. Γ. Μουζάλα). Gutenberg, Αθήνα 2018, 25-51.",
+          "en": "“The Heraclitean ‘one-all’ according to Heidegger”. In: *Themes of Ontology – Metaphysics… in memoriam Dimitrios D. Moukanos* (ed. M. G. Mouzala). Gutenberg, Athens 2018, 25-51.",
+          "de": "„Das heraklitische ‚Eins-Alles‘ bei Heidegger“. In: *Themen der Ontologie – Metaphysik… in memoriam Dimitrios D. Moukanos* (Hg. M. G. Mouzala). Gutenberg, Athen 2018, 25-51."
+        },
+        {
+          "el": "«Ο χρόνος κατά τον Αίαντα του Σοφοκλή». *Φιλοσοφείν* 18 (Ιούνιος 2018), 227-238.",
+          "en": "“Time according to Sophocles’ Ajax”. *Filosofein* 18 (June 2018), 227-238.",
+          "de": "„Die Zeit nach dem Aias des Sophokles“. *Filosofein* 18 (Juni 2018), 227-238."
+        },
+        {
+          "el": "«Ο δικός μου θάνατος κατά τον Ρίλκε». *Διά-ΛΟΓΟΣ* 8 (2018), 186-201.",
+          "en": "“My own death according to Rilke”. *Dia-LOGOS* 8 (2018), 186-201.",
+          "de": "„Mein eigener Tod bei Rilke“. *Dia-LOGOS* 8 (2018), 186-201."
+        }
       ]
     },
     {
       "year": "2019",
       "items": [
-        "Όμηρος και Ρίλκε περί θανάτου. Ερμηνευτικά δοκίμια. Εκδόσεις Δωδώνη, Αθήνα 2019, 224 σελ.",
-        "«Η ουσία της σύγχρονης τέχνης κατά τον Heidegger». Ελληνική Φιλοσοφική Επιθεώρηση 108 (2019), 210-225."
+        {
+          "el": "*Όμηρος και Ρίλκε περί θανάτου. Ερμηνευτικά δοκίμια*. Εκδόσεις Δωδώνη, Αθήνα 2019, 224 σ.",
+          "en": "*Homer and Rilke on death. Interpretive essays*. Dodoni, Athens 2019, 224 pp.",
+          "de": "*Homer und Rilke über den Tod. Interpretierende Essays*. Dodoni, Athen 2019, 224 S."
+        },
+        {
+          "el": "«Η ουσία της σύγχρονης τέχνης κατά τον Heidegger». *Ελληνική Φιλοσοφική Επιθεώρηση* 108 (2019), 210-225.",
+          "en": "“The essence of modern art according to Heidegger”. *Greek Philosophical Review* 108 (2019), 210-225.",
+          "de": "„Das Wesen der modernen Kunst bei Heidegger“. *Griechische Philosophische Rundschau* 108 (2019), 210-225."
+        }
       ]
     },
     {
       "year": "2020",
       "items": [
-        "Ράινερ Μαρία Ρίλκε: Επίλεκτα ποιήματα. Εκδόσεις bookstars, Αθήνα 2020, 179 σελ."
+        {
+          "el": "Ράινερ Μαρία Ρίλκε: *Επίλεκτα ποιήματα*. Μετάφραση – Ερμηνευτικά Σχόλια Γιάννης Τζαβάρας. Εκδόσεις Bookstars, Αθήνα 2020, 179 σ.",
+          "en": "Rainer Maria Rilke: *Selected Poems*. Translation – Interpretive Commentary by Giannis Tzavaras. Bookstars, Athens 2020, 179 pp.",
+          "de": "Rainer Maria Rilke: *Ausgewählte Gedichte*. Übersetzung – interpretierender Kommentar von Giannis Tzavaras. Bookstars, Athen 2020, 179 S."
+        }
       ]
     },
     {
       "year": "2021",
       "items": [
-        "Friedrich Hoelderlin: Δύο ποιήματα για τον Εμπεδοκλή. Εκδόσεις Διανόηση, Αθήνα 2021, 121 σελ.",
-        "Φιλοσοφικά άρθρα στη Βικιπαίδεια. Μεταξύ άλλων: Η έννοια της αγωνίας (Κίρκεγκωρ), Ευθύφρων (Πλατωνικός διάλογος), Σοφιστής (Πλατωνικός διάλογος), Η προέλευση του έργου τέχνης (Χάιντεγκερ), Λάχης (Πλατωνικός διάλογος), Μικρή Λογική (Χέγκελ), Περί του όντος και της ουσίας (de ente et essentia), Πραγματεία περί χρόνου (Αριστοτέλης), Περί αιωνιότητας και χρόνου (Πλωτίνος), Φόβος και Τρόμος (Κίρκεγκωρ)."
+        {
+          "el": "Friedrich Hölderlin: *Δύο ποιήματα για τον Εμπεδοκλή*. Εισαγωγή – Μετάφραση – Σχόλια Γιάννης Τζαβάρας. Εκδόσεις Διανόηση, Αθήνα 2021, 121 σ.",
+          "en": "Friedrich Hölderlin: *Two poems on Empedocles*. Introduction – Translation – Commentary by Giannis Tzavaras. Dianoisi, Athens 2021, 121 pp.",
+          "de": "Friedrich Hölderlin: *Zwei Gedichte über Empedokles*. Einführung – Übersetzung – Kommentar von Giannis Tzavaras. Dianoisi, Athen 2021, 121 S."
+        },
+        {
+          "el": "Φιλοσοφικά άρθρα στη *Βικιπαίδεια* (μεταξύ άλλων: Η έννοια της αγωνίας, Ευθύφρων, Σοφιστής, Η προέλευση του έργου τέχνης, Μικρή Λογική, Πραγματεία περί χρόνου, Περί αιωνιότητας και χρόνου, Φόβος και Τρόμος).",
+          "en": "Philosophical articles in *Wikipedia* (among others: The Concept of Anxiety, Euthyphro, Sophist, The Origin of the Work of Art, The Lesser Logic, Treatise on Time, On Eternity and Time, Fear and Trembling).",
+          "de": "Philosophische Artikel in der *Wikipedia* (u. a.: Der Begriff Angst, Euthyphron, Sophistes, Der Ursprung des Kunstwerks, Die kleine Logik, Abhandlung über die Zeit, Über Ewigkeit und Zeit, Furcht und Zittern)."
+        }
       ]
     },
     {
       "year": "2022",
       "items": [
-        "«Φιλοσοφικός διάλογος μέσα στη σχολική τάξη». Δελτίο Εκπαιδευτικού Προβληματισμού και Επικοινωνίας, Σχολή Ι.Μ. Παναγιωτόπουλου, Τεύχος 66 (2022).",
-        "Θρησκευτική ποίηση. Αισχύλου: Ύμνος στον Δία. Φρίντριχ Χαίλντερλιν: Άρτος και Οίνος, 7-9. Εκδόσεις Δωδώνη, Αθήνα 2022, 282 σελ.",
-        "Friedrich Hoelderlin: H γένεση εντός της φθοράς, ή αλλιώς: Η καταρρέουσα πατρίδα... Εισαγωγή - Μετάφραση - Σχόλια Γιάννη Τζαβάρα. Εκδόσεις Διανόηση, Αθήνα 2022, 221 σελ."
+        {
+          "el": "«Φιλοσοφικός διάλογος μέσα στη σχολική τάξη». *Δελτίο Εκπαιδευτικού Προβληματισμού και Επικοινωνίας*, Σχολή Ι.Μ. Παναγιωτόπουλου, τεύχος 66 (2022).",
+          "en": "“Philosophical dialogue in the classroom”. *Bulletin of Educational Reflection and Communication*, I. M. Panagiotopoulos School, issue 66 (2022).",
+          "de": "„Philosophischer Dialog im Schulunterricht“. *Bulletin für pädagogische Reflexion und Kommunikation*, I.-M.-Panagiotopoulos-Schule, Heft 66 (2022)."
+        },
+        {
+          "el": "*Θρησκευτική ποίηση. Αισχύλου: Ύμνος στον Δία· Φρίντριχ Χαίλντερλιν: Άρτος και Οίνος, 7-9*. Εκδόσεις Δωδώνη, Αθήνα 2022, 282 σ.",
+          "en": "*Religious poetry. Aeschylus: Hymn to Zeus; Friedrich Hölderlin: Bread and Wine, 7-9*. Dodoni, Athens 2022, 282 pp.",
+          "de": "*Religiöse Dichtung. Aischylos: Hymne an Zeus; Friedrich Hölderlin: Brot und Wein, 7-9*. Dodoni, Athen 2022, 282 S."
+        },
+        {
+          "el": "Friedrich Hölderlin: *Η γένεση εντός της φθοράς, ή αλλιώς: Η καταρρέουσα πατρίδα…*. Εισαγωγή – Μετάφραση – Σχόλια Γιάννης Τζαβάρας. Εκδόσεις Διανόηση, Αθήνα 2022, 221 σ.",
+          "en": "Friedrich Hölderlin: *Becoming in dissolution, or: The declining fatherland…*. Introduction – Translation – Commentary by Giannis Tzavaras. Dianoisi, Athens 2022, 221 pp.",
+          "de": "Friedrich Hölderlin: *Das Werden im Vergehen, oder: Das untergehende Vaterland…*. Einführung – Übersetzung – Kommentar von Giannis Tzavaras. Dianoisi, Athen 2022, 221 S."
+        }
       ]
     },
     {
       "year": "2023",
       "items": [
-        "«Ο Γυπογέρακας του J.F.A. Oliver». Ηλεκτρονικό περιοδικό Φρέαρ 9, Μάιος 2023.",
-        "Friedrich Hölderlin: Το Αρχιπέλαγος 12 και Ο αετός. Μετάφραση - Ερμηνευτικά Σχόλια Γιάννη Τζαβάρα. Εκδόσεις Διανόηση, Αθήνα 2023, 155 σελ."
+        {
+          "el": "«Ο Γυπογέρακας του J.F.A. Oliver». Ηλεκτρονικό περιοδικό *Φρέαρ* 9 (Μάιος 2023).",
+          "en": "“The lammergeier of J. F. A. Oliver”. Online journal *Frear* 9 (May 2023).",
+          "de": "„Der Bartgeier von J. F. A. Oliver“. Online-Zeitschrift *Frear* 9 (Mai 2023)."
+        },
+        {
+          "el": "Friedrich Hölderlin: *Το Αρχιπέλαγος 12 και Ο αετός*. Μετάφραση – Ερμηνευτικά Σχόλια Γιάννης Τζαβάρας. Εκδόσεις Διανόηση, Αθήνα 2023, 155 σ.",
+          "en": "Friedrich Hölderlin: *The Archipelago 12 and The Eagle*. Translation – Interpretive Commentary by Giannis Tzavaras. Dianoisi, Athens 2023, 155 pp.",
+          "de": "Friedrich Hölderlin: *Der Archipelagus 12 und Der Adler*. Übersetzung – interpretierender Kommentar von Giannis Tzavaras. Dianoisi, Athen 2023, 155 S."
+        }
       ]
     },
     {
       "year": "2024",
       "items": [
-        "Η ανθρώπινη ελευθερία κατά τον Schelling. Εκδόσεις Διανόηση, Αθήνα 2024, 182 σελ."
+        {
+          "el": "*Η ανθρώπινη ελευθερία κατά τον Schelling*. Εκδόσεις Διανόηση, Αθήνα 2024, 182 σ.",
+          "en": "*Human freedom according to Schelling*. Dianoisi, Athens 2024, 182 pp.",
+          "de": "*Die menschliche Freiheit nach Schelling*. Dianoisi, Athen 2024, 182 S."
+        }
       ]
     },
     {
       "year": "2025",
       "items": [
-        "«Φιλοσοφία της παιδείας στον Ηράκλειτο». Στον συλλογικό τόμο: Ηράκλειτος: Από το χάος στο φάος. Επιμέλεια Δημήτρης Τζωρτζόπουλος. «Διανόηση», Αθήνα, σελ. 69-81.",
-        "Φρίντριχ Σέλλινγκ: Ιδιωτικές Διαλέξεις στη Στουτγάρδη. Πρόλογος - Ερμηνευτική ανάλυση - Μετάφραση Γιάννη Τζαβάρα. Εκδόσεις Διανόηση, Αθήνα 2025, 311 σελ."
+        {
+          "el": "«Φιλοσοφία της παιδείας στον Ηράκλειτο». Στον συλλογικό τόμο: *Ηράκλειτος: Από το χάος στο φάος* (επιμ. Δημήτρης Τζωρτζόπουλος). «Διανόηση», Αθήνα, 69-81.",
+          "en": "“Philosophy of education in Heraclitus”. In the collective volume: *Heraclitus: From chaos to light* (ed. Dimitris Tzortzopoulos). “Dianoisi”, Athens, 69-81.",
+          "de": "„Bildungsphilosophie bei Heraklit“. Im Sammelband: *Heraklit: Vom Chaos zum Licht* (Hg. Dimitris Tzortzopoulos). „Dianoisi“, Athen, 69-81."
+        },
+        {
+          "el": "Φρίντριχ Σέλλινγκ: *Ιδιωτικές Διαλέξεις στη Στουτγάρδη*. Πρόλογος – Ερμηνευτική ανάλυση – Μετάφραση Γιάννης Τζαβάρας. Εκδόσεις Διανόηση, Αθήνα 2025, 311 σ.",
+          "en": "Friedrich Schelling: *Private Lectures at Stuttgart (Stuttgarter Privatvorlesungen)*. Preface – Interpretive analysis – Translation by Giannis Tzavaras. Dianoisi, Athens 2025, 311 pp.",
+          "de": "Friedrich Schelling: *Stuttgarter Privatvorlesungen*. Vorwort – interpretierende Analyse – Übersetzung von Giannis Tzavaras. Dianoisi, Athen 2025, 311 S."
+        }
+      ]
+    },
+    {
+      "year": "2026",
+      "items": [
+        {
+          "el": "Φρίντριχ Σέλλινγκ: *Οι Θεότητες της Σαμοθράκης*. Δίγλωσση έκδοση. Εισαγωγή – Ερμηνευτική ανάλυση – Μετάφραση Γιάννης Τζαβάρας. Εκδόσεις Διανόηση, Αθήνα 2026, 326 σ.",
+          "en": "Friedrich Schelling: *The Deities of Samothrace (Die Gottheiten von Samothrake)*. Bilingual edition. Introduction – Interpretive analysis – Translation by Giannis Tzavaras. Dianoisi, Athens 2026, 326 pp.",
+          "de": "Friedrich Schelling: *Die Gottheiten von Samothrake*. Zweisprachige Ausgabe. Einführung – interpretierende Analyse – Übersetzung von Giannis Tzavaras. Dianoisi, Athen 2026, 326 S."
+        }
       ]
     }
   ]

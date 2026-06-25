@@ -56,9 +56,11 @@ These are the things the owner explicitly asked for. Keep them satisfied:
   (`public/images/foto-giannis.jpg`, `public/images/giannis-rubik.jpg`). All content in the
   `interests` key of `el.json`/`en.json`: `{ title, lead, photos:[{src,caption}],
   sections:[{ letter, heading, groups:[{ label, items:[string] }] }] }`. Section headings,
-  group labels and photo captions are translated; book/work titles stay in the original Greek
-  for both languages (same convention as Books). Reuses the `.activity-section`/`.activity-item`
-  styles plus `.interests-*` styles in `index.css`.
+  group labels and photo captions are translated. **As of the dad-requests vol.1 round (see
+  changelog), the `items` strings are now fully translated per language** (EL/EN/DE), not kept
+  in original Greek. Book/journal titles inside items are wrapped in `*asterisks*` and rendered
+  italic via `<RichText>`. Reuses the `.activity-section`/`.activity-item` styles plus
+  `.interests-*` styles in `index.css`.
 - **Curriculum / CV** (`/cv`, `src/pages/CV.jsx`) — formal CV from `yliko/cv.txt`. **Not in the
   main navbar** (it was already full) — instead it's coupled to the Biography page: a `btn--ghost`
   CTA at the bottom of the Biography prose links to it, and it's also in the Footer link list.
@@ -67,15 +69,23 @@ These are the things the owner explicitly asked for. Keep them satisfied:
   key of `el.json`/`en.json`: `{ title, lead, backLink, photo:{src,caption}, detailsHeading,
   details:[{label,value}], sections:[{ heading, entries:[{label,text}] }],
   publications:{ heading, booksHeading, books:[string], groups:[{label,text}] }, sourceLabel,
-  sourceUrl }`. Labels/headings/education/teaching entries are translated; the `publications.books`
-  citations are kept identical (the English form from the source CV) in both languages. Styles:
-  `.cv-*` in `index.css`. Nav label key is `nav.cv`.
+  sourceUrl }`. Labels/headings/education/teaching entries are translated. **As of the
+  dad-requests vol.1 round, the 17 `publications.books` citations are now per-language**: Greek
+  titles in `el.json` (no "(In Greek)" tag), English titles in `en.json`, German titles in
+  `de.json`. Each book title is wrapped in `*asterisks*` and rendered italic via `<RichText>`.
+  Styles: `.cv-*` in `index.css`. Nav label key is `nav.cv`.
 
 ### `yliko/` — the owner's content drop folder
 The owner places source material (`.txt` etc.) in **`yliko/`** to be turned into site content.
 First file: `yliko/xronologio.txt` → became `src/data/chronology.json`. When new files appear
 there, read them and fold their content into the appropriate JSON/page. (`yliko/` is raw source
 and is not rendered directly.)
+
+### `dad-requests/` — the owner's correction rounds
+The owner (Giannis Tzavaras) sends rounds of requested corrections as `.docx` files placed in
+**`dad-requests/`**. They are written in Greek. To read a `.docx`, unzip it and extract text from
+`word/document.xml` (the `<w:t>` runs). Apply every change across **all three** dictionaries and
+rebuild `dist/`. See the **Changelog** at the bottom for what each round changed.
 
 ### Books page data (Books + Translations tabs)
 The **Books** page (`/books`) has a two-tab segmented switch: **Βιβλία / Books** and
@@ -86,15 +96,21 @@ tab pre-selected (`<Books initialTab="translations" />`).
 - Translations → shared **`src/data/translations.json`** (22 translations, from
   `yliko/metafraseis.txt`). Item adds an `author` field (original author, shown as eyebrow):
   `{ year, author, title, subtitle?, publisher, pages?, note? }`.
-Titles are kept in the original Greek/German for both languages; only UI labels (title, lead,
-note, countLabel, tab labels, translations* labels, pagesLabel) live in the `books` key of
-`el.json`/`en.json`. To add an entry, append to the relevant JSON file.
+Titles on the Books/Translations pages are kept in the original Greek/German for all three
+languages; only UI labels (title, lead, note, countLabel, tab labels, translations* labels,
+pagesLabel) live in the `books` key of `el.json`/`en.json`/`de.json`. The card title
+(`.book-card__title`) is rendered **italic** via CSS (dad-requests vol.1, item about italics).
+To add an entry, append to the relevant JSON file.
 
 ### chronology.json structure
 Single shared file (not duplicated per language). Each entry: `{ year, items: [...] }`.
-An item is either a **string** (a bibliographic entry, kept in original Greek for both
-languages) or an **object** `{ milestone: true, el, en }` (a life event, shown translated and
-highlighted with a badge). The page picks `item[lang]` for milestones.
+**As of dad-requests vol.1, every item is an object `{ el, en, de }`** (the whole chronology is
+translated per language). A life-event item additionally carries `milestone: true` and is shown
+with a badge. The page (`Chronology.jsx`) picks `item[lang] || item.el` and renders it through
+`<RichText>`; `isMilestone = typeof item === 'object' && item.milestone`. Book/journal titles are
+wrapped in `*asterisks*` for italics. The file is **generated** by `scripts/gen_chronology.py`
+(edit that script and re-run `python scripts/gen_chronology.py` to regenerate, so the three
+languages stay aligned). To add a year/entry, add it to the script's `entries` list.
 
 ### Real photographs
 The owner added two real photos in `public/images/`:
@@ -119,8 +135,19 @@ These are wired through `src/components/Portrait.jsx` (pass a `src` prop to choo
 - **Content**: everything textual lives in `src/data/el.json` + `src/data/en.json` +
   `src/data/de.json`, which **must keep an identical structure / array lengths** so switching
   language never breaks. IDs in `blog.posts` must match across all three files (used in the URL).
-- **Routing**: `/`, `/biography`, `/chronology`, `/works`, `/books`, `/articles`, `/blog`,
-  `/blog/:id`, `/activities`, `/contact`, and a `*` 404. Defined in `src/App.jsx`.
+- **Routing**: `/`, `/biography`, `/cv`, `/chronology`, `/works`, `/interests`, `/books`,
+  `/translations`, `/articles`, `/blog`, `/blog/:id`, `/activities`, `/contact`, and a `*` 404.
+  Defined in `src/App.jsx`. Note: `/works` still exists as a route (and the hero "Explore the
+  work" CTA links to it) but the **Works menu item was removed** from the navbar and footer
+  (dad-requests vol.1).
+- **Navbar** (`src/components/Navbar.jsx`): `navItems` is a mix of single links and `stack`
+  groups. A `{ stack: [...] }` group renders its links vertically (one below the other) inside a
+  `.nav-stack` flex column. Current groups: **Books/Articles** and **Blog/Activities/Contact**
+  (dad-requests vol.1).
+- **Italics helper** (`src/components/RichText.jsx`): renders a plain string, converting
+  `*emphasis*` spans into `<em>`. Used wherever book titles / journal names must appear italic
+  (CV books, Articles `source`, Chronology items, Interests items). Wrap a title in the JSON with
+  `*...*` to italicise it. Books/Translations card titles are italicised via CSS instead.
 - **Design system**: all in `src/index.css`. Palette = aegean blue + parchment + gold +
   terracotta; serif typography (Cormorant Garamond / Spectral, both support Greek);
   Greek-meander motifs; owl-of-Athena logo (`public/owl.svg`).
@@ -141,30 +168,105 @@ These are wired through `src/components/Portrait.jsx` (pass a `src` prop to choo
 ## Common tasks
 
 ```bash
-npm install      # install deps
-npm run dev      # dev server → http://localhost:5173
-npm run build    # production build → /dist
-npm run preview  # preview the build
+npm install            # install deps
+npm run dev            # dev server → http://localhost:5173
+npm run build          # production build → /dist
+npm run build:standalone  # portable build → /dist (open index.html directly, no server)
+npm run preview        # preview the build
 ```
 
-- **New blog post** → append an object to `blog.posts` in BOTH json files (same `id`,
+### Standalone / offline build (`npm run build:standalone`)
+Produces a `dist/` that runs by **double-clicking `dist/index.html`** in a browser —
+no web server, no React, no Node. Copy the whole `dist/` folder to any PC and open it.
+This works because:
+- **Routing uses `HashRouter`** (`src/main.jsx`) so navigation lives in the URL hash and
+  needs no server-side routing.
+- **`base: './'`** in `vite.config.js` + **relative asset paths** (asset `src`s have no
+  leading `/`, e.g. `owl.svg`, `images/…`, `flag-*.svg`) so files resolve under `file://`.
+- **JS + CSS are inlined into `index.html`** by `scripts/inline-dist.mjs` (runs after
+  `vite build`), avoiding the browser's block on external `type="module"` scripts over
+  `file://`. Only images/SVGs remain as sibling files.
+
+Caveat: the Google Fonts `<link>` still needs internet; offline it falls back to system serif.
+
+**Why one `index.html` "does everything":** the inline step pastes the full CSS (`<style>…</style>`)
+and the entire bundled React app (`<script type="module">…</script>`) directly inside the HTML file
+— that's why it's ~370 KB. There are no separate page files; the browser runs that embedded script
+and generates every route on the fly. Only binary/image assets stay as sibling files (`images/`,
+plus the `.svg` logo/flags), referenced by relative paths. **Keep `index.html` and those files
+together in the same folder** — the HTML carries all the logic but still loads the photos from
+`images/`. To transfer, copy the whole `dist/` folder (or zip it); double-click `index.html` to run.
+
+- **New blog post** → append an object to `blog.posts` in ALL THREE json files (same `id`,
   `date` as `YYYY-MM-DD`, `body` is an array of paragraph strings).
-- **New book** → append to `books.items` (`type` is `"original"` or `"translation"`).
-- **New article** → append to `articles.items`.
+- **New book** → append to `src/data/books.json` (and/or `translations.json`).
+- **New article** → append the same object to `articles.items` in all three dictionaries. Item
+  shape is `{ year, title, source }`; `title` is the article title (kept in original language,
+  same for all 3 files), `source` is the citation with the journal/volume name wrapped in
+  `*...*` for italics.
+- **New chronology entry** → edit the `entries` list in `scripts/gen_chronology.py` (each item is
+  a trilingual `b(el, en, de)` or milestone `m(el, en, de)`), then run
+  `python scripts/gen_chronology.py`.
 - **Swap a portrait** → drop the file in `public/images/` and pass its path as the `src`
   prop to `<Portrait />`.
 
 ## Important caveat — content accuracy
 
-The biographical narrative, book titles, dates, publishers, journals and blog posts are
-**plausible placeholders** written to populate and demonstrate the design. They are NOT
-verified facts. **Replace them with accurate, sourced information before publishing.**
-The two photographs are the only verified real assets so far.
+The **Chronology, Books, Translations, Articles, CV publications and Interests** are now real,
+sourced bibliographic data (from the owner's `yliko/` files and his
+`istoselidatzavara.webnode.page` / blogspot bibliography). The **biographical narrative prose
+and the blog posts** are still **plausible placeholders** demonstrating the design — NOT verified
+facts; replace before publishing. The photographs and the bibliography are the verified assets.
 
 ## Not done yet / possible next steps
 
-- Verify and replace placeholder biographical/bibliographic content with real data.
+- Verify and replace the placeholder **biographical narrative prose** and **blog posts** with
+  real text (the bibliographic data is now sourced/real — see the caveat above).
 - Optional: deploy (e.g. GitHub Pages / Netlify / Vercel) — add a `base` in
   `vite.config.js` if hosting under a sub-path.
 - Optional: real contact form (would need a backend or a 3rd-party form service).
 - Optional: SEO/OG image, sitemap, favicon variants.
+
+## Changelog
+
+### dad-requests vol.1 — "Διορθώσεις στη νέα Ιστοσελίδα Τζαβάρα vol. 1.docx" (June 2026)
+Source file: `dad-requests/Διορθώσεις στη νέα Ιστοσελίδα Τζαβάρα vol. 1.docx`. 21 owner-requested
+corrections, applied across all three dictionaries and rebuilt to `dist/`:
+
+1. **Home hero subtitle** — «έργο **αφιερωμένο στην … φαινομενολογία**» → «έργο **επικεντρωμένο
+   στην … μεταφυσική**» (EL/EN/DE).
+2. **Phenomenology → Metaphysics** everywhere the word describes his *work/field* (home
+   highlight title, biography paragraphs, timeline title, Works area title) in all 3 languages.
+   **Deliberately preserved** in actual book/journal titles (Heidegger *Φαινομενολογία και
+   Θεολογία* / *Phänomenologie und Theologie*; *Studia Phaenomenologica*).
+3. **Reading time singular** — added `ui.minReadOne` (EL «λεπτό ανάγνωσης»); `Blog.jsx` /
+   `BlogPost.jsx` choose singular when `readingTime === 1`.
+4. **Blog post fixes** (EL + mirrored EN/DE): «δεν είναι **αυτοσκοπός**»; «**Για να μελετηθεί** …
+   μπορεί να **απαιτηθεί** μια ολόκληρη μέρα»; «**καινούριες**»; Leibniz phrasing «γιατί υπάρχει
+   κάτι **και όχι μάλλον το τίποτα**» (DE already had «und nicht vielmehr nichts»).
+5. **Italics for book titles & journal names everywhere** — added `src/components/RichText.jsx`
+   (`*...*` → `<em>`); applied markup in CV books, Articles `source`, Chronology items, Interests
+   items; Books/Translations card titles italicised via CSS.
+6. **Chronology 2026 entry** added — Friedrich Schelling, *Οι Θεότητες της Σαμοθράκης* (Διανόηση,
+   Αθήνα 2026, 326 σ.).
+7. **CV publications per language** — Greek titles in `el.json` (dropped the "(In Greek)" tag),
+   English titles in `en.json`, German titles in `de.json`.
+8. **Αισθητική Αγωγή journal dates** — «(2002–σήμερα)» → **(2002-2014)** (Interests, all langs).
+9. **Articles page rebuilt** — removed placeholders; pulled the exact 38 articles the owner
+   listed (numbers 1, 2, 3, 4, 10, 12, 14, 16, 18, 19, 21, 23, 24, 26, 28, 32, 35, 36, 37, 38,
+   40, 43, 48, 51, 52, 53, 56, 57, 59, 62, 63, 66, 67, 70, 72, 75, 77, 78) from his blogspot
+   εργογραφία, each with full citation. New item shape `{ year, title, source }`; titles kept in
+   original language across all three files.
+10. **Chronology & Interests translated** into EN and DE (were Greek-only). `chronology.json` is
+    now fully trilingual and generated by `scripts/gen_chronology.py`.
+11. **Navbar** — removed the **Works** («Έργο») menu item (nav + footer; route still exists).
+    **Books/Articles** and **Blog/Activities/Contact** now render stacked (one below the other)
+    via `.nav-stack` groups, in all 3 languages.
+12. **Contact** — removed the «Στείλτε email» CTA button (all langs). The `contact.writeButton`
+    key is now unused (left in JSON harmlessly).
+
+New/changed files: `src/components/RichText.jsx` (new), `scripts/gen_chronology.py` (new
+generator for `chronology.json`), `src/components/Navbar.jsx`, `src/components/Footer.jsx`,
+`src/pages/{Articles,Interests,Chronology,CV,Contact,Blog,BlogPost}.jsx`, `src/index.css`
+(`.nav-stack`, italic `.book-card__title`, `.article-item__journal em`), and all three
+`src/data/*.json` + `src/data/chronology.json`.

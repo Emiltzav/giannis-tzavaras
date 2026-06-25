@@ -1,6 +1,7 @@
 import { useLang } from '../i18n/LanguageContext.jsx'
 import PageHeader from '../components/PageHeader.jsx'
 import Reveal from '../components/Reveal.jsx'
+import RichText from '../components/RichText.jsx'
 
 export default function Interests() {
   const { t } = useLang()
@@ -36,7 +37,7 @@ export default function Interests() {
                       <Reveal as="li" key={i} delay={i * 40} className="activity-item">
                         <span className="activity-item__num">{i + 1}</span>
                         <div className="activity-item__body">
-                          <p className="activity-item__text">{item}</p>
+                          <p className="activity-item__text"><RichText text={item} /></p>
                         </div>
                       </Reveal>
                     ))}
