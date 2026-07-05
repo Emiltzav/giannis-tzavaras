@@ -12,7 +12,7 @@
     "works": "Werk",
     "interests": "Interessen",
     "books": "Bücher",
-    "articles": "Artikel",
+    "articles": "Aufsätze",
     "blog": "Blog",
     "activities": "Aktivitäten",
     "contact": "Kontakt"
@@ -328,7 +328,7 @@
     "translationsCountLabel": "Übersetzungen"
   },
   "articles": {
-    "title": "Artikel & Veröffentlichungen",
+    "title": "Aufsätze & Veröffentlichungen",
     "lead": "Eine Auswahl wissenschaftlicher Artikel, Essays und Beiträge zu Sammelbänden und Zeitschriften.",
     "items": [
       { "year": "1974", "title": "«Προβλήματα και προτάσεις για μια νεοελληνική μετάφραση του Sein und Zeit του Μάρτιν Χάιντεγγερ»", "source": "*Φιλοσοφία. Επετηρίς του Κέντρου Φιλοσοφίας της Ακαδημίας Αθηνών* 4 (1974), 449-458." },
