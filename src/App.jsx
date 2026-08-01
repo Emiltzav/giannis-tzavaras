@@ -1,5 +1,6 @@
 import { Routes, Route, useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
+import { trackPageView } from './lib/analytics.js'
 import Navbar from './components/Navbar.jsx'
 import Footer from './components/Footer.jsx'
 import Home from './pages/Home.jsx'
@@ -14,6 +15,7 @@ import Blog from './pages/Blog.jsx'
 import BlogPost from './pages/BlogPost.jsx'
 import Activities from './pages/Activities.jsx'
 import Contact from './pages/Contact.jsx'
+import Admin from './pages/Admin.jsx'
 import NotFound from './pages/NotFound.jsx'
 
 function ScrollToTop() {
@@ -24,10 +26,23 @@ function ScrollToTop() {
   return null
 }
 
+// Fires one analytics page-view per route change. The full path is recorded,
+// so every page (and each /blog/:id) is tracked distinctly. No-ops on /admin
+// (internal tool) and when analytics isn't configured.
+function TrackPageViews() {
+  const { pathname } = useLocation()
+  useEffect(() => {
+    if (pathname.startsWith('/admin')) return
+    trackPageView(pathname)
+  }, [pathname])
+  return null
+}
+
 export default function App() {
   return (
     <div className="app-shell">
       <ScrollToTop />
+      <TrackPageViews />
       <Navbar />
       <main>
         <Routes>
@@ -44,6 +59,7 @@ export default function App() {
           <Route path="/blog/:id" element={<BlogPost />} />
           <Route path="/activities" element={<Activities />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/admin" element={<Admin />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>

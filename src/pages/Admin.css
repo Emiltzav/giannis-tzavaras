@@ -1,0 +1,156 @@
+/* Self-contained styles for the internal analytics dashboard (#/admin). */
+
+.admin-wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem 4rem;
+    color: #1f2a37;
+}
+.admin-wrap--center {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.admin-card {
+    background: #fff;
+    border: 1px solid #e6e1d5;
+    border-radius: 12px;
+    padding: 1.1rem 1.25rem;
+    box-shadow: 0 1px 3px rgba(20, 40, 70, 0.06);
+}
+
+.admin-note { max-width: 620px; }
+.admin-note code, .admin-login code { font-size: 0.9em; }
+
+/* --- header --- */
+.admin-head {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+.admin-head h1 { margin: 0; font-size: 1.6rem; color: #123a5e; }
+.admin-head__actions { display: flex; gap: 0.5rem; align-items: center; }
+
+.admin-btn {
+    border: 1px solid #123a5e;
+    background: #123a5e;
+    color: #fff;
+    border-radius: 8px;
+    padding: 0.5rem 0.9rem;
+    cursor: pointer;
+    font: inherit;
+}
+.admin-btn--ghost { background: transparent; color: #123a5e; }
+.admin-head select {
+    padding: 0.5rem 0.6rem;
+    border-radius: 8px;
+    border: 1px solid #cdd5df;
+    font: inherit;
+    background: #fff;
+}
+
+/* --- login --- */
+.admin-login { width: min(380px, 92vw); display: flex; flex-direction: column; gap: 0.9rem; }
+.admin-login h1 { margin: 0 0 0.3rem; font-size: 1.35rem; color: #123a5e; }
+.admin-login label { display: flex; flex-direction: column; gap: 0.35rem; font-size: 0.9rem; font-weight: 600; }
+.admin-login input {
+    padding: 0.6rem 0.7rem;
+    border: 1px solid #cdd5df;
+    border-radius: 8px;
+    font: inherit;
+}
+.admin-login button {
+    margin-top: 0.4rem;
+    padding: 0.65rem;
+    border: none;
+    border-radius: 8px;
+    background: #123a5e;
+    color: #fff;
+    font: inherit;
+    cursor: pointer;
+}
+.admin-login button:disabled { opacity: 0.6; cursor: default; }
+
+.admin-error { color: #b3261e; font-weight: 600; }
+.admin-muted { color: #6b7280; }
+
+/* --- stat cards --- */
+.admin-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+.admin-stat { display: flex; flex-direction: column; gap: 0.2rem; }
+.admin-stat__value { font-size: 2rem; font-weight: 700; color: #123a5e; line-height: 1.1; }
+.admin-stat__label { font-size: 0.85rem; color: #6b7280; }
+
+/* --- daily chart --- */
+.admin-daily { margin-bottom: 1.5rem; }
+.admin-daily h2, .admin-breakdown h2, .admin-recent h2 { margin: 0 0 0.9rem; font-size: 1.05rem; color: #123a5e; }
+.admin-daily__bars {
+    display: flex;
+    align-items: flex-end;
+    gap: 2px;
+    height: 140px;
+}
+.admin-daily__col { flex: 1; height: 100%; display: flex; align-items: flex-end; }
+.admin-daily__bar {
+    width: 100%;
+    min-height: 2px;
+    background: linear-gradient(#2f6f9f, #123a5e);
+    border-radius: 2px 2px 0 0;
+}
+.admin-daily__axis { display: flex; justify-content: space-between; font-size: 0.75rem; color: #6b7280; margin-top: 0.4rem; }
+
+/* --- breakdown grid --- */
+.admin-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+.admin-breakdown ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.35rem; }
+.admin-breakdown li {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 0.35rem 0.5rem;
+    border-radius: 6px;
+    overflow: hidden;
+}
+.admin-bar {
+    position: absolute;
+    inset: 0 auto 0 0;
+    background: #e8f0f7;
+    z-index: 0;
+    border-radius: 6px;
+}
+.admin-bar__label {
+    position: relative;
+    z-index: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 0.5rem;
+    font-size: 0.9rem;
+}
+.admin-bar__count { position: relative; z-index: 1; font-variant-numeric: tabular-nums; font-weight: 600; color: #123a5e; }
+
+/* --- recent table --- */
+.admin-table-scroll { overflow-x: auto; }
+.admin-recent table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+.admin-recent th, .admin-recent td {
+    text-align: left;
+    padding: 0.45rem 0.6rem;
+    border-bottom: 1px solid #eee;
+    white-space: nowrap;
+}
+.admin-recent th { color: #6b7280; font-weight: 600; }
+.admin-ref { max-width: 220px; overflow: hidden; text-overflow: ellipsis; }

@@ -152,6 +152,34 @@ These are wired through `src/components/Portrait.jsx` (pass a `src` prop to choo
   terracotta; serif typography (Cormorant Garamond / Spectral, both support Greek);
   Greek-meander motifs; owl-of-Athena logo (`public/owl.svg`).
 
+## Analytics (Supabase — no backend server)
+
+Basic traffic analytics are tracked **without any backend/JVM/self-hosted DB**: the static
+frontend writes one row per page view directly to a free **Supabase** (Postgres) project via
+`@supabase/supabase-js`, and a private in-app dashboard reads it back. This keeps requirement
+#7 (frontend-only, no server to run) intact — Supabase is a managed BaaS, not our server.
+Full setup + rationale is in **`ANALYTICS.md`**; the schema/RLS/aggregation SQL is in
+**`supabase/schema.sql`**. (We deliberately rejected a self-hosted Spring Boot + MySQL stack
+as too heavy/costly for a static site.)
+
+- **Client**: `src/lib/supabase.js` (creates the client, or `null` if env vars are absent →
+  everything no-ops) and `src/lib/analytics.js` (`trackPageView(path)` — visitor id in
+  `localStorage`, UA parse, client-side geo via `ipwho.is`, fire-and-forget insert).
+- **Wiring**: `App.jsx` has a `TrackPageViews` component that fires `trackPageView(pathname)`
+  on every route change (so each `/blog/:id` is tracked distinctly); it skips `/admin`.
+- **Dashboard**: `src/pages/Admin.jsx` (+ `Admin.css`) at route **`/admin`** (HashRouter →
+  `/#/admin`). **Not in the navbar/footer.** Supabase Auth login (your email/password);
+  totals, per-day chart, breakdowns (page, blog, lang, country, browser, OS, device, referrer,
+  UTM), recent-visits table. Kept **English-only and out of the `el/en/de` JSON** on purpose —
+  it's an internal tool, not public content, so the "mirror across 3 dictionaries" rule does
+  **not** apply to it.
+- **Config**: `VITE_SUPABASE_URL` + `VITE_SUPABASE_ANON_KEY` (see `.env.example`). The anon
+  key is public-safe; Row-Level Security (in `schema.sql`) lets anon only *insert*, and only a
+  logged-in user *read*. For the committed-`dist/` GitHub Pages flow, set `.env.production`
+  locally (git-ignored) before `npm run build` so the keys are inlined into the built bundle.
+- **Tracking is best-effort**: failures are swallowed; the offline standalone build still runs
+  (it just records nothing).
+
 ## Conventions
 
 - **Add/edit content in JSON, not in JSX.** Mirror every change across all three of
