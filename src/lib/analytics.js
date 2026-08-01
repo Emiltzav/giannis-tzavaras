@@ -8,6 +8,32 @@ import { supabase } from './supabase.js'
 
 const VISITOR_KEY = 'gt-visitor-id'
 const LANG_KEY = 'gt-lang' // same key the LanguageContext uses
+const DNT_KEY = 'gt-dnt' // '1' in a browser → that browser is excluded from analytics
+
+// Own-visit opt-out. Two ways to flip it for a given browser:
+//   • visiting the site with ?dnt=1  (…/?dnt=1) sets it; ?dnt=0 clears it;
+//   • logging into the /#/admin dashboard sets it automatically (see Admin.jsx).
+// Kept in localStorage so it persists per browser.
+function syncDoNotTrackFlag() {
+    try {
+        const params = new URLSearchParams(window.location.search)
+        if (params.has('dnt')) {
+            const v = params.get('dnt')
+            if (v === '0' || v === 'false') localStorage.removeItem(DNT_KEY)
+            else localStorage.setItem(DNT_KEY, '1')
+        }
+    } catch {
+        /* storage disabled → nothing to toggle */
+    }
+}
+
+export function isTrackingDisabled() {
+    try {
+        return localStorage.getItem(DNT_KEY) === '1'
+    } catch {
+        return false
+    }
+}
 
 // A stable-per-browser id → lets us count distinct visitors without storing IPs.
 // Regenerated if the user clears storage / uses private mode (slightly over-counts).
@@ -88,6 +114,8 @@ let lastTracked = null // guard against duplicate fires for the same path
  */
 export async function trackPageView(page) {
     if (!supabase) return // analytics not configured → silently skip
+    syncDoNotTrackFlag() // honour ?dnt= toggles in the URL
+    if (isTrackingDisabled()) return // this browser opted out (owner's own visits)
     if (page === lastTracked) return // React StrictMode / same-path re-render guard
     lastTracked = page
 

@@ -93,22 +93,29 @@ function Login() {
 
 function Dashboard({ onSignOut }) {
     const [days, setDays] = useState(30)
+    const [uniq, setUniq] = useState(true) // true = distinct visitors, false = raw views
     const [data, setData] = useState(null)
     const [recent, setRecent] = useState([])
     const [loading, setLoading] = useState(true)
     const [err, setErr] = useState('')
+
+    // Logging in marks THIS browser as the owner's, so your own future visits to
+    // the public site are never recorded (see analytics.js opt-out).
+    useEffect(() => {
+        try { localStorage.setItem('gt-dnt', '1') } catch { /* storage disabled */ }
+    }, [])
 
     const load = useCallback(async () => {
         setLoading(true)
         setErr('')
         try {
             const breakdown = (col, lim = 20) =>
-                supabase.rpc('pv_breakdown', { col, days, lim })
+                supabase.rpc('pv_breakdown', { col, days, lim, uniq })
 
             const [totals, daily, lang, page, browser, os, device, country, source, referrer, recentRows] =
                 await Promise.all([
                     supabase.rpc('pv_totals', { days }),
-                    supabase.rpc('pv_daily', { days: days || 30 }),
+                    supabase.rpc('pv_daily', { days: days || 30, uniq }),
                     breakdown('lang'),
                     breakdown('page', 50),
                     breakdown('browser'),
@@ -146,7 +153,7 @@ function Dashboard({ onSignOut }) {
             setErr(e.message || 'Failed to load analytics.')
         }
         setLoading(false)
-    }, [days])
+    }, [days, uniq])
 
     useEffect(() => { load() }, [load])
 
@@ -160,6 +167,10 @@ function Dashboard({ onSignOut }) {
                     <select value={days} onChange={(e) => setDays(Number(e.target.value))}>
                         {RANGES.map((r) => <option key={r.days} value={r.days}>{r.label}</option>)}
                     </select>
+                    <select value={uniq ? '1' : '0'} onChange={(e) => setUniq(e.target.value === '1')} title="Count distinct visitors, or every page load">
+                        <option value="1">Distinct visitors</option>
+                        <option value="0">All page views</option>
+                    </select>
                     <button onClick={load} className="admin-btn">Refresh</button>
                     <button onClick={onSignOut} className="admin-btn admin-btn--ghost">Sign out</button>
                 </div>
@@ -171,13 +182,13 @@ function Dashboard({ onSignOut }) {
             {data && (
                 <>
                     <section className="admin-cards">
-                        <Stat label="Total views" value={t.total_views} />
                         <Stat label="Distinct visitors" value={t.unique_visitors} />
+                        <Stat label="Total views" value={t.total_views} />
                         <Stat label="Blog views" value={t.blog_views} />
                         <Stat label="Views today" value={t.today_views} />
                     </section>
 
-                    <DailyChart points={data.daily} />
+                    <DailyChart points={data.daily} label={uniq ? 'Distinct visitors per day' : 'Page views per day'} />
 
                     <div className="admin-grid">
                         <Breakdown title="Pages" rows={data.page} />
@@ -226,11 +237,11 @@ function Breakdown({ title, rows }) {
     )
 }
 
-function DailyChart({ points }) {
+function DailyChart({ points, label = 'Views per day' }) {
     const max = Math.max(1, ...points.map((p) => Number(p.views)))
     return (
         <div className="admin-card admin-daily">
-            <h2>Views per day</h2>
+            <h2>{label}</h2>
             <div className="admin-daily__bars">
                 {points.map((p) => (
                     <div className="admin-daily__col" key={p.day} title={`${p.day}: ${p.views}`}>

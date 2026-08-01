@@ -68,7 +68,9 @@ create policy "authenticated can read page views"
 -- renders as bars. `days` filters to the last N days (0 or null = all time).
 -- =============================================================================
 
-create or replace function public.pv_breakdown(col text, days int default 0, lim int default 20)
+-- `uniq` = false → count every page view (raw hits);
+-- `uniq` = true  → count DISTINCT visitors (so 20 hits from one visitor count once).
+create or replace function public.pv_breakdown(col text, days int default 0, lim int default 20, uniq boolean default false)
 returns table(label text, count bigint)
 language plpgsql
 security definer
@@ -81,24 +83,27 @@ begin
     end if;
 
     return query execute format(
-        'select coalesce(nullif(%I::text, %L), %L) as label, count(*)::bigint as count
+        'select coalesce(nullif(%I::text, %L), %L) as label, %s as count
            from public.page_views
           where (%s = 0 or created_at >= now() - make_interval(days => %s))
           group by 1 order by 2 desc limit %s',
-        col, '', '—', days, days, lim
+        col, '', '—',
+        case when uniq then 'count(distinct visitor_id)::bigint' else 'count(*)::bigint' end,
+        days, days, lim
     );
 end;
 $$;
 
--- Daily totals (date + views) for the last N days, gap-filled to a continuous series.
-create or replace function public.pv_daily(days int default 30)
+-- Daily totals (date + count) for the last N days, gap-filled to a continuous series.
+-- `uniq` = true counts distinct visitors per day instead of raw views.
+create or replace function public.pv_daily(days int default 30, uniq boolean default false)
 returns table(day date, views bigint)
 language sql
 security definer
 set search_path = public
 as $$
     select d::date as day,
-           count(pv.id)::bigint as views
+           case when uniq then count(distinct pv.visitor_id) else count(pv.id) end::bigint as views
       from generate_series(current_date - (days - 1), current_date, interval '1 day') d
       left join public.page_views pv
              on pv.created_at::date = d::date
@@ -123,6 +128,6 @@ as $$
 $$;
 
 -- Let logged-in users (you) call the helpers.
-grant execute on function public.pv_breakdown(text, int, int) to authenticated;
-grant execute on function public.pv_daily(int)               to authenticated;
-grant execute on function public.pv_totals(int)              to authenticated;
+grant execute on function public.pv_breakdown(text, int, int, boolean) to authenticated;
+grant execute on function public.pv_daily(int, boolean)               to authenticated;
+grant execute on function public.pv_totals(int)                       to authenticated;
