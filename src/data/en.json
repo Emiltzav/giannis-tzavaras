@@ -48,8 +48,8 @@
     "introTitle": "A life among ideas",
     "introParagraphs": [
       "For decades, Giannis Tzavaras has stood between two worlds of thought: the ancient Greek philosophy that first posed the question of Being, and modern German philosophy, which renewed that question in new terms.",
-      "His work — as translator, interpreter and original thinker — builds bridges between Plato and Heidegger, between Aristotle and Hegel, in a language that is clear, rigorous and deeply human.",
-      "This site gathers his books, articles, biography and most recent reflections — a living archive for anyone who wishes to think alongside him."
+      "His work - as translator, interpreter and original thinker - builds bridges between Plato and Heidegger, between Aristotle and Hegel, in a language that is clear, rigorous and deeply human.",
+      "This site gathers his books, articles, biography and most recent reflections - a living archive for anyone who wishes to think alongside him."
     ],
     "highlightsTitle": "Threads of the work",
     "highlights": [
@@ -79,12 +79,12 @@
   },
   "biography": {
     "title": "Biography",
-    "lead": "A path from the study of classical texts to the chair of philosophy — and beyond it.",
+    "lead": "A path from the study of classical texts to the chair of philosophy - and beyond it.",
     "youngCaption": "The early years",
     "paragraphs": [
       "Giannis Tzavaras belongs to the generation of Greek philosophers who, in the second half of the 20th century, set out to bring contemporary European philosophy into fertile dialogue with the Greek tradition. He studied philosophy in Greece and in Germany, where he came into direct contact with the metaphysical and hermeneutic traditions.",
       "His encounter with the work of Martin Heidegger proved decisive. He devoted years to the study and translation of foundational texts, aiming not at a mere transfer of words but at the creation of a Greek philosophical language capable of hosting the most demanding concepts.",
-      "As a professor in the Department of Philosophy and Social Studies at the University of Crete, in Rethymno, he taught ontology, the history of philosophy and metaphysics. His teaching was marked by an insistence on careful, slow reading of texts — an exercise in patience and precision.",
+      "As a professor in the Department of Philosophy and Social Studies at the University of Crete, in Rethymno, he taught ontology, the history of philosophy and metaphysics. His teaching was marked by an insistence on careful, slow reading of texts - an exercise in patience and precision.",
       "Today, as Professor Emeritus, he continues to write, translate and reflect, sharing his thoughts through essays and posts on his blog."
     ],
     "timelineTitle": "Milestones",
@@ -214,7 +214,7 @@
       },
       {
         "title": "Philosophy of language",
-        "text": "Language is not a mere tool but the place where meaning becomes possible. Translation thus becomes a philosophical act in itself — the search for the right word as the search for truth."
+        "text": "Language is not a mere tool but the place where meaning becomes possible. Translation thus becomes a philosophical act in itself - the search for the right word as the search for truth."
       },
       {
         "title": "Ethics & the human measure",
@@ -224,7 +224,7 @@
   },
   "interests": {
     "title": "Interests",
-    "lead": "The fields that shaped the thought and work of Giannis Tzavaras — from ancient Greek philosophy to aesthetic education — together with the related books, translations and scholarly papers.",
+    "lead": "The fields that shaped the thought and work of Giannis Tzavaras - from ancient Greek philosophy to aesthetic education - together with the related books, translations and scholarly papers.",
     "photos": [
       {
         "src": "images/foto-giannis.jpg",
@@ -232,7 +232,7 @@
       },
       {
         "src": "images/giannis-rubik.jpg",
-        "caption": "Play and thought — the puzzle as a challenge"
+        "caption": "Play and thought - the puzzle as a challenge"
       }
     ],
     "sections": [
@@ -317,13 +317,13 @@
   },
   "books": {
     "title": "Books & Bibliography",
-    "lead": "The independent books of Giannis Tzavaras — studies, essays, and annotated or bilingual editions. Each title shows its publisher and year.",
+    "lead": "The independent books of Giannis Tzavaras - studies, essays, and annotated or bilingual editions. Each title shows its publisher and year.",
     "note": "Independent books only; titles are given in their original language (Greek / German).",
     "countLabel": "books",
     "pagesLabel": "pp.",
     "tabBooks": "Books",
     "tabTranslations": "Translations",
-    "translationsLead": "Philosophical works translated by Giannis Tzavaras — from Kierkegaard and Heidegger to Kant, Hegel, Plotinus and Schelling. Each title shows its publisher and year.",
+    "translationsLead": "Philosophical works translated by Giannis Tzavaras - from Kierkegaard and Heidegger to Kant, Hegel, Plotinus and Schelling. Each title shows its publisher and year.",
     "translationsNote": "Translations of other thinkers’ works; titles are given in the language of the edition.",
     "translationsCountLabel": "translations"
   },
@@ -373,42 +373,18 @@
   },
   "blog": {
     "title": "Blog",
-    "lead": "Thoughts, notes and short essays — written to the rhythm of daily study.",
+    "lead": "Thoughts, notes and short essays - written to the rhythm of daily study.",
     "posts": [
       {
         "id": "i-techni-tis-argis-anagnosis",
-        "date": "2026-05-18",
+        "date": "2026-08-02",
         "title": "The art of slow reading",
         "tags": ["education", "reading", "method"],
         "excerpt": "In a world that reads ever faster, philosophy insists on the opposite: on patience.",
         "body": [
           "When I teach, I often tell my students that a philosophical text is not read; it is inhabited. We do not hurry through it as through a corridor. We stay, we look again, we let the words open up.",
-          "Slow reading is not an end in itself. It is method. To study a single page of Aristotle or Heidegger may require an entire day — and this is not a failure, it is the right rhythm.",
+          "Slow reading is not an end in itself. It is method. To study a single page of Aristotle or Heidegger may require an entire day - and this is not a failure, it is the right rhythm.",
           "Perhaps the most revolutionary thing a young person can do today is exactly this: to sit with a difficult book and not be in a hurry."
-        ]
-      },
-      {
-        "id": "giati-metafrazoume",
-        "date": "2026-03-02",
-        "title": "Why we translate philosophy",
-        "tags": ["translation", "language"],
-        "excerpt": "Every translation is an interpretation, and every interpretation a decision about what truth means.",
-        "body": [
-          "People often ask me why I devoted so many years to translating texts that few will read. My answer is simple: translation is the slowest and the most faithful way of reading.",
-          "To translate a single word of Heidegger, you must understand it to the end. It is not enough to know what it means; you must find how the same thought sounds in your own language.",
-          "In this way the Greek language does not merely receive a foreign idea — it changes too, it grows, it discovers new possibilities. This is the true gain of translation."
-        ]
-      },
-      {
-        "id": "to-erotima-pou-menei",
-        "date": "2026-01-11",
-        "title": "The question that remains",
-        "tags": ["ontology", "reflection"],
-        "excerpt": "Philosophy does not accumulate answers; it cultivates a question that never ceases.",
-        "body": [
-          "After a life among books, I confess that I hold no more certainties than I did in my youth. But I have better questions.",
-          "The question of Being — why there is something rather than nothing — has never been solved, and perhaps it should not be. Its value lies not in the answer but in the fact that it keeps us awake.",
-          "This is what I try to leave to my students: not a system, but a capacity to be astonished before the fact that the world exists."
         ]
       }
     ]

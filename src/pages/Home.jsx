@@ -37,7 +37,7 @@ export default function Home() {
             <blockquote className="hero__quote">
               <Quote size={22} className="hero__quote-icon" aria-hidden="true" />
               <p>{t.home.heroQuote}</p>
-              <cite>— {t.home.heroQuoteAuthor}</cite>
+              <cite>- {t.home.heroQuoteAuthor}</cite>
             </blockquote>
           </div>
 

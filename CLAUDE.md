@@ -226,7 +226,10 @@ together in the same folder** — the HTML carries all the logic but still loads
 `images/`. To transfer, copy the whole `dist/` folder (or zip it); double-click `index.html` to run.
 
 - **New blog post** → append an object to `blog.posts` in ALL THREE json files (same `id`,
-  `date` as `YYYY-MM-DD`, `body` is an array of paragraph strings).
+  `date` as `YYYY-MM-DD`, `body` is an array of paragraph strings). **The `date` MUST be the
+  post's actual publication date (the real day it is published), not a placeholder.** The
+  reading-time badge has been removed from the blog list and single-post pages — do not
+  re-add it.
 - **New book** → append to `src/data/books.json` (and/or `translations.json`).
 - **New article** → append the same object to `articles.items` in all three dictionaries. Item
   shape is `{ year, title, source }`; `title` is the article title (kept in original language,

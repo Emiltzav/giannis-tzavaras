@@ -48,8 +48,8 @@
     "introTitle": "Ein Leben unter Ideen",
     "introParagraphs": [
       "Seit Jahrzehnten steht Giannis Tzavaras zwischen zwei Welten des Denkens: der altgriechischen Philosophie, die zuerst die Frage nach dem Sein stellte, und der modernen deutschen Philosophie, die diese Frage in neuen Begriffen erneuerte.",
-      "Sein Werk — als Übersetzer, Interpret und eigenständiger Denker — schlägt Brücken zwischen Platon und Heidegger, zwischen Aristoteles und Hegel, in einer Sprache, die klar, streng und zutiefst menschlich ist.",
-      "Diese Seite versammelt seine Bücher, Artikel, seine Biografie und seine jüngsten Überlegungen — ein lebendiges Archiv für alle, die mit ihm denken möchten."
+      "Sein Werk - als Übersetzer, Interpret und eigenständiger Denker - schlägt Brücken zwischen Platon und Heidegger, zwischen Aristoteles und Hegel, in einer Sprache, die klar, streng und zutiefst menschlich ist.",
+      "Diese Seite versammelt seine Bücher, Artikel, seine Biografie und seine jüngsten Überlegungen - ein lebendiges Archiv für alle, die mit ihm denken möchten."
     ],
     "highlightsTitle": "Stränge des Werks",
     "highlights": [
@@ -79,12 +79,12 @@
   },
   "biography": {
     "title": "Biografie",
-    "lead": "Ein Weg vom Studium der klassischen Texte bis zum Lehrstuhl für Philosophie — und darüber hinaus.",
+    "lead": "Ein Weg vom Studium der klassischen Texte bis zum Lehrstuhl für Philosophie - und darüber hinaus.",
     "youngCaption": "Die frühen Jahre",
     "paragraphs": [
       "Giannis Tzavaras gehört zu jener Generation griechischer Philosophen, die in der zweiten Hälfte des 20. Jahrhunderts daran gingen, die zeitgenössische europäische Philosophie in einen fruchtbaren Dialog mit der griechischen Tradition zu bringen. Er studierte Philosophie in Griechenland und in Deutschland, wo er in unmittelbaren Kontakt mit der metaphysischen und der hermeneutischen Tradition kam.",
       "Seine Begegnung mit dem Werk Martin Heideggers erwies sich als entscheidend. Er widmete Jahre dem Studium und der Übersetzung grundlegender Texte, mit dem Ziel, nicht bloß Worte zu übertragen, sondern eine griechische philosophische Sprache zu schaffen, die den anspruchsvollsten Begriffen ein Zuhause geben kann.",
-      "Als Professor am Institut für Philosophie und Sozialwissenschaften der Universität Kreta in Rethymno lehrte er Ontologie, Philosophiegeschichte und Metaphysik. Seine Lehre war geprägt vom Beharren auf der sorgfältigen, langsamen Lektüre der Texte — einer Übung in Geduld und Genauigkeit.",
+      "Als Professor am Institut für Philosophie und Sozialwissenschaften der Universität Kreta in Rethymno lehrte er Ontologie, Philosophiegeschichte und Metaphysik. Seine Lehre war geprägt vom Beharren auf der sorgfältigen, langsamen Lektüre der Texte - einer Übung in Geduld und Genauigkeit.",
       "Heute, als emeritierter Professor, schreibt, übersetzt und denkt er weiter und teilt seine Gedanken in Essays und Beiträgen auf seinem Blog."
     ],
     "timelineTitle": "Meilensteine",
@@ -214,7 +214,7 @@
       },
       {
         "title": "Sprachphilosophie",
-        "text": "Sprache ist kein bloßes Werkzeug, sondern der Ort, an dem Sinn möglich wird. So wird das Übersetzen selbst zu einer philosophischen Handlung — die Suche nach dem rechten Wort als Suche nach der Wahrheit."
+        "text": "Sprache ist kein bloßes Werkzeug, sondern der Ort, an dem Sinn möglich wird. So wird das Übersetzen selbst zu einer philosophischen Handlung - die Suche nach dem rechten Wort als Suche nach der Wahrheit."
       },
       {
         "title": "Ethik & das menschliche Maß",
@@ -224,7 +224,7 @@
   },
   "interests": {
     "title": "Interessen",
-    "lead": "Die Gebiete, die das Denken und Werk von Giannis Tzavaras geprägt haben — von der altgriechischen Philosophie bis zur ästhetischen Erziehung — samt den zugehörigen Büchern, Übersetzungen und wissenschaftlichen Beiträgen.",
+    "lead": "Die Gebiete, die das Denken und Werk von Giannis Tzavaras geprägt haben - von der altgriechischen Philosophie bis zur ästhetischen Erziehung - samt den zugehörigen Büchern, Übersetzungen und wissenschaftlichen Beiträgen.",
     "photos": [
       {
         "src": "images/foto-giannis.jpg",
@@ -232,7 +232,7 @@
       },
       {
         "src": "images/giannis-rubik.jpg",
-        "caption": "Spiel und Denken — das Rätsel als Herausforderung"
+        "caption": "Spiel und Denken - das Rätsel als Herausforderung"
       }
     ],
     "sections": [
@@ -317,13 +317,13 @@
   },
   "books": {
     "title": "Bücher & Bibliografie",
-    "lead": "Die eigenständigen Bücher von Giannis Tzavaras — Studien, Essays sowie kommentierte oder zweisprachige Ausgaben. Bei jedem Titel sind Verlag und Jahr angegeben.",
+    "lead": "Die eigenständigen Bücher von Giannis Tzavaras - Studien, Essays sowie kommentierte oder zweisprachige Ausgaben. Bei jedem Titel sind Verlag und Jahr angegeben.",
     "note": "Nur eigenständige Bücher; die Titel sind in ihrer Originalsprache (Griechisch / Deutsch) angegeben.",
     "countLabel": "Bücher",
     "pagesLabel": "S.",
     "tabBooks": "Bücher",
     "tabTranslations": "Übersetzungen",
-    "translationsLead": "Von Giannis Tzavaras übersetzte philosophische Werke — von Kierkegaard und Heidegger bis zu Kant, Hegel, Plotin und Schelling. Bei jedem Titel sind Verlag und Jahr angegeben.",
+    "translationsLead": "Von Giannis Tzavaras übersetzte philosophische Werke - von Kierkegaard und Heidegger bis zu Kant, Hegel, Plotin und Schelling. Bei jedem Titel sind Verlag und Jahr angegeben.",
     "translationsNote": "Übersetzungen der Werke anderer Denker; die Titel sind in der Sprache der Ausgabe angegeben.",
     "translationsCountLabel": "Übersetzungen"
   },
@@ -373,42 +373,18 @@
   },
   "blog": {
     "title": "Blog",
-    "lead": "Gedanken, Notizen und kurze Essays — im Rhythmus des täglichen Studiums geschrieben.",
+    "lead": "Gedanken, Notizen und kurze Essays - im Rhythmus des täglichen Studiums geschrieben.",
     "posts": [
       {
         "id": "i-techni-tis-argis-anagnosis",
-        "date": "2026-05-18",
+        "date": "2026-08-02",
         "title": "Die Kunst des langsamen Lesens",
         "tags": ["Bildung", "Lesen", "Methode"],
         "excerpt": "In einer Welt, die immer schneller liest, beharrt die Philosophie auf dem Gegenteil: auf Geduld.",
         "body": [
           "Wenn ich unterrichte, sage ich meinen Studierenden oft, dass ein philosophischer Text nicht gelesen, sondern bewohnt wird. Wir eilen nicht durch ihn hindurch wie durch einen Korridor. Wir bleiben, wir schauen erneut hin, wir lassen die Worte sich öffnen.",
-          "Langsames Lesen ist kein Selbstzweck. Es ist Methode. Um eine einzige Seite von Aristoteles oder Heidegger zu studieren, kann ein ganzer Tag nötig sein — und das ist kein Versagen, sondern der richtige Rhythmus.",
+          "Langsames Lesen ist kein Selbstzweck. Es ist Methode. Um eine einzige Seite von Aristoteles oder Heidegger zu studieren, kann ein ganzer Tag nötig sein - und das ist kein Versagen, sondern der richtige Rhythmus.",
           "Vielleicht ist das Revolutionärste, was ein junger Mensch heute tun kann, genau dies: sich mit einem schwierigen Buch hinzusetzen und es nicht eilig zu haben."
-        ]
-      },
-      {
-        "id": "giati-metafrazoume",
-        "date": "2026-03-02",
-        "title": "Warum wir Philosophie übersetzen",
-        "tags": ["Übersetzung", "Sprache"],
-        "excerpt": "Jede Übersetzung ist eine Auslegung, und jede Auslegung eine Entscheidung darüber, was Wahrheit bedeutet.",
-        "body": [
-          "Man fragt mich oft, warum ich so viele Jahre dem Übersetzen von Texten gewidmet habe, die nur wenige lesen werden. Meine Antwort ist einfach: Übersetzen ist die langsamste und zugleich treueste Weise des Lesens.",
-          "Um ein einziges Wort Heideggers zu übersetzen, muss man es zu Ende verstehen. Es genügt nicht zu wissen, was es bedeutet; man muss finden, wie derselbe Gedanke in der eigenen Sprache klingt.",
-          "Auf diese Weise empfängt die griechische Sprache nicht nur eine fremde Idee — sie verändert sich auch, sie wächst, sie entdeckt neue Möglichkeiten. Das ist der wahre Gewinn des Übersetzens."
-        ]
-      },
-      {
-        "id": "to-erotima-pou-menei",
-        "date": "2026-01-11",
-        "title": "Die Frage, die bleibt",
-        "tags": ["Ontologie", "Reflexion"],
-        "excerpt": "Die Philosophie häuft keine Antworten an; sie pflegt eine Frage, die niemals aufhört.",
-        "body": [
-          "Nach einem Leben unter Büchern gestehe ich, dass ich nicht mehr Gewissheiten habe als in meiner Jugend. Aber ich habe bessere Fragen.",
-          "Die Frage nach dem Sein — warum es etwas gibt und nicht vielmehr nichts — ist nie gelöst worden, und vielleicht sollte sie es auch nicht. Ihr Wert liegt nicht in der Antwort, sondern darin, dass sie uns wach hält.",
-          "Das ist es, was ich meinen Studierenden zu hinterlassen versuche: kein System, sondern die Fähigkeit, vor der Tatsache zu staunen, dass die Welt existiert."
         ]
       }
     ]

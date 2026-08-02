@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom'
-import { ArrowUpRight, Clock } from 'lucide-react'
+import { ArrowUpRight } from 'lucide-react'
 import { useLang } from '../i18n/LanguageContext.jsx'
 import PageHeader from '../components/PageHeader.jsx'
 import Reveal from '../components/Reveal.jsx'
-import { readingTime, formatDate } from '../utils/format.js'
+import { formatDate } from '../utils/format.js'
 
 export default function Blog() {
   const { t, lang } = useLang()
@@ -21,9 +21,6 @@ export default function Blog() {
                 <Link to={`/blog/${post.id}`} className="blog-list__item">
                   <div className="blog-list__meta">
                     <time>{formatDate(post.date, lang)}</time>
-                    <span className="blog-list__reading">
-                      <Clock size={13} /> {readingTime(post.body)} {readingTime(post.body) === 1 ? t.ui.minReadOne : t.ui.minRead}
-                    </span>
                   </div>
                   <h2 className="blog-list__title">{post.title}</h2>
                   <p className="blog-list__excerpt">{post.excerpt}</p>

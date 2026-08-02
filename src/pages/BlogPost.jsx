@@ -1,8 +1,8 @@
 import { Link, useParams } from 'react-router-dom'
-import { ArrowLeft, Clock } from 'lucide-react'
+import { ArrowLeft } from 'lucide-react'
 import { useLang } from '../i18n/LanguageContext.jsx'
 import Reveal from '../components/Reveal.jsx'
-import { readingTime, formatDate } from '../utils/format.js'
+import { formatDate } from '../utils/format.js'
 
 export default function BlogPost() {
   const { id } = useParams()
@@ -31,9 +31,6 @@ export default function BlogPost() {
           </Link>
           <div className="post__meta">
             <time>{formatDate(post.date, lang)}</time>
-            <span className="post__reading">
-              <Clock size={14} /> {readingTime(post.body)} {readingTime(post.body) === 1 ? t.ui.minReadOne : t.ui.minRead}
-            </span>
           </div>
           <h1 className="post__title">{post.title}</h1>
           <ul className="tags">

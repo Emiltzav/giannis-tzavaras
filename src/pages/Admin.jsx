@@ -8,7 +8,7 @@ import './Admin.css'
 // Supabase dashboard. Row-Level Security means only a logged-in user can read
 // the data, so this page is useless to anyone without your credentials.
 //
-// Kept deliberately self-contained and English-only — it's an internal tool, so
+// Kept deliberately self-contained and English-only - it's an internal tool, so
 // it stays out of the trilingual el/en/de JSON dictionaries.
 // -----------------------------------------------------------------------------
 
@@ -75,7 +75,7 @@ function Login() {
     return (
         <div className="admin-wrap admin-wrap--center">
             <form className="admin-card admin-login" onSubmit={submit}>
-                <h1>Analytics — Sign in</h1>
+                <h1>Analytics - Sign in</h1>
                 <label>
                     Email
                     <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required autoFocus />
@@ -228,7 +228,7 @@ function Breakdown({ title, rows }) {
                 {rows.map((r, i) => (
                     <li key={i}>
                         <span className="admin-bar" style={{ width: `${(Number(r.count) / max) * 100}%` }} />
-                        <span className="admin-bar__label" title={r.label}>{r.label || '—'}</span>
+                        <span className="admin-bar__label" title={r.label}>{r.label || '-'}</span>
                         <span className="admin-bar__count">{Number(r.count).toLocaleString()}</span>
                     </li>
                 ))}
@@ -277,12 +277,12 @@ function RecentTable({ rows }) {
                                 <td>{new Date(r.created_at).toLocaleString()}</td>
                                 <td>{r.page}</td>
                                 <td>{r.lang}</td>
-                                <td>{r.country || '—'}</td>
-                                <td>{r.city || '—'}</td>
+                                <td>{r.country || '-'}</td>
+                                <td>{r.city || '-'}</td>
                                 <td>{r.device_type}</td>
                                 <td>{r.browser}</td>
                                 <td>{r.os}</td>
-                                <td className="admin-ref" title={r.referrer || ''}>{r.referrer || '—'}</td>
+                                <td className="admin-ref" title={r.referrer || ''}>{r.referrer || '-'}</td>
                             </tr>
                         ))}
                     </tbody>
