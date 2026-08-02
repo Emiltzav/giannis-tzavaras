@@ -188,6 +188,10 @@ main {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
+  /* Override the centered .container: span (almost) the full viewport width so
+     the logo sits far left and the links/flags get much more room. */
+  max-width: none;
+  padding-inline: clamp(1rem, 2.5vw, 2rem);
 }
 
 /* Logo */
@@ -233,12 +237,13 @@ main {
 .navbar__links {
   display: flex;
   align-items: center;
-  gap: clamp(0.6rem, 1.6vw, 1.7rem);
+  gap: clamp(0.5rem, 1.1vw, 1.15rem);
 }
 
 .nav-link {
   position: relative;
-  font-size: 1.02rem;
+  font-size: 0.98rem;
+  white-space: nowrap;
   color: var(--ink-soft);
   padding: 0.3rem 0.15rem;
   transition: color 0.25s var(--ease);
@@ -265,6 +270,31 @@ main {
 .nav-link.is-active::after,
 .nav-link:hover::after {
   transform: scaleX(1);
+}
+
+/* Home link: icon + label, styled as an obvious pill so users always find home */
+.nav-link--home {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.34rem 0.8rem;
+  border: 1.5px solid var(--gold);
+  border-radius: 999px;
+  color: var(--aegean);
+}
+
+.nav-link--home::after {
+  display: none;
+}
+
+.nav-link--home:hover,
+.nav-link--home.is-active {
+  background: var(--gold);
+  color: #fff;
+}
+
+.nav-link--home svg {
+  flex-shrink: 0;
 }
 
 /* Stacked nav group: links rendered one below the other in the top bar */
@@ -2380,7 +2410,7 @@ main {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1180px) {
   :root {
     --nav-h: 72px;
   }

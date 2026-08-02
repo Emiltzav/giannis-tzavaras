@@ -140,10 +140,15 @@ These are wired through `src/components/Portrait.jsx` (pass a `src` prop to choo
   Defined in `src/App.jsx`. Note: `/works` still exists as a route (and the hero "Explore the
   work" CTA links to it) but the **Works menu item was removed** from the navbar and footer
   (dad-requests vol.1).
-- **Navbar** (`src/components/Navbar.jsx`): `navItems` is a mix of single links and `stack`
-  groups. A `{ stack: [...] }` group renders its links vertically (one below the other) inside a
-  `.nav-stack` flex column. Current groups: **Books/Articles** and **Blog/Activities/Contact**
-  (dad-requests vol.1).
+- **Navbar** (`src/components/Navbar.jsx`): `navItems` is now a **single flat row** of links
+  (dad-requests vol.2): Home, Biography, Chronology, Interests, Books, Articles, Blog,
+  Activities, Contact. The first item is an explicit **`Αρχική` Home link** (`{ to: '/', icon:
+  Home, end: true }`) styled as a gold pill (`.nav-link--home`); `renderLink` supports an
+  optional lucide `icon` and an `end` flag. The old stacked `{ stack: [...] }` groups were
+  removed — the navbar now spans **full viewport width** (`.navbar__inner` overrides
+  `.container` with `max-width:none`) so everything fits on one line. The primary nav collapses
+  to the burger menu at **≤1180px** (was ≤1024px). The `.nav-stack` CSS is now unused but left
+  in place harmlessly.
 - **Italics helper** (`src/components/RichText.jsx`): renders a plain string, converting
   `*emphasis*` spans into `<em>`. Used wherever book titles / journal names must appear italic
   (CV books, Articles `source`, Chronology items, Interests items). Wrap a title in the JSON with
@@ -324,5 +329,19 @@ Small owner-requested round, applied across all three dictionaries and rebuilt t
 6. **"Old website" link label** — CV page **and** Activities page `sourceLabel` changed:
    EL «Διαβάστε περισσότερα στον παλιό ιστότοπο», EN "Read more on the old website",
    DE "Mehr auf der alten Website lesen" (was "…personal website"/«…προσωπική ιστοσελίδα»).
+7. **Explicit Home nav link** — added an obvious **`Αρχική` link with a Home icon** (lucide
+   `Home`) as the **first** item in the navbar, styled as a gold pill (`.nav-link--home` in
+   `index.css`). It's driven by `nav.home` (already trilingual) and uses `end` so it's only
+   active on `/`. The **logo link (top-left) is unchanged** and still also goes home — this is
+   an *additional* entry point for users who don't realise the logo is clickable. `renderLink`
+   in `Navbar.jsx` now supports an optional `icon` (a lucide component) and `end` flag.
+8. **Navbar widened & un-stacked** — the nav bar was too tight (language flags overflowing).
+   Fixed by making `.navbar__inner` span **full viewport width** (`max-width:none` +
+   `padding-inline: clamp(1rem,2.5vw,2rem)`) so the logo sits far left with much more room, and
+   by **flattening the two stacked groups** (Books/Articles, Blog/Activities/Contact) into
+   single one-line links. Reduced `.navbar__links` gap and `.nav-link` font-size (0.98rem,
+   `white-space:nowrap`), and moved the mobile-nav breakpoint from **≤1024px → ≤1180px** so the
+   single row collapses to the burger before it can crowd the flags.
 
-Changed files: `src/pages/{Blog,BlogPost}.jsx`, all three `src/data/*.json`, `CLAUDE.md`.
+Changed files: `src/pages/{Blog,BlogPost}.jsx`, `src/components/Navbar.jsx`, `src/index.css`,
+all three `src/data/*.json`, `CLAUDE.md`.
