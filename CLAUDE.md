@@ -301,3 +301,28 @@ generator for `chronology.json`), `src/components/Navbar.jsx`, `src/components/F
 `src/pages/{Articles,Interests,Chronology,CV,Contact,Blog,BlogPost}.jsx`, `src/index.css`
 (`.nav-stack`, italic `.book-card__title`, `.article-item__journal em`), and all three
 `src/data/*.json` + `src/data/chronology.json`.
+
+### dad-requests vol.2 — blog cleanup & content tweaks (August 2026)
+Small owner-requested round, applied across all three dictionaries and rebuilt to `dist/`:
+
+1. **Blog trimmed to one post** — removed the two older posts (`giati-metafrazoume`,
+   `to-erotima-pou-menei`); only the most recent, «Η τέχνη της αργής ανάγνωσης»
+   (`i-techni-tis-argis-anagnosis`), remains in `blog.posts` (all 3 langs).
+2. **Em-dashes → hyphens** — replaced every large em-dash «—» (U+2014) with a plain hyphen «-»
+   in the visible site text (`el/en/de.json`, `Home.jsx`, `Admin.jsx`). En-dashes «–» (U+2013)
+   in date/page ranges (e.g. `1968–1973`) were deliberately left as-is. (The only remaining `—`
+   in the bundle are inside the third-party `@supabase/supabase-js` library, never rendered.)
+3. **Greek "view all" label** — `ui.viewAll` «Δείτε όλα» → «Δείτε τα όλα» (EL only; EN/DE
+   unchanged).
+4. **Reading-time badge removed** — dropped the Clock + `readingTime()` "X λεπτά ανάγνωσης"
+   badge from both `Blog.jsx` (list) and `BlogPost.jsx` (single post), plus their now-unused
+   `Clock`/`readingTime` imports. `ui.minRead`/`ui.minReadOne` keys left in JSON harmlessly.
+   **New convention:** new blog posts must use their real publication `date`; don't re-add the
+   reading-time badge (see the "New blog post" bullet in Common tasks).
+5. **Kept post's date** — `i-techni-tis-argis-anagnosis` date set to `2026-08-02`
+   (2 Αυγούστου 2026), was `2026-05-18`.
+6. **"Old website" link label** — CV page **and** Activities page `sourceLabel` changed:
+   EL «Διαβάστε περισσότερα στον παλιό ιστότοπο», EN "Read more on the old website",
+   DE "Mehr auf der alten Website lesen" (was "…personal website"/«…προσωπική ιστοσελίδα»).
+
+Changed files: `src/pages/{Blog,BlogPost}.jsx`, all three `src/data/*.json`, `CLAUDE.md`.
