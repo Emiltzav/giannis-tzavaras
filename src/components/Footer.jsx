@@ -13,6 +13,7 @@ export default function Footer() {
     { to: '/interests', label: t.nav.interests },
     { to: '/books', label: t.nav.books },
     { to: '/articles', label: t.nav.articles },
+    { to: '/bibliography', label: t.nav.bibliography },
     { to: '/blog', label: t.nav.blog },
     { to: '/activities', label: t.nav.activities },
     { to: '/contact', label: t.nav.contact },

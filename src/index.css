@@ -1,5 +1,5 @@
 /* ============================================================
-   Giannis Tzavaras — Philosopher
+   Giannis Tzavaras - Philosopher
    A warm, classical "encyclopedia of ideas" aesthetic.
    ============================================================ */
 
@@ -2523,4 +2523,488 @@ main {
     opacity: 1;
     transform: none;
   }
+}
+
+/* ── Bibliography search (skeleton) ─────────────────────────── */
+.biblio-note {
+  margin: 0 0 1.5rem;
+  padding: 0.75rem 1rem;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  background: var(--parchment-2);
+  border-left: 3px solid var(--gold);
+  border-radius: var(--radius);
+}
+
+.biblio-search {
+  position: relative;
+  z-index: 20;
+}
+
+.biblio-search__field {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.35rem 0.5rem 0.35rem 1.1rem;
+  background: var(--paper);
+  border: 1.5px solid var(--gold-soft);
+  border-radius: 999px;
+  box-shadow: var(--shadow-sm);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.biblio-search__field:focus-within {
+  border-color: var(--gold);
+  box-shadow: var(--shadow-md);
+}
+
+.biblio-search__field.is-open {
+  border-radius: 22px 22px 0 0;
+}
+
+.biblio-search__icon {
+  color: var(--gold-deep);
+  flex-shrink: 0;
+}
+
+.biblio-search__input {
+  flex: 1;
+  min-width: 0;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: var(--serif-body);
+  font-size: 1.1rem;
+  color: var(--ink);
+  padding: 0.55rem 0;
+}
+
+.biblio-search__input::placeholder {
+  color: var(--ink-soft);
+  opacity: 0.7;
+}
+
+.biblio-search__clear {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 50%;
+  background: var(--parchment-2);
+  color: var(--ink-soft);
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+  flex-shrink: 0;
+}
+
+.biblio-search__clear:hover {
+  background: var(--terracotta);
+  color: var(--paper);
+}
+
+/* Autocomplete dropdown */
+.biblio-suggest {
+  position: absolute;
+  left: -1.5px;
+  right: -1.5px;
+  top: 100%;
+  margin: 0;
+  padding: 0.4rem;
+  list-style: none;
+  background: var(--paper);
+  border: 1.5px solid var(--gold);
+  border-top: none;
+  border-radius: 0 0 18px 18px;
+  box-shadow: var(--shadow-md);
+  max-height: 340px;
+  overflow-y: auto;
+}
+
+.biblio-suggest__item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.6rem 0.75rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background 0.12s ease;
+}
+
+.biblio-suggest__item.is-active {
+  background: var(--parchment);
+}
+
+.biblio-suggest__code {
+  flex-shrink: 0;
+  min-width: 2.6rem;
+  text-align: center;
+  font-family: var(--serif-display);
+  font-weight: 600;
+  font-size: 0.85rem;
+  color: var(--aegean);
+  background: var(--gold-soft);
+  padding: 0.15rem 0.45rem;
+  border-radius: var(--radius);
+}
+
+.biblio-suggest__text {
+  flex: 1;
+  min-width: 0;
+  color: var(--ink);
+  font-size: 1rem;
+}
+
+.biblio-suggest__path {
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+}
+
+.biblio-suggest__enter {
+  color: var(--gold-deep);
+  flex-shrink: 0;
+}
+
+/* Filter chips */
+.biblio-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.75rem 0 1.25rem;
+}
+
+.biblio-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.4rem 0.9rem;
+  font-family: var(--serif-body);
+  font-size: 0.9rem;
+  color: var(--aegean);
+  background: var(--paper);
+  border: 1.5px solid var(--gold-soft);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.18s ease, color 0.18s ease, border-color 0.18s ease;
+}
+
+.biblio-chip:hover {
+  border-color: var(--gold);
+}
+
+.biblio-chip.is-active {
+  background: var(--aegean);
+  color: var(--parchment);
+  border-color: var(--aegean);
+}
+
+.biblio-chip__code {
+  font-family: var(--serif-display);
+  font-weight: 600;
+  font-size: 0.78rem;
+  opacity: 0.85;
+}
+
+/* Results */
+.biblio-results {
+  margin-top: 0.5rem;
+}
+
+.biblio-results__count {
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+  color: var(--gold-deep);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.biblio-empty {
+  padding: 2rem;
+  text-align: center;
+  color: var(--ink-soft);
+  background: var(--parchment-2);
+  border-radius: var(--radius-lg);
+}
+
+.biblio-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.biblio-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  padding: 0.9rem 1.1rem;
+  background: var(--paper);
+  border: 1px solid var(--parchment-2);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: border-color 0.18s ease, transform 0.18s ease;
+}
+
+.biblio-item:hover {
+  border-color: var(--gold-soft);
+  transform: translateX(3px);
+}
+
+.biblio-item__code {
+  flex-shrink: 0;
+  min-width: 2.8rem;
+  text-align: center;
+  font-family: var(--serif-display);
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--aegean);
+  background: var(--gold-soft);
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius);
+}
+
+.biblio-item__body {
+  min-width: 0;
+}
+
+.biblio-item__title {
+  margin: 0;
+  font-family: var(--serif-display);
+  font-size: 1.2rem;
+  color: var(--ink);
+}
+
+.biblio-item__path {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin: 0.2rem 0 0;
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+}
+
+/* ── Bibliography: real-entry additions ─────────────────────── */
+.biblio-suggest__hint {
+  padding: 0.35rem 0.75rem 0.15rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+}
+.biblio-suggest__n {
+  flex-shrink: 0;
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+  background: var(--parchment-2);
+  padding: 0.05rem 0.5rem;
+  border-radius: 999px;
+}
+
+.biblio-filters--period {
+  align-items: center;
+  /* Clearance so the period chips never tuck under the search bar's shadow -
+     matters in Articles, where no category-chip row sits above them. */
+  margin-top: 1rem;
+}
+.biblio-filters__label {
+  font-size: 0.85rem;
+  color: var(--gold-deep);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-right: 0.15rem;
+}
+.biblio-chip--sm {
+  padding: 0.28rem 0.7rem;
+  font-size: 0.82rem;
+}
+
+/* Loading */
+.biblio-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 3rem 1rem;
+  color: var(--ink-soft);
+}
+.biblio-spin { animation: biblio-spin 0.9s linear infinite; color: var(--gold-deep); }
+@keyframes biblio-spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .biblio-spin { animation: none; } }
+
+/* Browse by section */
+.biblio-browse__heading {
+  font-family: var(--serif-display);
+  font-size: 1.7rem;
+  color: var(--aegean);
+  margin: 0.5rem 0 0.2rem;
+}
+.biblio-browse__hint { margin: 0 0 1.5rem; color: var(--ink-soft); }
+.biblio-browse__group { margin-bottom: 1.75rem; }
+.biblio-browse__top {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--serif-display);
+  font-size: 1.25rem;
+  color: var(--ink);
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--gold-soft);
+  margin: 0 0 0.85rem;
+}
+.biblio-browse__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 0.55rem;
+}
+.biblio-browse__card {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: left;
+  padding: 0.6rem 0.75rem;
+  background: var(--paper);
+  border: 1px solid var(--parchment-2);
+  border-radius: var(--radius-lg);
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: border-color 0.16s ease, transform 0.16s ease;
+}
+.biblio-browse__card:hover { border-color: var(--gold); transform: translateY(-2px); }
+.biblio-browse__card-code {
+  flex-shrink: 0;
+  min-width: 2.4rem;
+  text-align: center;
+  font-family: var(--serif-display);
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: var(--aegean);
+  background: var(--gold-soft);
+  padding: 0.12rem 0.4rem;
+  border-radius: var(--radius);
+}
+.biblio-browse__card-title { flex: 1; min-width: 0; color: var(--ink); font-size: 0.95rem; }
+.biblio-browse__card-n { flex-shrink: 0; font-size: 0.82rem; color: var(--ink-soft); }
+
+/* Results bar */
+.biblio-results__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.biblio-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.35rem 0.7rem;
+  font-family: var(--serif-body);
+  font-size: 0.88rem;
+  color: var(--aegean);
+  background: var(--paper);
+  border: 1.5px solid var(--gold-soft);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: border-color 0.16s ease;
+}
+.biblio-back:hover { border-color: var(--gold); }
+.biblio-results__section { color: var(--ink); }
+
+/* Entry cards */
+.biblio-entry {
+  padding: 0.85rem 1.1rem;
+  background: var(--paper);
+  border: 1px solid var(--parchment-2);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+.biblio-entry + .biblio-entry { margin-top: 0.55rem; }
+.biblio-entry__head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+.biblio-entry__code {
+  font-family: var(--serif-display);
+  font-weight: 600;
+  font-size: 0.78rem;
+  color: var(--aegean);
+  background: var(--gold-soft);
+  padding: 0.1rem 0.45rem;
+  border-radius: var(--radius);
+}
+.biblio-entry__year {
+  font-size: 0.8rem;
+  color: var(--gold-deep);
+  letter-spacing: 0.04em;
+}
+.biblio-entry__text {
+  margin: 0;
+  color: var(--ink);
+  font-size: 1.02rem;
+  line-height: 1.55;
+}
+.biblio-hl {
+  background: var(--gold-soft);
+  color: var(--aegean);
+  border-radius: 2px;
+  padding: 0 0.1em;
+}
+.biblio-more {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--ink-soft);
+  background: var(--parchment-2);
+  border-radius: var(--radius-lg);
+}
+
+/* ── Bibliography: division tabs + year browse ──────────────── */
+.biblio-tabs {
+  display: inline-flex;
+  gap: 0.25rem;
+  padding: 0.3rem;
+  margin-bottom: 1.4rem;
+  background: var(--parchment-2);
+  border-radius: 999px;
+}
+.biblio-tab {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1.15rem;
+  font-family: var(--serif-body);
+  font-size: 0.98rem;
+  color: var(--aegean);
+  background: transparent;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.18s ease, color 0.18s ease, box-shadow 0.18s ease;
+}
+.biblio-tab:hover { color: var(--gold-deep); }
+.biblio-tab.is-active {
+  background: var(--aegean);
+  color: var(--parchment);
+  box-shadow: var(--shadow-sm);
+}
+
+.biblio-browse__cards--years {
+  grid-template-columns: repeat(auto-fill, minmax(96px, 1fr));
+}
+.biblio-browse__card--year {
+  justify-content: space-between;
+  gap: 0.4rem;
+}
+.biblio-browse__card--year .biblio-browse__card-title {
+  font-family: var(--serif-display);
+  font-weight: 600;
+  font-size: 1.05rem;
+  color: var(--aegean);
+  flex: 0 0 auto;
 }

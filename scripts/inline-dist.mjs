@@ -1,6 +1,6 @@
 // Post-build step: inline the bundled JS and CSS into dist/index.html so the
 // site can be opened directly from the filesystem (file://) by double-clicking
-// index.html — no web server required.
+// index.html - no web server required.
 //
 // Why this is needed: browsers refuse to load external `<script type="module">`
 // files over the file:// protocol (CORS / "origin null"). Inlining the module
@@ -36,7 +36,7 @@ html = html.replace(
 
 writeFileSync(htmlPath, html)
 
-// The now-inlined files are no longer referenced — drop the assets folder.
+// The now-inlined files are no longer referenced - drop the assets folder.
 rmSync(join(distDir, 'assets'), { recursive: true, force: true })
 
 const remaining = readdirSync(distDir).join(', ')

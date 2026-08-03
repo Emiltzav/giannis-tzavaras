@@ -4,10 +4,10 @@ Guidance for Claude Code (and humans) working in this repository.
 
 ## Project
 
-Personal website for **Giannis Tzavaras** (Γιάννης Τζαβάρας) — a modern Greek
+Personal website for **Giannis Tzavaras** (Γιάννης Τζαβάρας) - a modern Greek
 philosopher, **Professor Emeritus of Philosophy at the University of Crete, Rethymno**
 (now retired). The site presents his life, career, works, books/bibliography, articles,
-and a blog, in the spirit of a *modern encyclopedia of philosophy* — evoking a world of
+and a blog, in the spirit of a *modern encyclopedia of philosophy* - evoking a world of
 ideas, books, and Greek thinking culture.
 
 ## Original requirements (as requested by the owner)
@@ -18,12 +18,12 @@ These are the things the owner explicitly asked for. Keep them satisfied:
 2. **React JS website** for the philosopher Giannis Tzavaras.
 3. Show his **works, articles, bibliography/books**; describe his **career and life**.
 4. **Modern, beautiful design** that evokes *a world full of ideas, philosophy, books,
-   Greek thinking culture* — encyclopedia-like.
+   Greek thinking culture* - encyclopedia-like.
 5. **Bilingual**: Greek text by default with a **toggle to English via an EL / EN button
-   (with flags)**. *(Later extended to **trilingual** — German (DE) was added as a third
+   (with flags)**. *(Later extended to **trilingual** - German (DE) was added as a third
    language; the toggle is now EL / EN / DE. See the i18n notes below.)*
 6. **All text stored in JSON** (no hard-coded strings in components where avoidable).
-7. **Frontend only** — **no backend and no database** for now.
+7. **Frontend only** - **no backend and no database** for now.
 8. **A blog** with posts from him (new posts can be added).
 9. Use **logos / images / icons** related to philosophy.
 10. He is a **retired Philosophy professor at the University of Crete, Rethymno**.
@@ -39,19 +39,19 @@ These are the things the owner explicitly asked for. Keep them satisfied:
 | Modern encyclopedia design | ✅ custom CSS design system | `src/index.css` |
 | EL / EN / DE toggle with flags | ✅ flag buttons, persisted | `src/components/LanguageToggle.jsx`, `public/flag-*.svg` |
 | Text stored in JSON | ✅ mirrored EL/EN/DE dictionaries | `src/data/el.json`, `src/data/en.json`, `src/data/de.json` |
-| Frontend only, no backend/db | ✅ static SPA | — |
+| Frontend only, no backend/db | ✅ static SPA | - |
 | Blog with posts | ✅ list + single post, reading time | `src/pages/Blog.jsx`, `BlogPost.jsx` |
 | Logos / images / icons | ✅ owl-of-Athena logo, lucide icons, real photos | `public/owl.svg`, `lucide-react`, `public/images/*` |
 | Retired prof, University of Crete | ✅ stated throughout | `data/*.json` |
 
 ### Pages added after the initial build
-- **Broader Activities** (`/activities`, `src/pages/Activities.jsx`) — websites, institutional
+- **Broader Activities** (`/activities`, `src/pages/Activities.jsx`) - websites, institutional
   activities, and lectures. Content in `activities` key of `el.json`/`en.json`.
-- **Chronology** (`/chronology`, `src/pages/Chronology.jsx`) — full year-by-year timeline
+- **Chronology** (`/chronology`, `src/pages/Chronology.jsx`) - full year-by-year timeline
   1950→present (life milestones + complete bibliography). Data in the shared
   `src/data/chronology.json`; page labels in the `chronology` key of `el.json`/`en.json`.
-- **Interests** (`/interests`, `src/pages/Interests.jsx`) — his thematic areas of interest
-  (Ενδιαφέροντα), from `yliko/endiaferonta.txt`. Five lettered sections (A–E), each with one
+- **Interests** (`/interests`, `src/pages/Interests.jsx`) - his thematic areas of interest
+  (Ενδιαφέροντα), from `yliko/endiaferonta.txt`. Five lettered sections (A-E), each with one
   or more labelled groups of related works. Opens with two personal photos
   (`public/images/foto-giannis.jpg`, `public/images/giannis-rubik.jpg`). All content in the
   `interests` key of `el.json`/`en.json`: `{ title, lead, photos:[{src,caption}],
@@ -61,8 +61,8 @@ These are the things the owner explicitly asked for. Keep them satisfied:
   in original Greek. Book/journal titles inside items are wrapped in `*asterisks*` and rendered
   italic via `<RichText>`. Reuses the `.activity-section`/`.activity-item` styles plus
   `.interests-*` styles in `index.css`.
-- **Curriculum / CV** (`/cv`, `src/pages/CV.jsx`) — formal CV from `yliko/cv.txt`. **Not in the
-  main navbar** (it was already full) — instead it's coupled to the Biography page: a `btn--ghost`
+- **Curriculum / CV** (`/cv`, `src/pages/CV.jsx`) - formal CV from `yliko/cv.txt`. **Not in the
+  main navbar** (it was already full) - instead it's coupled to the Biography page: a `btn--ghost`
   CTA at the bottom of the Biography prose links to it, and it's also in the Footer link list.
   Opens with the `yiannis-2009.jpg` photo + a details table, then Education / University Teaching
   sections and a Publications block (17 books + papers/translations notes). Content in the `cv`
@@ -75,13 +75,55 @@ These are the things the owner explicitly asked for. Keep them satisfied:
   `de.json`. Each book title is wrapped in `*asterisks*` and rendered italic via `<RichText>`.
   Styles: `.cv-*` in `index.css`. Nav label key is `nav.cv`.
 
-### `yliko/` — the owner's content drop folder
+- **Bibliography search** (`/bibliography`, `src/pages/Bibliography.jsx`) - the owner's *Greek
+  Philosophical Bibliography*, a 40-year (1980-2019) collection. **Both divisions are LIVE with real
+  data: Books (~15,236 entries) + Articles (~9,003 entries) = ~24,239.** The page has a **Books ⇄
+  Articles toggle** (`.biblio-tabs`).
+  - **Source & pipeline:** the raw archives are binary Word 97-2003 `.doc` files in
+    **`greek-bibliography/`** (`elliniki-philosophiki-bibliografia/` = 5 book files;
+    `elliniki-philosophiki-arthrografia/` = 4 article files). Parsed by
+    **`scripts/gen_bibliography.mjs`** (Node; requires **`antiword`** on PATH - extracts with
+    `antiword -m UTF-8.txt`, de-wraps antiword's hard line-wrapping, splits entries on blank
+    lines / bullets / column-0 starts). Two modes: **books** are grouped by the philosophical
+    taxonomy, section detected by **matching the heading title against the canonical taxonomy**
+    (body *numbering* is inconsistent, e.g. `01.` vs `0.2.`, so titles are the reliable key);
+    **articles** are grouped by **YEAR** (each file lists 1980, 1981, … with alphabetical entries
+    below - `sectionCode` = the year). Run `node scripts/gen_bibliography.mjs` to regenerate. The
+    pure parsing rules (`dewrap`, `isYearHeading`, `isJunk`, `extractAuthorYear`) live in
+    **`src/lib/bibliographyParse.js`** and are unit-tested - the `isJunk` filter is deliberately
+    conservative (regression-tested that it does **not** drop real entries containing e.g. «Κυκλικά»
+    - the `κλικ` substring - or transliteration lists with several `=` signs; earlier versions did).
+  - **Generated data:** `src/data/bibliography/books/{1980-1989,1990-1999,2000-2009,2010-2019a,
+    2010-2019b}.json` and `src/data/bibliography/articles/{1980-1989,1990-1999,2000-2009,
+    2010-2019}.json` (one per period) + an `index.json` per division. Each entry:
+    `{ id, sectionCode, sectionTitle, author, year, text }` (for articles `sectionCode`/`year` are
+    the heading year). **Lazy-loaded per division via dynamic `import()`** so Vite code-splits them
+    into separate chunks (kept out of the main bundle) - per the owner's decision the full data is
+    **online-only** (the offline `build:standalone` won't include these chunks). `year`/`author` are
+    heuristic (`year` = smallest 4-digit year in the text for books; the heading year for articles) -
+    `author` is only used to widen the search blob, not displayed, so occasional over-capture is
+    harmless.
+  - **Taxonomy (books):** the browsable thematic tree is the shared **`src/data/bibliography.json`**
+    (trilingual `{ code, title:{el,en,de}, note?, children? }`), including body-only alphabetical
+    sections **V.23** (foreign) & **V.24** (Greek) contemporary philosophers.
+  - **The page:** modern search bar with a keyboard-navigable **"jump to section" autocomplete**
+    (books only); books show **category** chips (top-level 0/I/II/III/IV/V), articles have none;
+    both show **period** chips (division-specific) and a **browse view** shown by default - books
+    **browse-by-section** (cards per taxonomy leaf), articles **browse-by-year** (year cards grouped
+    by decade). Typing switches to **full-text entry search** (accent-insensitive, multi-token AND,
+    debounced 140 ms, results capped at 300) with **match highlighting** (`<mark class="biblio-hl">`,
+    accent-insensitive via a normalised index map). Search helpers are extracted to
+    **`src/lib/bibliographySearch.js`** (unit-tested - see the Tests section). UI strings in the
+    `bibliography` key of `el/en/de.json`; nav label `nav.bibliography` (navbar + footer). Styles:
+    `.biblio-*` in `index.css`.
+
+### `yliko/` - the owner's content drop folder
 The owner places source material (`.txt` etc.) in **`yliko/`** to be turned into site content.
 First file: `yliko/xronologio.txt` → became `src/data/chronology.json`. When new files appear
 there, read them and fold their content into the appropriate JSON/page. (`yliko/` is raw source
 and is not rendered directly.)
 
-### `dad-requests/` — the owner's correction rounds
+### `dad-requests/` - the owner's correction rounds
 The owner (Giannis Tzavaras) sends rounds of requested corrections as `.docx` files placed in
 **`dad-requests/`**. They are written in Greek. To read a `.docx`, unzip it and extract text from
 `word/document.xml` (the `<w:t>` runs). Apply every change across **all three** dictionaries and
@@ -114,9 +156,9 @@ languages stay aligned). To add a year/entry, add it to the script's `entries` l
 
 ### Real photographs
 The owner added two real photos in `public/images/`:
-- `IoannisTzavaras.jpg` — recent (Professor Emeritus) photo → used as the **main portrait**
+- `IoannisTzavaras.jpg` - recent (Professor Emeritus) photo → used as the **main portrait**
   (hero + biography aside).
-- `Giannis-Tzavaras.jpg` — younger black-and-white portrait → used as the **"early years"**
+- `Giannis-Tzavaras.jpg` - younger black-and-white portrait → used as the **"early years"**
   historical photo in the Biography aside.
 
 These are wired through `src/components/Portrait.jsx` (pass a `src` prop to choose one).
@@ -124,7 +166,7 @@ These are wired through `src/components/Portrait.jsx` (pass a `src` prop to choo
 ## Architecture
 
 - **Stack**: React 18, Vite, React Router v6, `lucide-react` icons, plain CSS.
-- **i18n**: **Trilingual — Greek (default), English, German.**
+- **i18n**: **Trilingual - Greek (default), English, German.**
   `src/i18n/LanguageContext.jsx` provides `{ lang, setLang, toggle, t }`; `lang` is one of
   `'el' | 'en' | 'de'` (the `LANGS` array there is the source of truth; `toggle` cycles through
   them). `t` is the whole dictionary for the active language (`el.json`, `en.json` or `de.json`).
@@ -145,7 +187,7 @@ These are wired through `src/components/Portrait.jsx` (pass a `src` prop to choo
   Activities, Contact. The first item is an explicit **`Αρχική` Home link** (`{ to: '/', icon:
   Home, end: true }`) styled as a gold pill (`.nav-link--home`); `renderLink` supports an
   optional lucide `icon` and an `end` flag. The old stacked `{ stack: [...] }` groups were
-  removed — the navbar now spans **full viewport width** (`.navbar__inner` overrides
+  removed - the navbar now spans **full viewport width** (`.navbar__inner` overrides
   `.container` with `max-width:none`) so everything fits on one line. The primary nav collapses
   to the burger menu at **≤1180px** (was ≤1024px). The `.nav-stack` CSS is now unused but left
   in place harmlessly.
@@ -157,25 +199,25 @@ These are wired through `src/components/Portrait.jsx` (pass a `src` prop to choo
   terracotta; serif typography (Cormorant Garamond / Spectral, both support Greek);
   Greek-meander motifs; owl-of-Athena logo (`public/owl.svg`).
 
-## Analytics (Supabase — no backend server)
+## Analytics (Supabase - no backend server)
 
 Basic traffic analytics are tracked **without any backend/JVM/self-hosted DB**: the static
 frontend writes one row per page view directly to a free **Supabase** (Postgres) project via
 `@supabase/supabase-js`, and a private in-app dashboard reads it back. This keeps requirement
-#7 (frontend-only, no server to run) intact — Supabase is a managed BaaS, not our server.
+#7 (frontend-only, no server to run) intact - Supabase is a managed BaaS, not our server.
 Full setup + rationale is in **`ANALYTICS.md`**; the schema/RLS/aggregation SQL is in
 **`supabase/schema.sql`**. (We deliberately rejected a self-hosted Spring Boot + MySQL stack
 as too heavy/costly for a static site.)
 
 - **Client**: `src/lib/supabase.js` (creates the client, or `null` if env vars are absent →
-  everything no-ops) and `src/lib/analytics.js` (`trackPageView(path)` — visitor id in
+  everything no-ops) and `src/lib/analytics.js` (`trackPageView(path)` - visitor id in
   `localStorage`, UA parse, client-side geo via `ipwho.is`, fire-and-forget insert).
 - **Wiring**: `App.jsx` has a `TrackPageViews` component that fires `trackPageView(pathname)`
   on every route change (so each `/blog/:id` is tracked distinctly); it skips `/admin`.
 - **Dashboard**: `src/pages/Admin.jsx` (+ `Admin.css`) at route **`/admin`** (HashRouter →
   `/#/admin`). **Not in the navbar/footer.** Supabase Auth login (your email/password);
   totals, per-day chart, breakdowns (page, blog, lang, country, browser, OS, device, referrer,
-  UTM), recent-visits table. Kept **English-only and out of the `el/en/de` JSON** on purpose —
+  UTM), recent-visits table. Kept **English-only and out of the `el/en/de` JSON** on purpose -
   it's an internal tool, not public content, so the "mirror across 3 dictionaries" rule does
   **not** apply to it.
 - **Config**: `VITE_SUPABASE_URL` + `VITE_SUPABASE_ANON_KEY` (see `.env.example`). The anon
@@ -206,10 +248,25 @@ npm run dev            # dev server → http://localhost:5173
 npm run build          # production build → /dist
 npm run build:standalone  # portable build → /dist (open index.html directly, no server)
 npm run preview        # preview the build
+npm test               # run unit tests once (Vitest)
+npm run test:watch     # unit tests in watch mode
 ```
 
+### Tests
+Unit tests use **Vitest** (`npm test`, 42 tests). Pure logic is extracted into `src/lib/*` so it can
+be tested without rendering React:
+- **`src/lib/bibliographySearch.js`** (`normalize`, `tokenize`, `entryNorm`, `entryMatches`,
+  `topCodeOf`, `sectionScore`, `highlightRanges`) - used by `Bibliography.jsx` (its `highlight()`
+  just wraps `highlightRanges` in `<mark>`). Specs in `bibliographySearch.test.js` (accent-insensitive
+  matching, multi-token AND, word-prefix section scoring, highlight ranges, article-shaped citations).
+- **`src/lib/bibliographyParse.js`** (`dewrap`, `isYearHeading`, `isJunk`, `extractAuthorYear`) -
+  used by `scripts/gen_bibliography.mjs`. Specs in `bibliographyParse.test.js` (de-wrapping, year
+  headings, author/year extraction, and **regression tests** that the junk filter keeps real entries).
+
+Prefer adding pure logic to `src/lib/*` so it stays testable.
+
 ### Standalone / offline build (`npm run build:standalone`)
-Produces a `dist/` that runs by **double-clicking `dist/index.html`** in a browser —
+Produces a `dist/` that runs by **double-clicking `dist/index.html`** in a browser -
 no web server, no React, no Node. Copy the whole `dist/` folder to any PC and open it.
 This works because:
 - **Routing uses `HashRouter`** (`src/main.jsx`) so navigation lives in the URL hash and
@@ -224,16 +281,16 @@ Caveat: the Google Fonts `<link>` still needs internet; offline it falls back to
 
 **Why one `index.html` "does everything":** the inline step pastes the full CSS (`<style>…</style>`)
 and the entire bundled React app (`<script type="module">…</script>`) directly inside the HTML file
-— that's why it's ~370 KB. There are no separate page files; the browser runs that embedded script
+- that's why it's ~370 KB. There are no separate page files; the browser runs that embedded script
 and generates every route on the fly. Only binary/image assets stay as sibling files (`images/`,
 plus the `.svg` logo/flags), referenced by relative paths. **Keep `index.html` and those files
-together in the same folder** — the HTML carries all the logic but still loads the photos from
+together in the same folder** - the HTML carries all the logic but still loads the photos from
 `images/`. To transfer, copy the whole `dist/` folder (or zip it); double-click `index.html` to run.
 
 - **New blog post** → append an object to `blog.posts` in ALL THREE json files (same `id`,
   `date` as `YYYY-MM-DD`, `body` is an array of paragraph strings). **The `date` MUST be the
   post's actual publication date (the real day it is published), not a placeholder.** The
-  reading-time badge has been removed from the blog list and single-post pages — do not
+  reading-time badge has been removed from the blog list and single-post pages - do not
   re-add it.
 - **New book** → append to `src/data/books.json` (and/or `translations.json`).
 - **New article** → append the same object to `articles.items` in all three dictionaries. Item
@@ -246,59 +303,59 @@ together in the same folder** — the HTML carries all the logic but still loads
 - **Swap a portrait** → drop the file in `public/images/` and pass its path as the `src`
   prop to `<Portrait />`.
 
-## Important caveat — content accuracy
+## Important caveat - content accuracy
 
 The **Chronology, Books, Translations, Articles, CV publications and Interests** are now real,
 sourced bibliographic data (from the owner's `yliko/` files and his
 `istoselidatzavara.webnode.page` / blogspot bibliography). The **biographical narrative prose
-and the blog posts** are still **plausible placeholders** demonstrating the design — NOT verified
+and the blog posts** are still **plausible placeholders** demonstrating the design - NOT verified
 facts; replace before publishing. The photographs and the bibliography are the verified assets.
 
 ## Not done yet / possible next steps
 
 - Verify and replace the placeholder **biographical narrative prose** and **blog posts** with
-  real text (the bibliographic data is now sourced/real — see the caveat above).
-- Optional: deploy (e.g. GitHub Pages / Netlify / Vercel) — add a `base` in
+  real text (the bibliographic data is now sourced/real - see the caveat above).
+- Optional: deploy (e.g. GitHub Pages / Netlify / Vercel) - add a `base` in
   `vite.config.js` if hosting under a sub-path.
 - Optional: real contact form (would need a backend or a 3rd-party form service).
 - Optional: SEO/OG image, sitemap, favicon variants.
 
 ## Changelog
 
-### dad-requests vol.1 — "Διορθώσεις στη νέα Ιστοσελίδα Τζαβάρα vol. 1.docx" (June 2026)
+### dad-requests vol.1 - "Διορθώσεις στη νέα Ιστοσελίδα Τζαβάρα vol. 1.docx" (June 2026)
 Source file: `dad-requests/Διορθώσεις στη νέα Ιστοσελίδα Τζαβάρα vol. 1.docx`. 21 owner-requested
 corrections, applied across all three dictionaries and rebuilt to `dist/`:
 
-1. **Home hero subtitle** — «έργο **αφιερωμένο στην … φαινομενολογία**» → «έργο **επικεντρωμένο
+1. **Home hero subtitle** - «έργο **αφιερωμένο στην … φαινομενολογία**» → «έργο **επικεντρωμένο
    στην … μεταφυσική**» (EL/EN/DE).
 2. **Phenomenology → Metaphysics** everywhere the word describes his *work/field* (home
    highlight title, biography paragraphs, timeline title, Works area title) in all 3 languages.
    **Deliberately preserved** in actual book/journal titles (Heidegger *Φαινομενολογία και
    Θεολογία* / *Phänomenologie und Theologie*; *Studia Phaenomenologica*).
-3. **Reading time singular** — added `ui.minReadOne` (EL «λεπτό ανάγνωσης»); `Blog.jsx` /
+3. **Reading time singular** - added `ui.minReadOne` (EL «λεπτό ανάγνωσης»); `Blog.jsx` /
    `BlogPost.jsx` choose singular when `readingTime === 1`.
 4. **Blog post fixes** (EL + mirrored EN/DE): «δεν είναι **αυτοσκοπός**»; «**Για να μελετηθεί** …
    μπορεί να **απαιτηθεί** μια ολόκληρη μέρα»; «**καινούριες**»; Leibniz phrasing «γιατί υπάρχει
    κάτι **και όχι μάλλον το τίποτα**» (DE already had «und nicht vielmehr nichts»).
-5. **Italics for book titles & journal names everywhere** — added `src/components/RichText.jsx`
+5. **Italics for book titles & journal names everywhere** - added `src/components/RichText.jsx`
    (`*...*` → `<em>`); applied markup in CV books, Articles `source`, Chronology items, Interests
    items; Books/Translations card titles italicised via CSS.
-6. **Chronology 2026 entry** added — Friedrich Schelling, *Οι Θεότητες της Σαμοθράκης* (Διανόηση,
+6. **Chronology 2026 entry** added - Friedrich Schelling, *Οι Θεότητες της Σαμοθράκης* (Διανόηση,
    Αθήνα 2026, 326 σ.).
-7. **CV publications per language** — Greek titles in `el.json` (dropped the "(In Greek)" tag),
+7. **CV publications per language** - Greek titles in `el.json` (dropped the "(In Greek)" tag),
    English titles in `en.json`, German titles in `de.json`.
-8. **Αισθητική Αγωγή journal dates** — «(2002–σήμερα)» → **(2002-2014)** (Interests, all langs).
-9. **Articles page rebuilt** — removed placeholders; pulled the exact 38 articles the owner
+8. **Αισθητική Αγωγή journal dates** - «(2002-σήμερα)» → **(2002-2014)** (Interests, all langs).
+9. **Articles page rebuilt** - removed placeholders; pulled the exact 38 articles the owner
    listed (numbers 1, 2, 3, 4, 10, 12, 14, 16, 18, 19, 21, 23, 24, 26, 28, 32, 35, 36, 37, 38,
    40, 43, 48, 51, 52, 53, 56, 57, 59, 62, 63, 66, 67, 70, 72, 75, 77, 78) from his blogspot
    εργογραφία, each with full citation. New item shape `{ year, title, source }`; titles kept in
    original language across all three files.
 10. **Chronology & Interests translated** into EN and DE (were Greek-only). `chronology.json` is
     now fully trilingual and generated by `scripts/gen_chronology.py`.
-11. **Navbar** — removed the **Works** («Έργο») menu item (nav + footer; route still exists).
+11. **Navbar** - removed the **Works** («Έργο») menu item (nav + footer; route still exists).
     **Books/Articles** and **Blog/Activities/Contact** now render stacked (one below the other)
     via `.nav-stack` groups, in all 3 languages.
-12. **Contact** — removed the «Στείλτε email» CTA button (all langs). The `contact.writeButton`
+12. **Contact** - removed the «Στείλτε email» CTA button (all langs). The `contact.writeButton`
     key is now unused (left in JSON harmlessly).
 
 New/changed files: `src/components/RichText.jsx` (new), `scripts/gen_chronology.py` (new
@@ -307,35 +364,35 @@ generator for `chronology.json`), `src/components/Navbar.jsx`, `src/components/F
 (`.nav-stack`, italic `.book-card__title`, `.article-item__journal em`), and all three
 `src/data/*.json` + `src/data/chronology.json`.
 
-### dad-requests vol.2 — blog cleanup & content tweaks (August 2026)
+### dad-requests vol.2 - blog cleanup & content tweaks (August 2026)
 Small owner-requested round, applied across all three dictionaries and rebuilt to `dist/`:
 
-1. **Blog trimmed to one post** — removed the two older posts (`giati-metafrazoume`,
+1. **Blog trimmed to one post** - removed the two older posts (`giati-metafrazoume`,
    `to-erotima-pou-menei`); only the most recent, «Η τέχνη της αργής ανάγνωσης»
    (`i-techni-tis-argis-anagnosis`), remains in `blog.posts` (all 3 langs).
-2. **Em-dashes → hyphens** — replaced every large em-dash «—» (U+2014) with a plain hyphen «-»
-   in the visible site text (`el/en/de.json`, `Home.jsx`, `Admin.jsx`). En-dashes «–» (U+2013)
-   in date/page ranges (e.g. `1968–1973`) were deliberately left as-is. (The only remaining `—`
+2. **Em-dashes → hyphens** - replaced every large em-dash «-» (U+2014) with a plain hyphen «-»
+   in the visible site text (`el/en/de.json`, `Home.jsx`, `Admin.jsx`). En-dashes «-» (U+2013)
+   in date/page ranges (e.g. `1968-1973`) were deliberately left as-is. (The only remaining `-`
    in the bundle are inside the third-party `@supabase/supabase-js` library, never rendered.)
-3. **Greek "view all" label** — `ui.viewAll` «Δείτε όλα» → «Δείτε τα όλα» (EL only; EN/DE
+3. **Greek "view all" label** - `ui.viewAll` «Δείτε όλα» → «Δείτε τα όλα» (EL only; EN/DE
    unchanged).
-4. **Reading-time badge removed** — dropped the Clock + `readingTime()` "X λεπτά ανάγνωσης"
+4. **Reading-time badge removed** - dropped the Clock + `readingTime()` "X λεπτά ανάγνωσης"
    badge from both `Blog.jsx` (list) and `BlogPost.jsx` (single post), plus their now-unused
    `Clock`/`readingTime` imports. `ui.minRead`/`ui.minReadOne` keys left in JSON harmlessly.
    **New convention:** new blog posts must use their real publication `date`; don't re-add the
    reading-time badge (see the "New blog post" bullet in Common tasks).
-5. **Kept post's date** — `i-techni-tis-argis-anagnosis` date set to `2026-08-02`
+5. **Kept post's date** - `i-techni-tis-argis-anagnosis` date set to `2026-08-02`
    (2 Αυγούστου 2026), was `2026-05-18`.
-6. **"Old website" link label** — CV page **and** Activities page `sourceLabel` changed:
+6. **"Old website" link label** - CV page **and** Activities page `sourceLabel` changed:
    EL «Διαβάστε περισσότερα στον παλιό ιστότοπο», EN "Read more on the old website",
    DE "Mehr auf der alten Website lesen" (was "…personal website"/«…προσωπική ιστοσελίδα»).
-7. **Explicit Home nav link** — added an obvious **`Αρχική` link with a Home icon** (lucide
+7. **Explicit Home nav link** - added an obvious **`Αρχική` link with a Home icon** (lucide
    `Home`) as the **first** item in the navbar, styled as a gold pill (`.nav-link--home` in
    `index.css`). It's driven by `nav.home` (already trilingual) and uses `end` so it's only
-   active on `/`. The **logo link (top-left) is unchanged** and still also goes home — this is
+   active on `/`. The **logo link (top-left) is unchanged** and still also goes home - this is
    an *additional* entry point for users who don't realise the logo is clickable. `renderLink`
    in `Navbar.jsx` now supports an optional `icon` (a lucide component) and `end` flag.
-8. **Navbar widened & un-stacked** — the nav bar was too tight (language flags overflowing).
+8. **Navbar widened & un-stacked** - the nav bar was too tight (language flags overflowing).
    Fixed by making `.navbar__inner` span **full viewport width** (`max-width:none` +
    `padding-inline: clamp(1rem,2.5vw,2rem)`) so the logo sits far left with much more room, and
    by **flattening the two stacked groups** (Books/Articles, Blog/Activities/Contact) into

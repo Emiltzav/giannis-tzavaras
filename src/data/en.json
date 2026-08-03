@@ -13,6 +13,7 @@
     "interests": "Interests",
     "books": "Books",
     "articles": "Scientific Papers",
+    "bibliography": "Bibliography",
     "blog": "Blog",
     "activities": "Activities",
     "contact": "Contact"
@@ -36,6 +37,31 @@
     "viewAll": "View all",
     "scroll": "Scroll",
     "menu": "Menu"
+  },
+  "bibliography": {
+    "title": "Greek Philosophical Bibliography",
+    "lead": "The fruit of forty years (1980-2019) of collecting: a Greek-language philosophical bibliography of books and a companion index of journal articles - tens of thousands of records. Search or browse.",
+    "collectionLabel": "Collection",
+    "booksTab": "Books",
+    "articlesTab": "Articles",
+    "searchPlaceholder": "Search author, title, source…",
+    "clear": "Clear",
+    "loading": "Loading the bibliography…",
+    "jumpHint": "Jump to a section",
+    "categoryLabel": "Category",
+    "periodLabel": "Period",
+    "allCategories": "All",
+    "allPeriods": "All periods",
+    "browseHeading": "Browse by section",
+    "browseByYear": "Browse by year",
+    "browseHint": "Pick a section, or start typing to search the whole collection.",
+    "entryOne": "entry",
+    "entryMany": "entries",
+    "showingOf": "Showing {shown} of {total}",
+    "refine": "Refine your search to narrow the results.",
+    "backToBrowse": "All sections",
+    "backToYears": "All years",
+    "noResults": "No entries found. Try another term."
   },
   "home": {
     "heroKicker": "Greek philosophical thought",
@@ -141,7 +167,7 @@
       { "label": "Name", "value": "Ioannis" },
       { "label": "Position", "value": "Professor Emeritus" },
       { "label": "Specialization", "value": "Philosophy with an emphasis on Metaphysics" },
-      { "label": "Address", "value": "Roussospiti POB 4642, GR–74100 Rethymno" },
+      { "label": "Address", "value": "Roussospiti POB 4642, GR-74100 Rethymno" },
       { "label": "Tel.", "value": "+30 6945953220" },
       { "label": "E-mail", "value": "itzavaras@yahoo.gr" }
     ],
@@ -149,18 +175,18 @@
       {
         "heading": "Education",
         "entries": [
-          { "label": "Undergraduate", "text": "University of Athens, School of Philosophy, Department of Philosophy: 1968–1973." },
-          { "label": "Post-graduate", "text": "Specialization in Philosophy: a) Göttingen (Germany), winter semester 1973–74; b) Munich (Germany), spring semester 1974 – spring semester 1978." },
-          { "label": "Doctorate", "text": "University of Munich, 1974–1978. Doctoral thesis: “Motion according to Kierkegaard”." }
+          { "label": "Undergraduate", "text": "University of Athens, School of Philosophy, Department of Philosophy: 1968-1973." },
+          { "label": "Post-graduate", "text": "Specialization in Philosophy: a) Göttingen (Germany), winter semester 1973-74; b) Munich (Germany), spring semester 1974 - spring semester 1978." },
+          { "label": "Doctorate", "text": "University of Munich, 1974-1978. Doctoral thesis: “Motion according to Kierkegaard”." }
         ]
       },
       {
         "heading": "University Teaching (University of Crete)",
         "entries": [
-          { "label": "Contract appointment", "text": "1979–1984" },
-          { "label": "Assistant Professor", "text": "1984–1990" },
-          { "label": "Associate Professor", "text": "1991–1997" },
-          { "label": "Professor", "text": "1997–2014" }
+          { "label": "Contract appointment", "text": "1979-1984" },
+          { "label": "Assistant Professor", "text": "1984-1990" },
+          { "label": "Associate Professor", "text": "1991-1997" },
+          { "label": "Professor", "text": "1997-2014" }
         ]
       }
     ],
@@ -170,19 +196,19 @@
       "books": [
         "1. *Motion according to Kierkegaard* (in German). Verlag Peter Lang, Frankfurt a.M. 1978, 122 pp.",
         "2. *The Poem of Parmenides* (in Greek). Domos, Athens 1980, 241 pp.",
-        "3. *The Certainty of Death* (in Greek). Dodoni, Athens – Ioannina 1982, 118 pp.",
-        "4. *The Poetry of Empedocles* (Ancient text – Translation – Commentary) (in Greek). Dodoni, Athens – Ioannina 1988, 303 pp.",
-        "5. *The Kantian Time according to Heidegger* (in Greek). Dodoni, Athens – Ioannina 1989, 101 pp.",
-        "6. *Love – War. An Essay on Cosmic Theory* (in Greek). Dodoni, Athens – Ioannina 1993, 172 pp.",
+        "3. *The Certainty of Death* (in Greek). Dodoni, Athens - Ioannina 1982, 118 pp.",
+        "4. *The Poetry of Empedocles* (Ancient text - Translation - Commentary) (in Greek). Dodoni, Athens - Ioannina 1988, 303 pp.",
+        "5. *The Kantian Time according to Heidegger* (in Greek). Dodoni, Athens - Ioannina 1989, 101 pp.",
+        "6. *Love - War. An Essay on Cosmic Theory* (in Greek). Dodoni, Athens - Ioannina 1993, 172 pp.",
         "7. *A Companion to Philosophy* (in Greek). Editions of Kosteas-Geitonas School, Athens 1995, 156 pp. (2nd edition, Rethymno 2001. 3rd edition totally renewed, Typothito-G. Dardanos, Athens 2006, 319 pp.).",
-        "8. *The Universal Diffusion of Despair* (Study on Kierkegaard) (in Greek). Dodoni, Athens – Ioannina 1997, 202 pp.",
+        "8. *The Universal Diffusion of Despair* (Study on Kierkegaard) (in Greek). Dodoni, Athens - Ioannina 1997, 202 pp.",
         "9. *Problems in the Philosophy of Education* (in Greek). Rethymno 2000, 172 pp.",
         "10. *The Demerit of Values: Nietzsche and Heidegger* (in Greek). Indictos, Athens 2005, 237 pp.",
         "11. *Theology and Philosophy according to the Early Heidegger* (in Greek). Indictos, Athens 2007, 125 pp.",
         "12. *An Anthology of Aesthetics* (in Greek). Gutenberg, Athens 2007, 175 pp.",
         "13. *An Introduction to Ontology* (in Greek). Gutenberg, Athens 2009, 186 pp.",
         "14. *Philosophical Dialogue in the Classroom. Proceedings of a Congress (Rethymno, 22-10-2010)* (in Greek).",
-        "15. *Nietzsches Notizen zum Zarathustra (Juli 1882 – Februar 1883)* (in Greek). e-book, 2011.",
+        "15. *Nietzsches Notizen zum Zarathustra (Juli 1882 - Februar 1883)* (in Greek). e-book, 2011.",
         "16. *Heideggers «Beiträge zur Philosophie». Ein Zugangsversuch* (in Greek). e-book, 2012.",
         "17. *Existentielles und denkerisches Werden bei Kierkegaard* (in Greek). e-book, 2013."
       ],
@@ -245,24 +271,24 @@
             "items": [
               "*The Poem of Parmenides* (1980)",
               "*The Poetry of Empedocles* (1988)",
-              "Plotinus: *The “Great Book”* (= Enneads 30–33) (1995)"
+              "Plotinus: *The “Great Book”* (= Enneads 30-33) (1995)"
             ]
           }
         ]
       },
       {
         "letter": "B",
-        "heading": "Ontology – Metaphysics",
+        "heading": "Ontology - Metaphysics",
         "groups": [
           {
             "label": "Related books",
             "items": [
               "*Bewegung bei Kierkegaard* (1978)",
               "*The Kantian Time according to Heidegger* (1989)",
-              "*Love – War. An Essay on Cosmic Theory* (1993)",
+              "*Love - War. An Essay on Cosmic Theory* (1993)",
               "*The Demerit of Values: Nietzsche and Heidegger* (2005)",
               "*An Introduction to Ontology* (2009)",
-              "Translations of ontological–metaphysical books by Thomas Aquinas, Heidegger, Kant and Hegel."
+              "Translations of ontological-metaphysical books by Thomas Aquinas, Heidegger, Kant and Hegel."
             ]
           }
         ]
@@ -280,7 +306,7 @@
           {
             "label": "Related scholarly paper",
             "items": [
-              "“Democratic education as an experience of collective self-institution and self-management”. A paper at the academic symposium “The crisis of democracy as a crisis of democratic education” (Alexandroupoli, 8–9 November 2013)."
+              "“Democratic education as an experience of collective self-institution and self-management”. A paper at the academic symposium “The crisis of democracy as a crisis of democratic education” (Alexandroupoli, 8-9 November 2013)."
             ]
           }
         ]
@@ -307,7 +333,7 @@
             "items": [
               "M. Heidegger, *The Origin of the Work of Art*. Translated by G. Tzavaras (1986).",
               "*An Anthology of Aesthetics* (2007)",
-              "The journal *Aesthetic Education* (2002–2014).",
+              "The journal *Aesthetic Education* (2002-2014).",
               "“The diffusion of inter-artistic knowledge through a website. General principles”. A scholarly paper at the International Workshop “Towards a new inter-artistic and intercultural approach through the use of new technology”, organised by the Laboratory of Artistic and Cultural Education of the Department of Primary Education of the University of the Aegean (Rhodes, 5 February 2011). Published in the proceedings of the workshop."
             ]
           }
@@ -339,7 +365,7 @@
       { "year": "1985", "title": "«Ο Ζαρατούστρα του Νίτσε ως κήρυκας του ολέθρου»", "source": "*Φιλοσοφία. Επετηρίς του Κέντρου Ερεύνης της Ελληνικής Φιλοσοφίας της Ακαδημίας Αθηνών* 15-16 (1985-86), 398-443." },
       { "year": "1988", "title": "«Διαλεκτική κίνηση στη φιλοσοφία της τέχνης του Χάιντεγγερ»", "source": "Συμμετοχή στο 3ο Πανελλήνιο συνέδριο της Ελληνικής Φιλοσοφικής Εταιρείας («Η έννοια της διαλεκτικής», 1986). Στον τόμο: *Η διαλεκτική*, Ελληνική Φιλοσοφική Εταιρεία, Αθήνα 1988, 383-387." },
       { "year": "1989", "title": "“Heideggers Unterscheidung zwischen Zuhandenheit und Vorhandenheit”", "source": "*Philosophisches Jahrbuch* 96 (1989), 367-371. (Ελληνική μετάφραση 2015: «Η διάκριση του Χάιντεγγερ μεταξύ πρόχειρων και παρευρισκόμενων όντων».)" },
-      { "year": "1990", "title": "«Η θεμελιώδης Οντολογία του Μάρτιν Χάιντεγγερ»", "source": "Συμμετοχή στο Συμπόσιο «Χάιντεγγερ και Αντόρνο – ο διάλογος που δεν πραγματοποιήθηκε» (Ινστιτούτο Γκαίτε Αθηνών, 22-24 Νοεμβρίου 1989). *Λεβιάθαν* 8 (1990), 21-26." },
+      { "year": "1990", "title": "«Η θεμελιώδης Οντολογία του Μάρτιν Χάιντεγγερ»", "source": "Συμμετοχή στο Συμπόσιο «Χάιντεγγερ και Αντόρνο - ο διάλογος που δεν πραγματοποιήθηκε» (Ινστιτούτο Γκαίτε Αθηνών, 22-24 Νοεμβρίου 1989). *Λεβιάθαν* 8 (1990), 21-26." },
       { "year": "1991", "title": "«Ο χρόνος της καθημερινότητας στον Αριστοτέλη και στον Heidegger»", "source": "*Ζήνων* 10-12 (1989-91), 15-19." },
       { "year": "1992", "title": "«Πυθαγόρειες επιδράσεις στη φιλοσοφία του Εμπεδοκλή»", "source": "Ανακοίνωση στο 3ο Διεθνές Συνέδριο Ελληνικής Φιλοσοφίας (Σάμος, 22-26/8/1991). Στον τόμο: Κωνσταντίνος Βουδούρης (επιμ.), *Πυθαγόρεια Φιλοσοφία*, Αθήνα-Σάμος 1992, 189-194." },
       { "year": "1994", "title": "«Ο εξωπραγματικός χαρακτήρας του καλλιτεχνήματος κατά τον Martin Heidegger»", "source": "Συμμετοχή στο 6ο Πανελλήνιο συνέδριο της Ελληνικής Φιλοσοφικής Εταιρείας («Αισθητική και Φιλοσοφία της τέχνης», Αθήνα 18-20/5/1994). Στον τόμο: Παύλος Χριστοδουλίδης (επιμ.), *Αισθητική και θεωρία της τέχνης*, Εκδόσεις Καρδαμίτσα, Αθήνα 1994, 179-183." },
@@ -352,7 +378,7 @@
       { "year": "2001", "title": "«Ένα καινούριο απόσπασμα από την ποίηση του Εμπεδοκλή»", "source": "Εισήγηση σε διεθνές συνέδριο για τα νέα αποσπάσματα του Εμπεδοκλή (Παρίσι, 26-27 Μαΐου 2000). *Ελληνική Φιλοσοφική Επιθεώρηση* 18 (2001), 45-57." },
       { "year": "2001", "title": "«Φιλοσοφία της παιδείας στον Ηράκλειτο»", "source": "Εισήγηση στο Β΄ Διεθνές Συνέδριο Φιλοσοφίας, Πανεπιστήμιο Κύπρου, Λευκωσία, 5-7 Απριλίου 2001." },
       { "year": "2002", "title": "«Αληθινά και ψευδή παραμύθια κατά τον Πλάτωνα»", "source": "Εισήγηση σε Διεθνές Συνέδριο του Παιδαγωγικού Τμήματος Π.Ε. του Πανεπιστημίου Κρήτης (18-20/10/2001). Στον τόμο: *Ψυχοπαιδαγωγική της Προσχολικής Ηλικίας*, Ρέθυμνο 2002, τόμος Β΄, 706-709." },
-      { "year": "2002", "title": "«Αξιώματα διαπαιδαγώγησης του μικρού παιδιού στον Αιμίλιο του Ρουσσώ»", "source": "Στον τόμο: Ευαγγελία Κούρτη (επιμ.), *Η έρευνα στην προσχολική εκπαίδευση*, τόμος Γ΄, Εκδόσεις Τυπωθήτω – Γ. Δαρδανός, Αθήνα 2002, 217-223." },
+      { "year": "2002", "title": "«Αξιώματα διαπαιδαγώγησης του μικρού παιδιού στον Αιμίλιο του Ρουσσώ»", "source": "Στον τόμο: Ευαγγελία Κούρτη (επιμ.), *Η έρευνα στην προσχολική εκπαίδευση*, τόμος Γ΄, Εκδόσεις Τυπωθήτω - Γ. Δαρδανός, Αθήνα 2002, 217-223." },
       { "year": "2004", "title": "«Η αγωνία ως μέσο ηθικο-θρησκευτικής διαπαιδαγώγησης κατά τον Κίρκεγκωρ»", "source": "Στον τόμο: *Ηθική και θρησκευτική ανάπτυξη και αγωγή του παιδιού*, Πανεπιστήμιο Κρήτης, Ρέθυμνο 2004, 584-588." },
       { "year": "2005", "title": "“Heideggers Hauptwerk in Neugriechisch”", "source": "*Studia Phaenomenologica* 5 (2005), 119-127." },
       { "year": "2007", "title": "«Αισθητική Αγωγή μέσω φιλοσοφικών κειμένων»", "source": "*Φιλοσοφία και Παιδεία* 41 (2007), 16-18." },
@@ -401,7 +427,7 @@
         "heading": "Websites of Giannis Tzavaras",
         "items": [
           {
-            "text": "Greek Philosophical Bibliography 1980–2019. An archive of Greek-language philosophical bibliography.",
+            "text": "Greek Philosophical Bibliography 1980-2019. An archive of Greek-language philosophical bibliography.",
             "url": "https://tzavaras-ioannis.blogspot.com/2022/05/blog-post_9.html"
           },
           {
@@ -413,7 +439,7 @@
             "url": "http://theatroskivvn.yolasite.com"
           },
           {
-            "text": "Philosophy for Children. An effort to introduce to the Greek public the international philosophical–pedagogical movement “philosophy for children”.",
+            "text": "Philosophy for Children. An effort to introduce to the Greek public the international philosophical-pedagogical movement “philosophy for children”.",
             "url": "https://childrenandphilosophy.webnode.com"
           },
           {
@@ -428,13 +454,13 @@
         "heading": "Other activities",
         "items": [
           {
-            "text": "He served as alternate representative of the University of Crete on the Prefectural Committee for Popular Education (N.E.L.E.) of the Prefecture of Rethymno for a two-year term (1985–1987)."
+            "text": "He served as alternate representative of the University of Crete on the Prefectural Committee for Popular Education (N.E.L.E.) of the Prefecture of Rethymno for a two-year term (1985-1987)."
           },
           {
-            "text": "He contributed to the organisation of the following conferences: A) “Wittgenstein Philosophical Symposium”, 15–17 December 1989. B) “The Present and Future of Philosophy”. A two-day philosophical symposium, Orthodox Academy of Crete, November 1991. C) “Technology and Knowledge. Philosophical and Sociological Investigations”. A two-day international seminar, Rethymno, 17–18 October 1996."
+            "text": "He contributed to the organisation of the following conferences: A) “Wittgenstein Philosophical Symposium”, 15-17 December 1989. B) “The Present and Future of Philosophy”. A two-day philosophical symposium, Orthodox Academy of Crete, November 1991. C) “Technology and Knowledge. Philosophical and Sociological Investigations”. A two-day international seminar, Rethymno, 17-18 October 1996."
           },
           {
-            "text": "During the academic year 1993–1994 he served as Chair of the Department of Philosophy and Social Studies, and during the academic years 2005–2007 as Chair of the Department of Pre-school Education of the University of Crete."
+            "text": "During the academic year 1993-1994 he served as Chair of the Department of Philosophy and Social Studies, and during the academic years 2005-2007 as Chair of the Department of Pre-school Education of the University of Crete."
           },
           {
             "text": "For several years he supervised, as principal supervisor, the doctoral thesis of Kostas Kourpetis on “Man and God in Empedocles”. The thesis was successfully defended (grade: excellent) in June 1996."
@@ -446,16 +472,16 @@
             "text": "He was a member of many electoral bodies set up to judge the election or promotion of faculty members of the University of Crete and other Greek universities."
           },
           {
-            "text": "During 1993–1997 he was a regular member of the Research Committee (E.L.K.E.) of the University of Crete as representative of the Department of Philosophy and Social Studies."
+            "text": "During 1993-1997 he was a regular member of the Research Committee (E.L.K.E.) of the University of Crete as representative of the Department of Philosophy and Social Studies."
           },
           {
             "text": "For several years he served as Deputy Chair of the Department of Philosophy and Social Studies and of the Department of Pre-school Education of the University of Crete."
           },
           {
-            "text": "For several years (1998–2005) he served as Vice-President of the Nursery Teachers’ Training College of the University of Crete, and during 2005–2007 as President of the same College."
+            "text": "For several years (1998-2005) he served as Vice-President of the Nursery Teachers’ Training College of the University of Crete, and during 2005-2007 as President of the same College."
           },
           {
-            "text": "He organised an academic workshop on: “From the teacher’s monologue to group dialogue. Philosophical thought and inquiry in the primary-school classroom” (Rethymno, 22 October 2010). The proceedings of the workshop, with enriched and improved versions of the participants’ papers, were published in the journal Dia-LOGOS 2 (2012), pp. 181–339."
+            "text": "He organised an academic workshop on: “From the teacher’s monologue to group dialogue. Philosophical thought and inquiry in the primary-school classroom” (Rethymno, 22 October 2010). The proceedings of the workshop, with enriched and improved versions of the participants’ papers, were published in the journal Dia-LOGOS 2 (2012), pp. 181-339."
           },
           {
             "text": "He was a member of the Quality Assurance Unit (MO.DI.P.) of the University of Crete from 2010 to 2012."
@@ -471,7 +497,7 @@
         "heading": "Lectures",
         "items": [
           {
-            "text": "“An alternative proposal for the teaching of philosophy in Secondary Education”. A lecture before philologists of East Attica, Pallini, 11 April 1994. The text was published in the journal “Philosophy and Education” 1 (1995), issue 3, pp. 12–14."
+            "text": "“An alternative proposal for the teaching of philosophy in Secondary Education”. A lecture before philologists of East Attica, Pallini, 11 April 1994. The text was published in the journal “Philosophy and Education” 1 (1995), issue 3, pp. 12-14."
           },
           {
             "text": "“The God of Empedocles”. A lecture given in Athens in 1997. The text, in a repeatedly reworked form, was published in 2015 under the title “The spherical god of Empedocles”."
@@ -480,10 +506,10 @@
             "text": "“Is the artwork a thing or a meaning?”. A lecture given in Rethymno, Armonia Gallery, 27 November 2002."
           },
           {
-            "text": "“Manolis Markakis as a philosopher”. A lecture organised by the Union of Philologists of the Prefecture of Heraklion, Crete, Heraklion, 3 March 2003, in honour of Manolis Markakis (1942–2001), sociologist, philosopher, poet and writer. Published in the journal “Dialogos” (issued by the Union of Philologists of the Prefecture of Heraklion), issue 17, October 2005, pp. 203–208."
+            "text": "“Manolis Markakis as a philosopher”. A lecture organised by the Union of Philologists of the Prefecture of Heraklion, Crete, Heraklion, 3 March 2003, in honour of Manolis Markakis (1942-2001), sociologist, philosopher, poet and writer. Published in the journal “Dialogos” (issued by the Union of Philologists of the Prefecture of Heraklion), issue 17, October 2005, pp. 203-208."
           },
           {
-            "text": "“Does time exist?”. A lecture given in Rethymno, at the Museum of Contemporary Art of Crete – L. Kanakakis Gallery, 2 December 2009. The lecture was repeated in Athens, at the “Patakis” bookshop (65 Akadimias St.), on 11 February 2010, under the title: “The existence of time according to Aristotle, Kant and Heidegger”."
+            "text": "“Does time exist?”. A lecture given in Rethymno, at the Museum of Contemporary Art of Crete - L. Kanakakis Gallery, 2 December 2009. The lecture was repeated in Athens, at the “Patakis” bookshop (65 Akadimias St.), on 11 February 2010, under the title: “The existence of time according to Aristotle, Kant and Heidegger”."
           }
         ]
       }

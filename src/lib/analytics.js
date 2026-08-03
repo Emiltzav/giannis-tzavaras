@@ -58,7 +58,7 @@ function fallbackUuid() {
     })
 }
 
-// Compact User-Agent classification — enough for basic browser/OS/device stats
+// Compact User-Agent classification - enough for basic browser/OS/device stats
 // without pulling in a heavy parser dependency.
 function parseUserAgent(ua = navigator.userAgent || '') {
     const s = ua.toLowerCase()
@@ -101,7 +101,7 @@ async function lookupGeo() {
             return { country: data.country ?? null, city: data.city ?? null }
         }
     } catch {
-        /* geo is optional — ignore failures */
+        /* geo is optional - ignore failures */
     }
     return { country: null, city: null }
 }

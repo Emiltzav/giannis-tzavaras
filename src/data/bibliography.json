@@ -1,0 +1,102 @@
+{
+  "categories": [
+    {
+      "code": "0",
+      "title": { "el": "Ασιατική Φιλοσοφία", "en": "Asian Philosophy", "de": "Asiatische Philosophie" },
+      "children": [
+        { "code": "0.1", "title": { "el": "Ινδική Φιλοσοφία", "en": "Indian Philosophy", "de": "Indische Philosophie" } },
+        { "code": "0.2", "title": { "el": "Κινέζικη - Γιαπωνέζικη - Θιβετιανή - Κορεατική Φιλοσοφία", "en": "Chinese - Japanese - Tibetan - Korean Philosophy", "de": "Chinesische - Japanische - Tibetische - Koreanische Philosophie" } },
+        { "code": "0.3", "title": { "el": "Ισλαμική Φιλοσοφία", "en": "Islamic Philosophy", "de": "Islamische Philosophie" } },
+        { "code": "0.4", "title": { "el": "Εβραϊκή Φιλοσοφία", "en": "Jewish Philosophy", "de": "Jüdische Philosophie" } },
+        { "code": "0.5", "title": { "el": "Περσική και Αραβική Φιλοσοφία", "en": "Persian and Arabic Philosophy", "de": "Persische und Arabische Philosophie" } }
+      ]
+    },
+    {
+      "code": "I",
+      "title": { "el": "Αρχαία Ελληνική Φιλοσοφία", "en": "Ancient Greek Philosophy", "de": "Antike Griechische Philosophie" },
+      "children": [
+        { "code": "I.1", "title": { "el": "Προσωκρατική Φιλοσοφία", "en": "Pre-Socratic Philosophy", "de": "Vorsokratische Philosophie" } },
+        { "code": "I.2", "title": { "el": "Σοφιστές", "en": "Sophists", "de": "Sophisten" } },
+        { "code": "I.3", "title": { "el": "Κλασική Ελληνική Φιλοσοφία", "en": "Classical Greek Philosophy", "de": "Klassische Griechische Philosophie" } },
+        { "code": "I.4", "title": { "el": "Μετακλασική - Ελληνιστική Φιλοσοφία", "en": "Post-Classical - Hellenistic Philosophy", "de": "Nachklassische - Hellenistische Philosophie" } }
+      ]
+    },
+    {
+      "code": "II",
+      "title": { "el": "Πατέρες - Βυζαντινοί - Σχολαστικοί - Μυστικιστές", "en": "Church Fathers - Byzantines - Scholastics - Mystics", "de": "Kirchenväter - Byzantiner - Scholastiker - Mystiker" },
+      "children": [
+        { "code": "II.1", "title": { "el": "Πατερική Φιλοσοφία (2ος - 5ος αι.)", "en": "Patristic Philosophy (2nd - 5th c.)", "de": "Patristische Philosophie (2.-5. Jh.)" } },
+        { "code": "II.2", "title": { "el": "Βυζαντινή Φιλοσοφία", "en": "Byzantine Philosophy", "de": "Byzantinische Philosophie" } },
+        { "code": "II.3", "title": { "el": "Σχολαστική ή Μεσαιωνική Φιλοσοφία", "en": "Scholastic or Medieval Philosophy", "de": "Scholastische oder Mittelalterliche Philosophie" } }
+      ]
+    },
+    {
+      "code": "III",
+      "title": { "el": "Φιλοσοφία της Αναγέννησης", "en": "Philosophy of the Renaissance", "de": "Philosophie der Renaissance" },
+      "children": [
+        { "code": "III.1", "title": { "el": "Έλληνες", "en": "Greeks", "de": "Griechen" } },
+        { "code": "III.2", "title": { "el": "Δυτικοευρωπαίοι", "en": "Western Europeans", "de": "Westeuropäer" } }
+      ]
+    },
+    {
+      "code": "IV",
+      "title": { "el": "Νεότερη Φιλοσοφία", "en": "Modern Philosophy", "de": "Neuzeitliche Philosophie" },
+      "children": [
+        { "code": "IV.1", "title": { "el": "Εμπειρισμός", "en": "Empiricism", "de": "Empirismus" } },
+        { "code": "IV.2", "title": { "el": "Ορθολογισμός", "en": "Rationalism", "de": "Rationalismus" } },
+        { "code": "IV.4", "title": { "el": "Γαλλικός Διαφωτισμός", "en": "French Enlightenment", "de": "Französische Aufklärung" } },
+        {
+          "code": "IV.5",
+          "title": { "el": "Γερμανικός Ιδεαλισμός και Ρομαντισμός", "en": "German Idealism and Romanticism", "de": "Deutscher Idealismus und Romantik" },
+          "children": [
+            { "code": "IV.5.1", "title": { "el": "Κριτικισμός", "en": "Criticism", "de": "Kritizismus" } },
+            { "code": "IV.5.2", "title": { "el": "Θεωρησιακός Ιδεαλισμός", "en": "Speculative Idealism", "de": "Spekulativer Idealismus" } },
+            { "code": "IV.5.3", "title": { "el": "Ουμανισμός και Παιδαγωγική", "en": "Humanism and Pedagogy", "de": "Humanismus und Pädagogik" } },
+            { "code": "IV.5.4", "title": { "el": "Μετα-ιδεαλισμός", "en": "Post-Idealism", "de": "Post-Idealismus" } },
+            { "code": "IV.5.5", "title": { "el": "Ατομισμός", "en": "Individualism", "de": "Individualismus" } }
+          ]
+        },
+        { "code": "IV.6", "title": { "el": "Αγγλικός και Ιταλικός Ρομαντισμός", "en": "English and Italian Romanticism", "de": "Englische und Italienische Romantik" } },
+        { "code": "IV.7", "title": { "el": "Πολιτική Φιλοσοφία και Φιλοσοφία της Πολιτικής Οικονομίας", "en": "Political Philosophy and Philosophy of Political Economy", "de": "Politische Philosophie und Philosophie der Politischen Ökonomie" } },
+        { "code": "IV.8", "title": { "el": "Ελληνική Νεότερη Φιλοσοφία", "en": "Modern Greek Philosophy", "de": "Neugriechische Philosophie" } }
+      ]
+    },
+    {
+      "code": "V",
+      "title": { "el": "Σύγχρονη Φιλοσοφία (από τα μέσα του 19ου αιώνα έως σήμερα)", "en": "Contemporary Philosophy (from the mid-19th century to today)", "de": "Zeitgenössische Philosophie (von der Mitte des 19. Jahrhunderts bis heute)" },
+      "note": { "el": "Ταξινόμηση κατά σύστημα", "en": "Classification by system", "de": "Einteilung nach System" },
+      "children": [
+        { "code": "V.1", "title": { "el": "Κλασικός Θετικισμός", "en": "Classical Positivism", "de": "Klassischer Positivismus" } },
+        {
+          "code": "V.2",
+          "title": { "el": "Ιστορικός και Διαλεκτικός Υλισμός", "en": "Historical and Dialectical Materialism", "de": "Historischer und Dialektischer Materialismus" },
+          "children": [
+            { "code": "V.2.1", "title": { "el": "Αναρχισμός", "en": "Anarchism", "de": "Anarchismus" } }
+          ]
+        },
+        { "code": "V.3", "title": { "el": "Επιστημολογικές Συνθέσεις", "en": "Epistemological Syntheses", "de": "Erkenntnistheoretische Synthesen" } },
+        { "code": "V.4", "title": { "el": "Ύστερος Ιδεαλισμός", "en": "Late Idealism", "de": "Später Idealismus" } },
+        { "code": "V.5", "title": { "el": "Νεοκαντιανισμός", "en": "Neo-Kantianism", "de": "Neukantianismus" } },
+        { "code": "V.6", "title": { "el": "Φιλοσοφία των Επιστημών του Πνεύματος", "en": "Philosophy of the Human Sciences", "de": "Philosophie der Geisteswissenschaften" } },
+        { "code": "V.7", "title": { "el": "Φιλοσοφία της Ζωής", "en": "Philosophy of Life", "de": "Lebensphilosophie" } },
+        { "code": "V.8", "title": { "el": "Φιλοσοφία της Κουλτούρας και της Ιστορίας", "en": "Philosophy of Culture and History", "de": "Philosophie der Kultur und der Geschichte" } },
+        { "code": "V.9", "title": { "el": "Κριτικός Ορθολογισμός", "en": "Critical Rationalism", "de": "Kritischer Rationalismus" } },
+        { "code": "V.10", "title": { "el": "Φαινομενολογία", "en": "Phenomenology", "de": "Phänomenologie" } },
+        { "code": "V.11", "title": { "el": "Φιλοσοφική Ανθρωπολογία", "en": "Philosophical Anthropology", "de": "Philosophische Anthropologie" } },
+        { "code": "V.12", "title": { "el": "Φιλοσοφία της Ύπαρξης - Υπαρξισμός", "en": "Philosophy of Existence - Existentialism", "de": "Existenzphilosophie - Existentialismus" } },
+        { "code": "V.13", "title": { "el": "Σύγχρονος Εμπειρισμός και Νεοθετικισμός", "en": "Contemporary Empiricism and Neo-Positivism", "de": "Zeitgenössischer Empirismus und Neopositivismus" } },
+        { "code": "V.14", "title": { "el": "Φιλοσοφία της Γλώσσας και Αναλυτική Φιλοσοφία", "en": "Philosophy of Language and Analytic Philosophy", "de": "Sprachphilosophie und Analytische Philosophie" } },
+        { "code": "V.15", "title": { "el": "Λογιστική, Κονστρουκτιβισμός", "en": "Logic (Logistic), Constructivism", "de": "Logistik, Konstruktivismus" } },
+        { "code": "V.16", "title": { "el": "Αμερικανικός Πραγματισμός", "en": "American Pragmatism", "de": "Amerikanischer Pragmatismus" } },
+        { "code": "V.17", "title": { "el": "Νεομαρξισμός - Κριτική Θεωρία", "en": "Neo-Marxism - Critical Theory", "de": "Neomarxismus - Kritische Theorie" } },
+        { "code": "V.18", "title": { "el": "Ερμηνευτική", "en": "Hermeneutics", "de": "Hermeneutik" } },
+        { "code": "V.19", "title": { "el": "Επιστημολογία (σύγχρονες θεωρίες της επιστήμης)", "en": "Epistemology (contemporary theories of science)", "de": "Epistemologie (zeitgenössische Wissenschaftstheorien)" } },
+        { "code": "V.20", "title": { "el": "Στρουκτουραλισμός", "en": "Structuralism", "de": "Strukturalismus" } },
+        { "code": "V.21", "title": { "el": "Πολιτική Φιλοσοφία και Φιλοσοφία της Πολιτικής Οικονομίας", "en": "Political Philosophy and Philosophy of Political Economy", "de": "Politische Philosophie und Philosophie der Politischen Ökonomie" } },
+        { "code": "V.22", "title": { "el": "Μυστικισμός", "en": "Mysticism", "de": "Mystik" } },
+        { "code": "V.23", "title": { "el": "Σύγχρονοι Αλλοδαποί Φιλόσοφοι", "en": "Contemporary Foreign Philosophers", "de": "Zeitgenössische ausländische Philosophen" } },
+        { "code": "V.24", "title": { "el": "Σύγχρονοι Έλληνες Φιλόσοφοι", "en": "Contemporary Greek Philosophers", "de": "Zeitgenössische griechische Philosophen" } }
+      ]
+    }
+  ]
+}

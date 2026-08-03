@@ -5,7 +5,7 @@ import { useLang } from '../i18n/LanguageContext.jsx'
  * Real photographs live in /public/images. Pass `src` to choose which one;
  * defaults to the recent (Professor Emeritus) photograph.
  * Paths are relative (no leading slash) so the built site also works when
- * opened directly from the filesystem (file://) — see vite.config base.
+ * opened directly from the filesystem (file://) - see vite.config base.
  */
 export default function Portrait({
   src = 'images/IoannisTzavaras.jpg',

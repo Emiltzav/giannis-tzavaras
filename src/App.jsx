@@ -11,6 +11,7 @@ import Works from './pages/Works.jsx'
 import Interests from './pages/Interests.jsx'
 import Books from './pages/Books.jsx'
 import Articles from './pages/Articles.jsx'
+import Bibliography from './pages/Bibliography.jsx'
 import Blog from './pages/Blog.jsx'
 import BlogPost from './pages/BlogPost.jsx'
 import Activities from './pages/Activities.jsx'
@@ -55,6 +56,7 @@ export default function App() {
           <Route path="/books" element={<Books />} />
           <Route path="/translations" element={<Books initialTab="translations" />} />
           <Route path="/articles" element={<Articles />} />
+          <Route path="/bibliography" element={<Bibliography />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:id" element={<BlogPost />} />
           <Route path="/activities" element={<Activities />} />

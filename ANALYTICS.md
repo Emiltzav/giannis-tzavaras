@@ -1,6 +1,6 @@
 # Website analytics (Supabase)
 
-This site tracks basic traffic analytics with **no backend server** — the static React
+This site tracks basic traffic analytics with **no backend server** - the static React
 app writes page-view events directly to a free **Supabase** (Postgres) database, and a
 private in-app dashboard at **`/#/admin`** reads them back. Nothing else changes about
 hosting: the site stays a static SPA on GitHub Pages.
@@ -58,11 +58,11 @@ swallowed and never affects the public site. The offline standalone build works 
 Go to **`https://<your-site>/#/admin`**, sign in with the credentials from step 3, and you
 get: total views, distinct visitors, blog views, views today, a views-per-day chart, and
 breakdowns by page, blog post, language, country, browser, OS, device, referrer and UTM
-source — plus a live table of recent visits. A range selector switches between 7/30/90/365
+source - plus a live table of recent visits. A range selector switches between 7/30/90/365
 days and all-time. The `/admin` route is **not** in the navbar and records no analytics of
 its own.
 
 ## Is the anon key safe to publish?
 
 Yes. It's designed to be public. RLS (schema step 2) means the anon key can only *insert*
-page-views and can never *read* them — reads require your authenticated session.
+page-views and can never *read* them - reads require your authenticated session.
