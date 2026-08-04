@@ -182,15 +182,24 @@ These are wired through `src/components/Portrait.jsx` (pass a `src` prop to choo
   Defined in `src/App.jsx`. Note: `/works` still exists as a route (and the hero "Explore the
   work" CTA links to it) but the **Works menu item was removed** from the navbar and footer
   (dad-requests vol.1).
-- **Navbar** (`src/components/Navbar.jsx`): `navItems` is now a **single flat row** of links
-  (dad-requests vol.2): Home, Biography, Chronology, Interests, Books, Articles, Blog,
-  Activities, Contact. The first item is an explicit **`Αρχική` Home link** (`{ to: '/', icon:
-  Home, end: true }`) styled as a gold pill (`.nav-link--home`); `renderLink` supports an
-  optional lucide `icon` and an `end` flag. The old stacked `{ stack: [...] }` groups were
-  removed - the navbar now spans **full viewport width** (`.navbar__inner` overrides
-  `.container` with `max-width:none`) so everything fits on one line. The primary nav collapses
-  to the burger menu at **≤1180px** (was ≤1024px). The `.nav-stack` CSS is now unused but left
-  in place harmlessly.
+- **Navbar** (`src/components/Navbar.jsx`): the row was overflowing (10 links + language flags
+  pushed the flags off-screen on desktop), so as of the **navbar-dropdowns round** the links are
+  **grouped into two dropdowns** to keep the top row short: **Home** (gold pill) · **Βίος ▾**
+  (`nav.about` group: Biography, Chronology, Interests, CV) · **Έργο ▾** (`nav.works` group:
+  Books, Articles - his *own authored* output only) · **Βιβλιογραφία** (standalone - it's a
+  *compiled reference work* he assembled from others' books/articles, deliberately **not** under
+  Έργο) · **Blog** · **Activities** (standalone - broader activity, not a written work) ·
+  **Contact**. `navItems` entries are either a plain link or a group `{ key, label, children:[…] }`
+  rendered by the `NavDropdown` subcomponent (hover **or** click to open; closes on outside
+  `pointerdown` / `Escape` / route change; the toggle highlights when any child route is active;
+  chevron flips via `.nav-dropdown.is-open`). The first item is still the explicit **`Αρχική` Home
+  link** (`{ to: '/', icon: Home, end: true }`, `.nav-link--home` gold pill); `renderLink` supports
+  an optional lucide `icon` and `end` flag. The navbar spans **full viewport width**
+  (`.navbar__inner` overrides `.container` with `max-width:none`). The primary nav collapses to the
+  burger menu at **≤1180px**, where the dropdowns **flatten into inline indented sections** (panel
+  forced `position:static`/visible via CSS). New group label key: **`nav.about`** (EL «Βίος» / EN
+  "Life" / DE "Leben"). Styles: `.nav-dropdown*` in `index.css` (the old `.nav-stack` CSS was
+  replaced by these).
 - **Italics helper** (`src/components/RichText.jsx`): renders a plain string, converting
   `*emphasis*` spans into `<em>`. Used wherever book titles / journal names must appear italic
   (CV books, Articles `source`, Chronology items, Interests items). Wrap a title in the JSON with
@@ -322,6 +331,32 @@ facts; replace before publishing. The photographs and the bibliography are the v
 
 ## Changelog
 
+### navbar-dropdowns round - shrink the overflowing navbar (August 2026)
+The owner reported the navbar overflowed on his father's desktop PC - 10 top-level links plus the
+EL/EN/DE flags were too wide, so the **language flags were pushed off-screen**. Fixed by grouping
+links into dropdowns instead of a flat row:
+
+1. **Two dropdown groups** - **Βίος ▾** (`nav.about`: Biography, Chronology, Interests, **CV** -
+   CV gained a navbar entry here, previously it was footer/Biography-only) and **Έργο ▾**
+   (`nav.works`: Books, Articles). Top row went from 10 items to ~6, leaving room for the flags.
+2. **`NavDropdown` subcomponent** in `Navbar.jsx` - opens on hover **or** click; closes on outside
+   `pointerdown`, `Escape`, or route change; toggle highlights when a child route is active;
+   chevron flips. Mobile (≤1180px burger menu): dropdowns **flatten into inline indented sections**
+   (CSS forces the panel `position:static`/visible).
+3. **Bibliography kept OUT of Έργο, as its own standalone top-level link** - owner's point:
+   «Έργο» = his *own authored* works (Books, Articles), but the **Bibliography is a compiled
+   reference work** he assembled from *other* scholars' books+articles, so it doesn't belong with
+   his oeuvre. Also confirmed the label «Βιβλιογραφία» is fine even though it contains articles
+   (a bibliography covers books *and* articles by definition).
+4. **Activities kept standalone** (owner's choice, option A) - it's broader activity (websites,
+   institutional roles, lectures), not a written work, so it's not folded into Έργο.
+5. New dictionary key **`nav.about`** (EL «Βίος» / EN "Life" / DE "Leben"), added surgically to all
+   three `nav` blocks. CSS: `.nav-stack` rules **replaced** by `.nav-dropdown*` (desktop popover +
+   mobile inline). Rebuilt `dist/`; 42 tests still pass.
+
+Changed files: `src/components/Navbar.jsx`, `src/index.css`, all three `src/data/*.json`
+(just `nav.about`), `CLAUDE.md`.
+
 ### dad-requests vol.1 - "Διορθώσεις στη νέα Ιστοσελίδα Τζαβάρα vol. 1.docx" (June 2026)
 Source file: `dad-requests/Διορθώσεις στη νέα Ιστοσελίδα Τζαβάρα vol. 1.docx`. 21 owner-requested
 corrections, applied across all three dictionaries and rebuilt to `dist/`:
@@ -402,3 +437,34 @@ Small owner-requested round, applied across all three dictionaries and rebuilt t
 
 Changed files: `src/pages/{Blog,BlogPost}.jsx`, `src/components/Navbar.jsx`, `src/index.css`,
 all three `src/data/*.json`, `CLAUDE.md`.
+
+### Bibliography search + tests + global hyphens (August 2026)
+A large owner-requested feature round (built incrementally over one session):
+
+1. **Bibliography search page** (`/bibliography`) - see the full "Bibliography search" bullet in the
+   Pages section above. Summary: parses the owner's 9 binary `.doc` archives in
+   `greek-bibliography/` (via **antiword**, in `scripts/gen_bibliography.mjs`) into ~24,239 JSON
+   entries across two divisions (**Books** by philosophical taxonomy, **Articles** by year),
+   lazy-loaded, with a modern search bar (accent-insensitive full-text, highlighting, "jump to
+   section" autocomplete), category/period/year filters and a Books ⇄ Articles toggle. Nav +
+   footer link `nav.bibliography`; UI strings in the `bibliography` key of `el/en/de.json`; taxonomy
+   in `src/data/bibliography.json`; styles `.biblio-*`.
+2. **Owner decisions:** in-page display (not PDF); data **online-only** lazy-load (not in the
+   offline standalone build); Books built first, then Articles.
+3. **Unit tests introduced** - added **Vitest** (`npm test`, `test:watch`). Pure logic extracted to
+   `src/lib/bibliographySearch.js` + `src/lib/bibliographyParse.js`, specs in the matching
+   `*.test.js` (42 tests). New convention: put pure logic in `src/lib/*` so it stays testable.
+4. **Coverage bug fixes (with regression tests):** the parser's `isJunk` filter was dropping real
+   entries - a "2+ ` = `" rule deleted philosopher/transliteration lists, and a bare `κλικ` matched
+   the substring inside «Κυκλικά». Both removed/narrowed; recovered ~96 entries; audited that no
+   dropped paragraph looks like a real citation.
+5. **Global hyphens** - replaced **every** en/em/figure/bar dash (U+2012-U+2015) with a plain
+   hyphen `-` across all content, labels, comments and generated data, and made `normalize()` /
+   `dewrap()` normalise dashes automatically so it stays clean. **New standing rule (supersedes
+   dad-requests vol.2's "keep en-dashes in ranges"): never author `–`/`—` anywhere; always `-`.**
+
+Key new/changed files: `src/pages/Bibliography.jsx` (new), `src/lib/bibliography{Search,Parse}.js`
+(+ `.test.js`), `scripts/gen_bibliography.mjs` (new), `src/data/bibliography.json` (new),
+`src/data/bibliography/{books,articles}/*.json` (generated), `package.json` (vitest + scripts),
+`src/App.jsx`, `src/components/{Navbar,Footer}.jsx`, `src/index.css`, all three `src/data/*.json`.
+**Not committed** - the owner commits himself. Raw `.doc` sources live in `greek-bibliography/`.

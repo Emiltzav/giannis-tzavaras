@@ -184,14 +184,17 @@ main {
 
 .navbar__inner {
   height: var(--nav-h);
-  display: flex;
+  /* Three zones: logo hard-left, nav links centered in the viewport, language
+     toggle hard-right. The equal 1fr side tracks keep the middle truly centered
+     regardless of the logo/toggle widths. */
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  justify-content: space-between;
   gap: 1rem;
   /* Override the centered .container: span (almost) the full viewport width so
      the logo sits far left and the links/flags get much more room. */
   max-width: none;
-  padding-inline: clamp(1rem, 2.5vw, 2rem);
+  padding-inline: clamp(0.85rem, 1.8vw, 1.3rem);
 }
 
 /* Logo */
@@ -200,6 +203,8 @@ main {
   align-items: center;
   gap: 0.7rem;
   flex-shrink: 0;
+  grid-column: 1;
+  justify-self: start;
 }
 
 .logo__mark {
@@ -237,12 +242,14 @@ main {
 .navbar__links {
   display: flex;
   align-items: center;
-  gap: clamp(0.5rem, 1.1vw, 1.15rem);
+  gap: clamp(0.4rem, 0.9vw, 0.82rem);
+  grid-column: 2;
+  justify-self: center;
 }
 
 .nav-link {
   position: relative;
-  font-size: 0.98rem;
+  font-size: 1.05rem;
   white-space: nowrap;
   color: var(--ink-soft);
   padding: 0.3rem 0.15rem;
@@ -276,8 +283,8 @@ main {
 .nav-link--home {
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
-  padding: 0.34rem 0.8rem;
+  gap: 0.3rem;
+  padding: 0.34rem 0.62rem;
   border: 1.5px solid var(--gold);
   border-radius: 999px;
   color: var(--aegean);
@@ -297,18 +304,88 @@ main {
   flex-shrink: 0;
 }
 
-/* Stacked nav group: links rendered one below the other in the top bar */
-.nav-stack {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 0.1rem;
+/* Dropdown nav group (About / Works) - keeps the top row short */
+.nav-dropdown {
+  position: relative;
+  display: inline-flex;
 }
 
-.nav-stack .nav-link {
-  padding: 0.05rem 0.15rem;
-  font-size: 0.92rem;
-  line-height: 1.3;
+.nav-dropdown__toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2rem;
+  background: none;
+  border: 0;
+  cursor: pointer;
+  font: inherit;
+  /* Match the standalone .nav-link size (font:inherit above would otherwise
+     reset it to the inherited body size). */
+  font-size: 1.05rem;
+}
+
+.nav-dropdown__chev {
+  transition: transform 0.25s var(--ease);
+}
+
+.nav-dropdown.is-open .nav-dropdown__chev {
+  transform: rotate(180deg);
+}
+
+.nav-dropdown__panel {
+  position: absolute;
+  top: calc(100% + 0.55rem);
+  left: 50%;
+  transform: translate(-50%, 6px);
+  min-width: 12rem;
+  display: flex;
+  flex-direction: column;
+  padding: 0.4rem;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  box-shadow: var(--shadow-md);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.2s var(--ease), transform 0.2s var(--ease), visibility 0.2s;
+  z-index: 20;
+}
+
+/* small hover bridge so moving the cursor into the panel doesn't close it */
+.nav-dropdown__panel::before {
+  content: '';
+  position: absolute;
+  top: -0.6rem;
+  left: 0;
+  right: 0;
+  height: 0.6rem;
+}
+
+.nav-dropdown.is-open .nav-dropdown__panel {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translate(-50%, 0);
+}
+
+.nav-dropdown__item {
+  padding: 0.55rem 0.75rem;
+  border-radius: 9px;
+  font-size: 0.96rem;
+  color: var(--ink-soft);
+  white-space: nowrap;
+  transition: background 0.18s var(--ease), color 0.18s var(--ease);
+}
+
+.nav-dropdown__item:hover {
+  background: var(--parchment-2);
+  color: var(--aegean);
+}
+
+.nav-dropdown__item.is-active {
+  color: var(--aegean);
+  background: var(--parchment-2);
+  font-weight: 600;
 }
 
 .navbar__links-lang {
@@ -319,6 +396,14 @@ main {
   display: flex;
   align-items: center;
   gap: 1rem;
+  /* Never let the flags/burger area be compressed by the nav links. */
+  flex: none;
+  grid-column: 3;
+  justify-self: end;
+}
+
+.navbar__lang-desktop {
+  flex: none;
 }
 
 .navbar__burger {
@@ -332,6 +417,7 @@ main {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
+  flex: none;
   background: var(--paper);
   border: 1px solid var(--line);
   border-radius: 999px;
@@ -342,14 +428,23 @@ main {
 .lang-btn {
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
-  font-size: 0.82rem;
+  gap: 0.3rem;
+  flex: none;
+  white-space: nowrap;
+  font-size: 0.8rem;
   font-weight: 600;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.05em;
   color: var(--muted);
   padding: 0.25rem 0.45rem;
+  /* letter-spacing adds trailing space after the last glyph; pad the right
+     a touch more so the label never spills past the active pill background */
+  padding-right: 0.55rem;
   border-radius: 999px;
   transition: color 0.2s var(--ease), background 0.2s var(--ease);
+}
+
+.lang-btn > span {
+  flex: none;
 }
 
 .lang-btn img {
@@ -2410,19 +2505,11 @@ main {
   }
 }
 
-@media (max-width: 1180px) {
-  :root {
-    --nav-h: 72px;
-  }
-
-  .logo__role {
-    display: none;
-  }
-
-  .logo__name {
-    font-size: 1.15rem;
-  }
-
+/* Navbar collapses to the burger BEFORE the desktop row (long EL/DE labels +
+   the language toggle) can outgrow the viewport and clip the flags on the
+   right. Kept on its own breakpoint, higher than the general 1180px layout
+   breakpoint below, because it's about horizontal fit of the nav row only. */
+@media (max-width: 1200px) {
   .navbar__burger {
     display: inline-flex;
   }
@@ -2465,10 +2552,67 @@ main {
     display: none;
   }
 
+  /* Dropdowns flatten into inline sections inside the burger menu */
+  .nav-dropdown {
+    display: block;
+    width: 100%;
+  }
+
+  .nav-dropdown__toggle {
+    width: 100%;
+    justify-content: space-between;
+    padding: 1rem 0.4rem;
+    font-size: 1.2rem;
+    border-bottom: 1px solid var(--line-soft);
+    cursor: default;
+  }
+
+  .nav-dropdown__chev {
+    display: none;
+  }
+
+  .nav-dropdown__panel {
+    position: static;
+    transform: none;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    min-width: 0;
+    background: none;
+    border: 0;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0 0 0 1rem;
+  }
+
+  .nav-dropdown__panel::before {
+    display: none;
+  }
+
+  .nav-dropdown__item {
+    padding: 0.85rem 0.4rem;
+    font-size: 1.05rem;
+    border-bottom: 1px solid var(--line-soft);
+  }
+
   .navbar__links-lang {
     display: flex;
     justify-content: center;
     padding-top: 1.2rem;
+  }
+}
+
+@media (max-width: 1180px) {
+  :root {
+    --nav-h: 72px;
+  }
+
+  .logo__role {
+    display: none;
+  }
+
+  .logo__name {
+    font-size: 1.15rem;
   }
 
   .work-area {
