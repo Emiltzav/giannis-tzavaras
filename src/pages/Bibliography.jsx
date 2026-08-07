@@ -13,6 +13,7 @@ import {
   sectionScore,
   highlightRanges,
 } from '../lib/bibliographySearch.js'
+import { italicSpans } from '../lib/bibliographyItalic.js'
 
 // Real entries are generated from the owner's .doc archives by
 // scripts/gen_bibliography.mjs and lazy-loaded (dynamic import) per division, so
@@ -51,18 +52,30 @@ const PERIODS = {
 
 const RESULT_CAP = 300
 
-// Turn pure highlight ranges into <mark> elements around the matched slices.
-function highlight(text, tokens) {
-  const merged = highlightRanges(text, tokens)
-  if (!merged.length) return text
+// Render a citation with book/journal titles in <em> italics (via italicSpans)
+// and search matches wrapped in <mark> - both range sets applied together by
+// slicing the string at every range boundary and wrapping each slice as needed.
+function renderCitation(text, tokens) {
+  const italic = italicSpans(text)
+  const hi = highlightRanges(text, tokens)
+  if (!italic.length && !hi.length) return text
+
+  const bounds = new Set([0, text.length])
+  for (const [s, e] of italic) { bounds.add(s); bounds.add(e) }
+  for (const [s, e] of hi) { bounds.add(s); bounds.add(e) }
+  const pts = [...bounds].sort((a, b) => a - b)
+  const covered = (ranges, s, e) => ranges.some(([a, b]) => a <= s && e <= b)
+
   const out = []
-  let pos = 0
-  merged.forEach(([s, e], i) => {
-    if (pos < s) out.push(<Fragment key={`t${i}`}>{text.slice(pos, s)}</Fragment>)
-    out.push(<mark key={`m${i}`} className="biblio-hl">{text.slice(s, e)}</mark>)
-    pos = e
-  })
-  if (pos < text.length) out.push(<Fragment key="end">{text.slice(pos)}</Fragment>)
+  for (let i = 0; i < pts.length - 1; i++) {
+    const s = pts[i]
+    const e = pts[i + 1]
+    if (s === e) continue
+    let node = text.slice(s, e)
+    if (covered(hi, s, e)) node = <mark className="biblio-hl">{node}</mark>
+    if (covered(italic, s, e)) node = <em>{node}</em>
+    out.push(<Fragment key={s}>{node}</Fragment>)
+  }
   return out
 }
 
@@ -396,7 +409,7 @@ export default function Bibliography() {
                           <span className="biblio-entry__code" title={sectionTitle(e.sectionCode)}>{e.sectionCode}</span>
                           {isBooks && e.year && <span className="biblio-entry__year">{e.year}</span>}
                         </div>
-                        <p className="biblio-entry__text">{highlight(e.text, tokens)}</p>
+                        <p className="biblio-entry__text">{renderCitation(e.text, tokens)}</p>
                       </li>
                     ))}
                   </ul>

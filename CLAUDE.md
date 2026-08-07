@@ -112,7 +112,15 @@ These are the things the owner explicitly asked for. Keep them satisfied:
     **browse-by-section** (cards per taxonomy leaf), articles **browse-by-year** (year cards grouped
     by decade). Typing switches to **full-text entry search** (accent-insensitive, multi-token AND,
     debounced 140 ms, results capped at 300) with **match highlighting** (`<mark class="biblio-hl">`,
-    accent-insensitive via a normalised index map). Search helpers are extracted to
+    accent-insensitive via a normalised index map). **Book/journal titles in each result are
+    rendered *italic*** - the entries are parsed plain text with no markup, so the italic character
+    ranges are computed heuristically by **`src/lib/bibliographyItalic.js`** (`italicSpans(text)`,
+    unit-tested): a book title = the segment after the "Author:" prefix up to the first sentence
+    period (author initials like «M. K.» are skipped so the author isn't split); an article's
+    «quoted» title stays roman and its **journal name** (the words before the `vol (year)` run) is
+    italicised instead; multi-work `α)/β)/γ)` entries are handled per sub-work. `renderCitation()`
+    in `Bibliography.jsx` applies these italic ranges together with the search `<mark>` highlight
+    ranges (slicing the string at every boundary). Search helpers are extracted to
     **`src/lib/bibliographySearch.js`** (unit-tested - see the Tests section). UI strings in the
     `bibliography` key of `el/en/de.json`; nav label `nav.bibliography` (navbar + footer). Styles:
     `.biblio-*` in `index.css`.
@@ -194,12 +202,30 @@ These are wired through `src/components/Portrait.jsx` (pass a `src` prop to choo
   `pointerdown` / `Escape` / route change; the toggle highlights when any child route is active;
   chevron flips via `.nav-dropdown.is-open`). The first item is still the explicit **`Αρχική` Home
   link** (`{ to: '/', icon: Home, end: true }`, `.nav-link--home` gold pill); `renderLink` supports
-  an optional lucide `icon` and `end` flag. The navbar spans **full viewport width**
-  (`.navbar__inner` overrides `.container` with `max-width:none`). The primary nav collapses to the
-  burger menu at **≤1180px**, where the dropdowns **flatten into inline indented sections** (panel
-  forced `position:static`/visible via CSS). New group label key: **`nav.about`** (EL «Βίος» / EN
+  an optional lucide `icon` and `end` flag. New group label key: **`nav.about`** (EL «Βίος» / EN
   "Life" / DE "Leben"). Styles: `.nav-dropdown*` in `index.css` (the old `.nav-stack` CSS was
   replaced by these).
+  - **Layout (navbar-layout round, Aug 2026):** `.navbar__inner` is a **3-zone CSS grid**
+    `grid-template-columns: 1fr auto 1fr` spanning full viewport width (`max-width:none`): **logo**
+    = col 1 `justify-self:start` (hard left), **`.navbar__links`** = col 2 `justify-self:center`
+    (nav **truly centered** in the viewport - the equal `1fr` side tracks keep it centered
+    regardless of logo/toggle widths), **`.navbar__actions`** (flags + burger) = col 3
+    `justify-self:end` (hard right). The owner explicitly wanted **left / centre / right** zones -
+    do **not** revert to `flex-start` (dumps everything left) or plain `space-between`.
+  - **Language toggle is overflow-proof:** `.lang-toggle` + `.lang-btn` are `flex:none` +
+    `white-space:nowrap`, and `.lang-btn` has extra `padding-right` to absorb the trailing
+    `letter-spacing` so the EL/EN/DE label can never spill past its active pill;
+    `.navbar__actions`/`.navbar__lang-desktop` are also `flex:none`.
+  - **Font size:** nav items are **`1.05rem`** (`.nav-link`). `.nav-dropdown__toggle` needs an
+    **explicit `font-size:1.05rem`** because its `font:inherit` otherwise resets the size and makes
+    the Βίος/Έργο toggles a different size from the standalone links.
+  - **Burger breakpoint:** the nav collapse lives in its **own `@media (max-width:1200px)` block**,
+    kept **separate** from the general `≤1180px` layout block (which controls footer grid,
+    work-area, article grids, logo shrink - leave those at 1180). At ≤1200px the dropdowns
+    **flatten into inline indented sections** (panel forced `position:static`/visible) and the
+    burger is pinned to `grid-column:3` so it stays far right. The 1200px value was chosen by
+    measuring the Greek row (longest) - the real condensed serif needs ~1050px, so it has a safe
+    margin.
 - **Italics helper** (`src/components/RichText.jsx`): renders a plain string, converting
   `*emphasis*` spans into `<em>`. Used wherever book titles / journal names must appear italic
   (CV books, Articles `source`, Chronology items, Interests items). Wrap a title in the JSON with
@@ -262,8 +288,13 @@ npm run test:watch     # unit tests in watch mode
 ```
 
 ### Tests
-Unit tests use **Vitest** (`npm test`, 42 tests). Pure logic is extracted into `src/lib/*` so it can
+Unit tests use **Vitest** (`npm test`, 52 tests). Pure logic is extracted into `src/lib/*` so it can
 be tested without rendering React:
+- **`src/lib/bibliographyItalic.js`** (`italicSpans`) - computes the italic character ranges (book
+  titles / journal names) for a bibliography citation. Specs in `bibliographyItalic.test.js`
+  (book title after author, no-author leading title, subtitle stays roman, «quoted» article titles
+  stay roman while the journal is italic, multi-work `α)/β)` entries, and a regression that author
+  initials «M. K.» don't split the author).
 - **`src/lib/bibliographySearch.js`** (`normalize`, `tokenize`, `entryNorm`, `entryMatches`,
   `topCodeOf`, `sectionScore`, `highlightRanges`) - used by `Bibliography.jsx` (its `highlight()`
   just wraps `highlightRanges` in `<mark>`). Specs in `bibliographySearch.test.js` (accent-insensitive
@@ -330,6 +361,68 @@ facts; replace before publishing. The photographs and the bibliography are the v
 - Optional: SEO/OG image, sitemap, favicon variants.
 
 ## Changelog
+
+### home bibliography spotlight - surface the archive (August 2026)
+Owner request: users must **not miss** the Bibliography/Arthrografia page. Added a prominent,
+elegant **Bibliography spotlight band** on the Home page, placed high up (right after the Intro,
+before Highlights). It's a full-width aegean-gradient band (reusing the proven `.featured-quote`
+visual language: gold meander top border, faint circle motif) with a «Ερευνητικό εργαλείο» badge,
+a serif title, a one-line pitch, three **stat counters** (15.000+ books / 9.000+ articles / 40
+years) and a gold CTA button linking to `/bibliography`. New content key **`home.biblio`**
+`{ eyebrow, title, text, stats:[{value,label}×3], cta }` added (compact single-line style) to all
+three dictionaries; the stat `value`s are per-language (`15.000+` EL/DE vs `15,000+` EN). New CSS
+`.biblio-spotlight*` + a reusable **`.btn--gold`** button variant. `dist/` rebuilt.
+
+Changed files: `src/pages/Home.jsx`, `src/index.css`, all three `src/data/*.json`, `CLAUDE.md`.
+
+### bibliography italics - italic titles in search results (August 2026)
+Owner request: the **Bibliography + Articles search results** should show book titles and journal
+(periodika) names in **italics**, matching the convention used elsewhere on the site. Because the
+~24,239 entries are parsed plain text (no `*asterisks*` markup), added a heuristic:
+- New **`src/lib/bibliographyItalic.js`** (`italicSpans(text)`, unit-tested, 10 specs) returns the
+  character ranges to italicise: book title = after the "Author:" prefix up to the first sentence
+  period (author initials «M. K.» skipped so the name isn't split); article «quoted» titles stay
+  roman and the **journal name** (words before the `vol (year)` run) is italicised; multi-work
+  `α)/β)/γ)` entries handled per sub-work.
+- `Bibliography.jsx`: replaced `highlight()` with **`renderCitation()`** which applies the italic
+  ranges together with the search `<mark>` highlight ranges (slices the string at every boundary,
+  wraps each slice in `<em>` and/or `<mark>` as needed).
+Audited across real data (~13% of entries have no detected italic - mostly "Στο:" book-chapter
+entries and philosopher-name section headers - which is the safe direction: better to under- than
+mis-italicise). Full suite 42→**52 tests**. `dist/` rebuilt.
+
+Changed files: `src/lib/bibliographyItalic.js` (+ `.test.js`, new), `src/pages/Bibliography.jsx`,
+`CLAUDE.md`.
+
+### navbar-layout round - responsive fit + left/centre/right zones (August 2026)
+Owner reported the **language flags overflowing** at intermediate desktop widths (the "EL" then
+"DE" labels spilling past their pills / the toggle getting clipped) and then tuned the look. All
+changes are CSS-only in `src/index.css` (no JSX/JSON/data changes; `dist/` not yet rebuilt - owner
+commits/builds himself). Built up over several quick iterations with the owner watching the live
+`npm run dev`:
+
+1. **Flag overflow fixed** - `.lang-toggle` + `.lang-btn` made `flex:none` + `white-space:nowrap`,
+   with extra `padding-right` on `.lang-btn` to absorb the trailing `letter-spacing`, so an EL/EN/DE
+   label can never spill past its active pill. `.navbar__actions`/`.navbar__lang-desktop` also
+   `flex:none` so the flags zone is never compressed.
+2. **Burger breakpoint split out** - the navbar-collapse rules moved into their **own
+   `@media (max-width:1200px)` block**, separate from the general `≤1180px` layout block (footer
+   grid, work-area, article grids, logo shrink stay at 1180). Tuned via PIL text-width measurement
+   of the longest (Greek) row; real condensed serif needs ~1050px so 1200 has margin.
+3. **Bigger nav font** - `.nav-link` `0.98→(0.9 briefly)→1.05rem`; **`.nav-dropdown__toggle` needed
+   an explicit `font-size:1.05rem`** because its `font:inherit` had been resetting the size, making
+   the Βίος/Έργο dropdown toggles inconsistent with the standalone links.
+4. **Left / centre / right layout** - after trying `flex-start` (owner: "too left, too much space
+   on the right"), settled on a **3-zone CSS grid**: `.navbar__inner { display:grid;
+   grid-template-columns:1fr auto 1fr }` with logo `justify-self:start` (col1), `.navbar__links`
+   `justify-self:center` (col2, truly viewport-centered), `.navbar__actions` `justify-self:end`
+   (col3). Burger pinned to `grid-column:3` so it stays far right on mobile. **Owner preference:
+   keep the three zones - don't revert to flex-start or space-between.**
+5. Also tightened `.navbar__inner` gap/side padding and `.navbar__links`/home-pill gaps a touch so
+   the larger font still fits comfortably.
+
+Changed files: `src/index.css`, `CLAUDE.md` (this file). See the **Navbar** bullet in Architecture
+for the durable spec.
 
 ### navbar-dropdowns round - shrink the overflowing navbar (August 2026)
 The owner reported the navbar overflowed on his father's desktop PC - 10 top-level links plus the

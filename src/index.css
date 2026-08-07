@@ -887,6 +887,151 @@ main {
 }
 
 /* ============================================================
+   Bibliography spotlight (Home) - "don't miss the archive"
+   ============================================================ */
+.biblio-spotlight {
+  position: relative;
+  background: linear-gradient(150deg, var(--aegean), var(--aegean-2));
+  color: var(--parchment);
+  padding-block: clamp(3rem, 7vw, 5rem);
+  overflow: hidden;
+}
+
+.biblio-spotlight::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Ccircle cx='70' cy='70' r='46' fill='none' stroke='%23c9a227' stroke-opacity='0.08' stroke-width='1'/%3E%3Ccircle cx='70' cy='70' r='30' fill='none' stroke='%23c9a227' stroke-opacity='0.06' stroke-width='1'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+
+.biblio-spotlight__meander {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 14px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='14' viewBox='0 0 48 14'%3E%3Cpath d='M0 13h6V5h8v8h6V1h12v12h6V5h8v8h6' fill='none' stroke='%23c9a227' stroke-width='2'/%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+  background-position: center;
+  opacity: 0.85;
+}
+
+.biblio-spotlight__inner {
+  position: relative;
+}
+
+.biblio-spotlight__content {
+  max-width: 760px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.biblio-spotlight__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.95rem;
+  border-radius: 999px;
+  background: rgba(201, 162, 39, 0.14);
+  border: 1px solid rgba(201, 162, 39, 0.4);
+  color: var(--gold-soft);
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin-bottom: 1.4rem;
+}
+
+.biblio-spotlight__title {
+  font-family: var(--serif-display);
+  font-size: clamp(1.9rem, 4vw, 2.9rem);
+  line-height: 1.15;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.biblio-spotlight__text {
+  font-size: 1.12rem;
+  line-height: 1.6;
+  color: rgba(246, 239, 225, 0.85);
+  max-width: 630px;
+  margin-bottom: 2.2rem;
+}
+
+.biblio-spotlight__stats {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2.3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: clamp(1.4rem, 5vw, 3.5rem);
+}
+
+.biblio-spotlight__stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.biblio-spotlight__stat + .biblio-spotlight__stat::before {
+  content: '';
+  position: absolute;
+  left: calc(-1 * clamp(0.7rem, 2.5vw, 1.75rem));
+  top: 15%;
+  bottom: 15%;
+  width: 1px;
+  background: rgba(201, 162, 39, 0.3);
+}
+
+.biblio-spotlight__stat-value {
+  font-family: var(--serif-display);
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--gold);
+}
+
+.biblio-spotlight__stat-label {
+  margin-top: 0.45rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold-soft);
+}
+
+.btn--gold {
+  background: var(--gold);
+  color: var(--aegean);
+  box-shadow: 0 10px 26px rgba(201, 162, 39, 0.3);
+}
+
+.btn--gold:hover {
+  background: var(--gold-soft);
+  transform: translateY(-2px);
+  box-shadow: 0 16px 34px rgba(201, 162, 39, 0.4);
+}
+
+.btn--gold:hover svg:last-child {
+  transform: translateX(3px);
+}
+
+.biblio-spotlight__cta {
+  font-size: 1.04rem;
+}
+
+@media (max-width: 520px) {
+  .biblio-spotlight__stat + .biblio-spotlight__stat::before {
+    display: none;
+  }
+}
+
+/* ============================================================
    Blog teaser / list / cards
    ============================================================ */
 .blog-teaser__grid {

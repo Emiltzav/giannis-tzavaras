@@ -102,7 +102,18 @@
       }
     ],
     "featuredQuote": "Denken heißt: einer Frage treu zu bleiben, auch wenn sie keine Ruhe verspricht.",
-    "featuredQuoteSource": "Aus Vorlesungsnotizen, Rethymno"
+    "featuredQuoteSource": "Aus Vorlesungsnotizen, Rethymno",
+    "biblio": {
+      "eyebrow": "Recherche-Werkzeug",
+      "title": "Griechische Philosophische Bibliographie & Artikel",
+      "text": "Die Frucht von vierzig Jahren des Sammelns (1980-2019): eine frei durchsuchbare Datenbank mit Zehntausenden Büchern und Artikeln des griechischen philosophischen Denkens - ein einzigartiges Werkzeug für Forscher und Leser.",
+      "stats": [
+        { "value": "15.000+", "label": "Bücher" },
+        { "value": "9.000+", "label": "Artikel" },
+        { "value": "40", "label": "Jahre gesammelt" }
+      ],
+      "cta": "Sammlung erkunden"
+    }
   },
   "biography": {
     "title": "Biografie",

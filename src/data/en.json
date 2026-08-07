@@ -102,7 +102,18 @@
       }
     ],
     "featuredQuote": "To think means: to stay faithful to a question, even when it promises no rest.",
-    "featuredQuoteSource": "From lecture notes, Rethymno"
+    "featuredQuoteSource": "From lecture notes, Rethymno",
+    "biblio": {
+      "eyebrow": "Research tool",
+      "title": "Greek Philosophical Bibliography & Articles",
+      "text": "The fruit of forty years of collecting (1980-2019): a freely searchable database of tens of thousands of books and articles of Greek philosophical thought - a unique resource for scholars and readers.",
+      "stats": [
+        { "value": "15,000+", "label": "Books" },
+        { "value": "9,000+", "label": "Articles" },
+        { "value": "40", "label": "Years collected" }
+      ],
+      "cta": "Explore the collection"
+    }
   },
   "biography": {
     "title": "Biography",

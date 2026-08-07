@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, Quote, ArrowUpRight } from 'lucide-react'
+import { ArrowRight, Quote, ArrowUpRight, Library, Search } from 'lucide-react'
 import { useLang } from '../i18n/LanguageContext.jsx'
 import Reveal from '../components/Reveal.jsx'
 import Icon from '../components/Icon.jsx'
@@ -66,6 +66,36 @@ export default function Home() {
               </Reveal>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ── Bibliography spotlight ─────────── */}
+      <section className="biblio-spotlight">
+        <div className="biblio-spotlight__meander" aria-hidden="true" />
+        <div className="container biblio-spotlight__inner">
+          <Reveal className="biblio-spotlight__content">
+            <span className="biblio-spotlight__badge">
+              <Library size={16} aria-hidden="true" />
+              {t.home.biblio.eyebrow}
+            </span>
+            <h2 className="biblio-spotlight__title">{t.home.biblio.title}</h2>
+            <p className="biblio-spotlight__text">{t.home.biblio.text}</p>
+
+            <ul className="biblio-spotlight__stats">
+              {t.home.biblio.stats.map((s, i) => (
+                <li key={i} className="biblio-spotlight__stat">
+                  <span className="biblio-spotlight__stat-value">{s.value}</span>
+                  <span className="biblio-spotlight__stat-label">{s.label}</span>
+                </li>
+              ))}
+            </ul>
+
+            <Link to="/bibliography" className="btn btn--gold biblio-spotlight__cta">
+              <Search size={18} />
+              {t.home.biblio.cta}
+              <ArrowRight size={18} />
+            </Link>
+          </Reveal>
         </div>
       </section>
 
